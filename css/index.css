@@ -61,6 +61,7 @@
 	border-bottom:1px solid #ccc;
 	height: 88px;
 	margin-top: 15px; 
+	display: block
 }
 .list_title{
 	font-size: 16px;
@@ -71,18 +72,18 @@
 }
 .list_comments{
 	background: url(../img/pinglun.png) no-repeat;
-	background-size: 100%
+	background-size: 100%;
+	display: inline;
+	float: right;
+	width: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
 }
 .list_titel{
 	display: inline-block;
 	float: left;
 	color: #1DBE96
-}
-.list_comments{
-	display: inline;
-	float: right;
-	width: 80px;
-	text-align: center
 }
 #footer{
 	height: 55px;

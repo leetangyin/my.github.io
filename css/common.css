@@ -61,3 +61,7 @@ a{
     color: #333;
     text-decoration: none;
 }
+textarea{
+    outline:none;
+    resize:none
+}

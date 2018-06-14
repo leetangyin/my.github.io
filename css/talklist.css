@@ -1,0 +1,78 @@
+#header{
+    background: #26C688;
+    width: 100%;
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+
+}
+.news_t{
+    margin: 10px 0;
+}
+#footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%
+}
+#footer textarea{
+    width: 100%;
+    border: none;
+    border-top:1px solid #ccc; 
+    height: 35px;
+    line-height: 35px;
+}
+.talkcontent{
+    height: 50px;
+    background: #FAFAFA;
+}
+.talkcontent_left{
+    float: left;
+    text-align: center;
+    color: #1EBF95;
+    font-size:18px;
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+}
+.talkcontent_right{
+    float: left;
+    text-align: center;
+    font-size:18px;
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+    color: #333;
+}
+.portrait{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #26C688;
+    margin: 0 auto;
+}
+.portrait img{
+    width: 100%
+}
+.talks_top{
+    color: #ccc;
+    font-size: 18px;
+}
+.talks_time{
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.my_list_ul{
+    margin-top: 15px;
+}
+.talks_text{
+    color: #000;
+    font-size: 18px;
+    margin-bottom:8px; 
+}
+.my_list{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
