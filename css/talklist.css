@@ -24,6 +24,7 @@
 .talkcontent{
     height: 50px;
     background: #FAFAFA;
+    margin-top: 50px;
 }
 .talkcontent_left{
     float: left;
