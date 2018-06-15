@@ -8,10 +8,10 @@
         </div>\
         <div id="header_nav">\
             <ul>\
-                <li>热门</li>\
-                <li>世界杯</li>\
-                <li>视屏</li>\
-                <li>中超</li>\
+                <li><span style="border-bottom:2px solid #fff">热门</span></li>\
+                <li><span style="width:48px">世界杯</span></li>\
+                <li><span>视屏</span></li>\
+                <li><span>中超</span></li>\
                 <li></li>\
             </ul>\
         </div>\

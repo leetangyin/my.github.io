@@ -95,7 +95,7 @@ textarea{
 /* 头部部导航栏样式（有导航 */
 #header{
 	background: #26C688;
-	height: 90px;
+	height: 99px;
 	color: #fff;
 	width: 100%;
 	position: fixed;
@@ -123,14 +123,24 @@ textarea{
 	width: 23px;
 }
 #header_top span{
-	font-weight: bold
+    font-weight: bold;
+    font-size: 16px;
 }
 #header_nav ul li{
 	float: left;
 	width: 20%;
-	height: 30px;
-	line-height: 30px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
+}
+#header_nav ul li span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center
 }
 /* 头部无导航栏样式 */
 #otherheader{
