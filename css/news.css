@@ -1,39 +1,10 @@
-#header{
-    height: 50px;
-    background: #26C688;
-    width: 100%;
-    text-align: left;
-    position: relative;
-}
-#header .header_left{
-    float: left;
-    height: 50px;
-    line-height: 50px;
-    position: absolute;
-    left: 10px;
-}
-#header .header_text{
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    font-size:17px;
-    color: #fff; 
-}
-#header .header_right{
-    float: right;
-    position: absolute;
-    right: 10px;
-    top: 9px;
-}
-#header .header_right img{
-    width: 30px;
-}
 #news_content{
     padding: 20px;
 }
 .news_titel{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 50px; 
 }
 .news_img_text{
     color: #888;
@@ -45,7 +16,8 @@
 #footer{
     position:fixed;
     bottom: 0;
-    width: 100%
+    width: 100%;
+    background: #fff;
 }
 #footer textarea{
     width: 100%;
@@ -58,4 +30,10 @@
     position: absolute;
     right: 15px;
     top: 10px;
+}
+.news_tt{
+    line-height: 25px;
+}
+.speaksend{
+    display: none;
 }

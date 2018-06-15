@@ -65,3 +65,102 @@ textarea{
     outline:none;
     resize:none
 }
+/* 底部导航栏样式 */
+#footer{
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	border-top:1px solid #ccc;
+	z-index: 1;
+}
+#footer_content{
+	width: 100%;
+}
+.footer_list{
+	width: 20%;
+	float: left;
+	text-align: center
+}
+.footer_list img{
+ display: block;
+ margin: 6px auto;
+ width: 17px;
+}
+.footer_list a{
+	color: #000;
+	font-size: 14px
+}
+/* 头部部导航栏样式（有导航 */
+#header{
+	background: #26C688;
+	height: 90px;
+	color: #fff;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999
+}
+#header_top{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	position: relative;
+}
+#header_img{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	top: 10px;
+	left: 13px;
+	line-height: 40px;
+}
+#header_img img{
+	width: 23px;
+}
+#header_top span{
+	font-weight: bold
+}
+#header_nav ul li{
+	float: left;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+/* 头部无导航栏样式 */
+#otherheader{
+    height: 50px;
+    background: #26C688;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    
+}
+#otherheader .otherheader_left{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 10px;
+}
+#otherheader .otherheader_text{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size:17px;
+    color: #fff; 
+}
+#otherheader .otherheader_right{
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+#otherheader .otherheader_right img{
+    width: 24px;
+}

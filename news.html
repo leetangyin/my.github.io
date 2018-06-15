@@ -12,16 +12,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/news.css" />
 </head>
 <body>
-    <div id="header">
-        <div class="header_left"  onclick="goBackClick()"><img src="img/left.png" style="width:15px"></div>
-        <div class="header_text"><span>详情</span></div>
-        <div class="header_right"><img src="img/share.png"></div>
-    </div>
+    <div id="otherheader"></div>
     <div id="news_content">
         <div>
             <h4 class="news_titel">球是怎样踢的,球是怎样踢的.球是怎样踢的</h4>
             <div class="news_img_text">
-                球友专题
+                球友专题　2018-11-11 08:05
             </div>
         </div>
         <div>
@@ -31,20 +27,28 @@
             <div class="news_t">
                 本报讯
             </div>
-            <div>
+            <div class="news_tt">
                 gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑...
             </div>            
         </div>
     </div>
     <div id="footer">
-        <textarea rows="1" placeholder="我来说两句"></textarea>
+        <textarea rows="1" placeholder="我来说两句" onfocus="light.news.getSubmitBtnClick()"  onblur="light.news.gotalkLsitBtnClick()"></textarea>
          <div id="talks">
-            <a href="talklist.html"> 评论1</a>
+            <a href="talklist.html" class="gotalklist"> 评论1</a>
+            <span class="speaksend">提交</span>
          </div>
     </div>
 </body>
 </html>
-<script type="text/javascript" src="third/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="third/jquery/bootstrap.min.js"></script>
-<script type="text/javascript" src="third/jquery/bootstrap.min.js"></script>
+<!-- third-第三方库(必须) begin -->
+<script src="third/jquery/jquery.min.js"></script>
+<script src="third/jquery/bootstrap.min.js"></script>
+<script src="third/jquery/bootstrap.min.js"></script>
+<script src="third/swiper/swiper.min.js"></script>
+<!-- base lib-基础库 end-->
+<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
+<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
+<!-- component 头部，底部引用 -->
+<script src="component/header/otherheader.js"></script>
 <script type="text/javascript"  src="js/news.js"></script>
