@@ -3,7 +3,7 @@
         '<ul id="footer_content" style="border-top:1px solid #ccc;">\
             <li class="footer_list">\
                 <a href="index.html">\
-                    <img src="img/caidan1.png">\
+                    <img src="img/caidan01.png">\
                     <span>头条</span>\
                 </a>\
             </li>\

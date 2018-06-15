@@ -5,5 +5,5 @@ function goBackClick(){
 
 //评论提交事件
 function speaksendClick(){
-    //提交代码写在这里
+    //提交代码写在这里,提交成功后跳转到评论页
 } 
