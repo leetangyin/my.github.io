@@ -2,3 +2,8 @@
 function goBackClick(){
     window.history.go(-1);
 }
+
+//评论提交事件
+function speaksendClick(){
+    //提交代码写在这里
+} 

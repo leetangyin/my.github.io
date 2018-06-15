@@ -9,5 +9,8 @@
             </div>'
         )
     }
-
+    //返回上一级事件
+    goBackClick = function goBackClick(){
+        window.history.go(-1);
+    }
 })(window)

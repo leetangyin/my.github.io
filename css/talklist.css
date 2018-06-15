@@ -76,3 +76,11 @@
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
 }
+#talks{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.news_tt{
+    line-height: 25px;
+}
