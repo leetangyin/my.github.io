@@ -101,6 +101,7 @@
 }
 #quiz_top_right{
     width: 110px;
+    
     background: #EEEEEE;
     border-radius: 20px;
     text-align: center;
@@ -110,4 +111,9 @@
 }
 #quiz_top_right span{
     margin: 0 10px;
+}
+.quiz_top_group{
+    float: left;
+    margin-top: 5px;
+    margin-left:15px; 
 }
