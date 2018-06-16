@@ -24,6 +24,15 @@ ul, ol {
 }
 
 /* 公共样式 */
+.my-text-center{
+    text-align: center;
+}
+.my-text-color-t{
+    color: #2ACF82;
+}
+.my-font-bold{
+    font-weight: bold;
+}
 .fl {
     float: left;
 }
@@ -53,6 +62,9 @@ ul, ol {
 }
 .mgt20 {
     margin-top: 20px;
+}
+.mgl10 {
+    margin-left: 10px;
 }
 .indexlist{
     padding: 0 10px;
@@ -91,6 +103,9 @@ textarea{
 .footer_list a{
 	color: #000;
 	font-size: 14px
+}
+.footer_list .no_act{
+    display: none;
 }
 /* 头部部导航栏样式（有导航 */
 #header{
@@ -173,4 +188,71 @@ textarea{
 }
 #otherheader .otherheader_right img{
     width: 24px;
+}
+/* 竞猜头部公共样式 */
+#pkend_header{
+    position: fixed;
+    top: 0;
+    height: 94;
+    background: #26C688;
+    width: 100%;
+    z-index: 12;
+    color: #fff;
+}
+#pkend_header_left{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+#pkend_header_left img{
+    width: 11px;
+}
+#pkend_header ul{
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    width: 159px;
+}
+#pkend_header ul li{
+    float: left;
+}
+#pkend_header ul li img{
+    width: 30px;
+    display: block;
+    margin-top:15px;
+}
+.pkend_text{
+    margin: 0 15px;
+}
+#pk_name{
+    height: 30px;
+    background:url(../img/pk_name_bg.png) no-repeat;
+    background-size:100% 100%; 
+    width: 100%;
+    margin-top: 15px;
+    line-height: 30px;
+}
+.pkend_bottom_text{
+    font-size: 16px;
+}
+#pk_name{
+    text-align: center;
+    position: relative;
+}
+.pk_name_lfet{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+.pk_name_right{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+.pkend_results{
+    position: relative;
+    top: 15px;
 }

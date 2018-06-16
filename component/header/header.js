@@ -2,7 +2,7 @@
     $('#header').append(
         '<div id="header_top">\
             <div id="header_img">\
-                <img src="img/user_light.png"/>\
+                <a href="registered.html"><img src="img/user_light.png"/></a>\
             </div>\
             <span>头条</span>\
         </div>\
