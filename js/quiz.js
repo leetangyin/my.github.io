@@ -19,5 +19,5 @@ var swiper = new Swiper('.swiper-container', {
 })
 //初始化底部导航
 $('.footer_list').eq(2).find('span').css('color','#25C58D')
-$('.no_act').eq(2).show().css('display','block').css('border','2px solid #25C58D').css('border-radius','50%');
+$('.no_act').eq(2).show().css('display','block')
 $('.act_img').eq(2).hide();
