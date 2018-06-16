@@ -26,7 +26,8 @@
 .slide-item{
     min-width: 65px;
     height: 40px;
-    text-align: center
+    text-align: center;
+    line-height: 40px;
 }
 .pk_time{
     height: 40px;
