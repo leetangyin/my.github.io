@@ -14,6 +14,15 @@ var swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     }
 })
+//初始化底部导航
+$('.footer_list').eq(0).find('span').css('color','#25C58D')
+$('.no_act').eq(0).show().css('display','block');
+$('.act_img').eq(0).hide();
+
+// console.log($('.on_act').eq(0))
+// console.log($('.footer_list ').eq(0).find('.on_act'))
+// $('.footer_list ').eq(0).find('.on_act').show();
+
 $('#header_nav').find('li').each(function(index,ele){
     $(this).click(function(){
         $('#header_nav').find('li').find('span').css('border',"none");
