@@ -59,6 +59,7 @@ html,body{
     background: #fff;
     width: 100%;
     line-height: 70px;
+    border-bottom: 1px solid #ccc;
 }
 .my_top_img{
     width: 45px;
