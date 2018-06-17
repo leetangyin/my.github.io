@@ -16,12 +16,15 @@ html,.weui-cell{
     color: #1DBE96;
 }
 .grand span:last-child{
-background: url(../img/pinglun.png) no-repeat;
-background-size: 100%;
-display: inline;
-float: right;
-width: 80px;
-text-align: center;
+    background: url(../img/pinglun.png) no-repeat;
+    background-size: 100%;
+    display: inline;
+    float: right;
+    width: 80px;
+    text-align: center;
+}
+.index_page{
+    padding-top: 100px; 
 }
 /* 首页轮播图样式 */
 .swiper-container {
