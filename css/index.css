@@ -1,54 +1,20 @@
-.swiper-container {
-    width: 100%;
-    height: 170px;
+html,.weui-cell{
+    background: #fff;
 }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: lightblue;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+.grand span{
+    display: inline-block;
 }
-.index_content_list{
-	border-bottom:1px solid #ccc;
-	height: 88px;
-	margin-top: 15px; 
-	display: block
+.grand span:first-child{
+    float: left;
+    color: #1DBE96;
 }
-.list_title{
-	font-size: 16px;
-	font-weight: bold;
-	height: 40px;
-	margin-bottom: 15px;
-	line-height: 22px;
-}
-.list_comments{
-	background: url(../img/pinglun.png) no-repeat;
-	background-size: 100%;
-	display: inline;
-	float: right;
-	width: 80px;
-	text-align: center;
-}
-.list_titel{
-	display: inline-block;
-	float: left;
-	color: #1DBE96
-}
-#myCarousel{
-	margin-top: 90px;
+.grand span:last-child{
+background: url(../img/pinglun.png) no-repeat;
+background-size: 100%;
+display: inline;
+float: right;
+width: 80px;
+text-align: center;
 }
 /* 首页轮播图样式 */
 .swiper-container {
