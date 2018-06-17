@@ -87,7 +87,7 @@
 .my_lv{
     width: 80px;
     height: 20px;
-    line-height: 22px;
+    line-height: 20px;
     background: url(../img/lv.png) no-repeat;
     background-size: 100% 100%; 
     text-align: center;

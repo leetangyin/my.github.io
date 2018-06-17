@@ -55,14 +55,14 @@ html,body{
     text-align: center;
 }
 .ranking_my_list{
-    height: 80px;
+    height: 70px;
     background: #fff;
     width: 100%;
-    line-height: 80px;
+    line-height: 70px;
 }
 .my_top_img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin-right: 10px; 
 }
 .ranking_list{
