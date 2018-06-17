@@ -88,7 +88,7 @@ textarea{
 	z-index: 1;
 }
 #footer_content{
-	width: 100%;
+    width: 100%;
 }
 .footer_list{
 	width: 20%;
@@ -141,7 +141,27 @@ textarea{
     font-weight: bold;
     font-size: 16px;
 }
-#header_nav ul li{
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+#header_nav .slide-item{
+	height: 40px;
+	line-height: 40px;
+    text-align: center;
+    padding: 0 10px
+}
+#header_nav .slide-item span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center
+}
+/* #header_nav ul li{
 	float: left;
 	width: 20%;
 	height: 40px;
@@ -156,7 +176,7 @@ textarea{
     margin: 0 auto;
     font-size: 16px;
     text-align: center
-}
+} */
 /* 头部无导航栏样式 */
 #otherheader{
     height: 50px;
