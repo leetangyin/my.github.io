@@ -1,6 +1,13 @@
 html,.weui-cell{
     background: #fff;
 }
+#load{
+    position: fixed;
+    bottom:60px
+    ;text-align:center;
+    width:100%;
+    display: none;
+}
 .grand span{
     display: inline-block;
 }
