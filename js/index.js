@@ -26,8 +26,9 @@ $(window).on("scroll", scrollFn());
 function scrollFn(){
     if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
         $('#load').show();
+        alert('执行了')
         setTimeout(function() {
             $('#load').hide();
-        }, 500);
+        }, 800);
     }
 }
