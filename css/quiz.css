@@ -7,7 +7,7 @@
 }
 #quiz_top{
     padding-top:50px;
-    height: 100px; 
+    height: 110px; 
 }
 .otherheader_right{
     display: none;
@@ -117,14 +117,14 @@
     text-align: center;
     height: 35px;
     line-height: 35px;
-    margin-top:5px 
+    margin-top:8px 
 }
 #quiz_top_right span{
     margin: 0 8px;
 }
 .quiz_top_group{
     float: left;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left:15px; 
 }
 #quiz_header{
