@@ -2,7 +2,7 @@
     //顶部导航为后台动态添加，没添加一个导航都会自动添加一个page内容页，自动添加的页面的模板在index.js
     $('#header').append(
         '<div id="header_top">\
-            <div id="header_img">\
+            <div id="header_img" style="line-height: 49px;">\
                 <a href="###"><img src="img/user_light.png"/></a>\
             </div>\
             <span>头条</span>\
