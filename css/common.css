@@ -132,7 +132,8 @@ textarea{
 	text-align: center;
 	top: 10px;
 	left: 13px;
-	line-height: 49px;
+    line-height: 49
+    px;
 }
 #header_img img{
 	width: 23px;
@@ -276,3 +277,4 @@ textarea{
     position: relative;
     top: 15px;
 }
+a{text-decoration:none;}

@@ -137,3 +137,7 @@
 #header_img{
     line-height: 40px
 }
+.pk{
+    display: block;
+    width: 100%
+}

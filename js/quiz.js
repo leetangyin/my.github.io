@@ -60,25 +60,29 @@ function initPage(){
 //顶部导航栏点击事件
 $('#quiz_nav').find('.slide-item').each(function(index,ele){
     $(this).click(function(){
-        if(!index){
-            $('.swiper-container').show();
-            $('#quiz_nav').css('background','#fff').css('color','#333');
-            $(this).find('span').css('border-bottom','node');
-            $('#quiz_header').hide();
-            $('#quiz_top').show();
-            $('#otherheader').show();
-            $('#pk_page').css('padding-top','0');
-        }else{
-            $('#otherheader').find('span').html('赛事');
-            $('#quiz_top').hide();
-            $('.swiper-container').hide();
-            $('#quiz_nav').css('background','#26C688').css('color','#fff');
-            $('#quiz_nav').find('.slide-item').find('span').css('border','none');
-            $(this).find('span').css('border-bottom','2px solid #fff');
-            $('#quiz_header').show();
-            $('#otherheader').hide()
-            $('#pk_page').css('padding-top','60px');
-        }
+        $('#quiz_nav').find('.slide-item').find('span').css('color','#333');
+        $(this).find('span').css('color','#1DBE96');
+       // if(!index){
+          //  $(this).find('span').css('color','#1DBE96');
+            // $('.swiper-container').show();
+            // $('#quiz_nav').css('background','#fff').css('color','#333');
+            // $(this).find('span').css('border-bottom','node');
+            // $('#quiz_header').hide();
+            // $('#quiz_top').show();
+            // $('#otherheader').show();
+            // $('#pk_page').css('padding-top','0');
+       // }else{
+            // $(this).find('span').css('color','#1DBE96');
+            // $('#otherheader').find('span').html('赛事');
+            // $('#quiz_top').hide();
+            // $('.swiper-container').hide();
+            // $('#quiz_nav').css('background','#26C688').css('color','#fff');
+            // $('#quiz_nav').find('.slide-item').find('span').css('border','none');
+            // $(this).find('span').css('border-bottom','2px solid #fff');
+            // $('#quiz_header').show();
+            // $('#otherheader').hide()
+            // $('#pk_page').css('padding-top','60px');
+       // }
         $('.pk_content_body').hide();
         $('.pk_content_body').eq(index).show()
     })
