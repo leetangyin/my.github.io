@@ -28,6 +28,16 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
+    padding: 0 10px;
+}
+.slide-item span{
+    display: inline-block;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
 }
 .pk_time{
     height: 40px;
@@ -85,9 +95,9 @@
     background: #fff
 }
 .my_lv{
-    width: 80px;
-    height: 20px;
-    line-height: 20px;
+    width: 60px;
+    height: 16px;
+    line-height: 16px;
     background: url(../img/lv.png) no-repeat;
     background-size: 100% 100%; 
     text-align: center;
@@ -95,25 +105,35 @@
     font-size:14px; 
 }
 .my_username{
-    width: 80px;
+    width: 65px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
+    margin-top: 1px;
 }
 #quiz_top_right{
-    width: 110px;
-    
+    width: 100px;
     background: #EEEEEE;
     border-radius: 20px;
     text-align: center;
-    height: 40px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
     margin-top:5px 
 }
 #quiz_top_right span{
-    margin: 0 10px;
+    margin: 0 8px;
 }
 .quiz_top_group{
     float: left;
     margin-top: 5px;
     margin-left:15px; 
+}
+#quiz_header{
+    background: #26C688;
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+#header_img{
+    line-height: 40px
 }

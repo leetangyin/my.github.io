@@ -34,6 +34,9 @@ html,body{
     margin-left:4px;
     margin-bottom: 0px;  
 }
+.progress-bar{
+    background-color: #ccc;
+}
 .support{
     font-size: 12px;
     color: #F5F5F5
@@ -84,7 +87,7 @@ html,body{
 }
 #bet{
     position: fixed;
-    z-index: 13;
+    z-index: 999999;
     width: 100%;
     bottom: 0px;
     height: 220px;

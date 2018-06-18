@@ -30,11 +30,10 @@ $(window).scroll(function(){
     }    
 })
 
-//初始化页面模板
+//根据导航初始化页面模板
 function initPage(){
     var pagesize = $('#header_nav').find('.slide-item').length;
     for(var i = 1; i<=pagesize; i++){
-        console.log(i)
         var titel = $('#header_nav').find('.slide-item').eq(i).find('span').html();
         var tmp = '<div class="index_page">\
                     <div class="weui-cell" onclick="goDetails()">\

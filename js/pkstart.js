@@ -5,7 +5,7 @@ function goBackClick(){
 }
 //初始化底部导航
 $('.footer_list').eq(2).find('span').css('color','#25C58D')
-$('.no_act').eq(2).show().css('display','block').css('border','2px solid #25C58D').css('border-radius','50%');
+$('.no_act').eq(2).show().css('display','block');
 $('.act_img').eq(2).hide();
 
 function betClick(text){
@@ -20,9 +20,11 @@ function closeBetClick(){
 }
 function addClick(){
     $('.bet_but_num').html(parseInt($('.bet_but_num').html()) + 1)
+    $('#integral_num').html(parseInt($('.bet_but_num').html()) * 100)
 }
 function reductionClick(){
     if(parseInt($('.bet_but_num').html())>0){
         $('.bet_but_num').html(parseInt($('.bet_but_num').html()) - 1)
+        $('#integral_num').html(parseInt($('.bet_but_num').html()) * 100)
     }
 }
