@@ -107,10 +107,7 @@ html,body{
 .mypk_list .placeholder span{
 		color: #333;
 } 
-.mypk_list {
-    background-color: #fff;
-    clear: both;
-}
+
 	.mypk{
 		padding-bottom: 55px;
 	}
@@ -122,6 +119,7 @@ html,body{
 	}
 	.mypk_list{
 		background-color: #fff;
+		padding: 0 5px;
 		margin-bottom: 12px;
 	}
 	.my_type_pk{
