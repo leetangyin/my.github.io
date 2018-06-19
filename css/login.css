@@ -1,5 +1,25 @@
 html,body{
-    background: #ffffff;
+    background: #fff;
+}
+.myclose{
+    padding: 0 10px;
+}
+.myclose span{
+    display: inline-block;
+    font-size: 20px;
+}
+.myclose span:first-child{
+    float: left;
+    font-size: 25px
+}
+.myclose span:last-child{
+    float: right
+}
+.mylogin_titel{
+    clear: both;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
 }
 .row input{
     border: none;
@@ -14,7 +34,7 @@ html,body{
 .row {
     width: 80%;
     margin: 0 auto;
-    border-bottom:1px solid #666 
+    border-bottom:1px solid #666;
 }
 .my_row{
     padding: 0;
@@ -23,6 +43,33 @@ html,body{
     font-size: 25px;
     width: 100%;
 }
-#login_content{
-    margin-top: 45%;
+.terms{
+    text-align: center;
+    margin-top: 50px;
+}
+.terms a{
+    color:#44D38E;
+}
+#yzcode{
+    display: block;
+    margin:0 auto;
+    width: 90px;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    background: #2FCE81;
+}
+#otherlogin{
+}
+#yzcode{
+    display: block;
+    margin:0 auto;
+    width: 90px;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    background: #2FCE81;
+}
+#loginpage{
+    display: none;
 }

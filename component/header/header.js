@@ -3,7 +3,7 @@
     $('#header').append(
         '<div id="header_top">\
             <div id="header_img" style="line-height: 49px;">\
-                <a href="###"><img src="img/user_light.png"/></a>\
+                <a href="choselogin.html"><img src="img/user_light.png"/></a>\
             </div>\
             <span>头条</span>\
         </div>\

@@ -1,6 +1,24 @@
 html,body{
     background: #ffffff;
 }
+.my_registered{
+    padding: 0 10px;
+}
+.my_registered span{
+    display: inline-block;
+    font-size: 20px;
+}
+.my_registered span:first-child{
+    float: left;
+    font-size: 25px
+}
+.my_registered span:last-child{
+    float: right
+}
+.my_registered a{
+    color: #333;
+}
+
 .row input{
     border: none;
     width: 87%;
@@ -24,5 +42,22 @@ html,body{
     width: 100%;
 }
 #register_content{
-    margin-top: 45%;
+    padding-top: 25px;
+    clear: both;
+}
+#yzcode{
+    display: block;
+    margin:0 auto;
+    width: 90px;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    background: #2FCE81;
+}
+.terms{
+    text-align: center;
+    margin-top: 60px;
+}
+.terms a{
+    color:#44D38E;
 }

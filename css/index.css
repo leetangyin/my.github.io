@@ -50,3 +50,25 @@ html,.weui-cell{
     -webkit-align-items: center;
     align-items: center;
 }
+.my_swiper_bg{
+    opacity: 0.3;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    background: #111;
+    width: 100%
+}
+.my_swiper_text{
+    position:absolute;
+    bottom:0px;
+    height:40px;
+    color: #fff;
+    width:100%;
+    line-height:40px;
+    text-align: left;
+    padding-left:10px; 
+}
+.my_swiper_text{
+    text-align: center;
+}

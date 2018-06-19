@@ -1,0 +1,29 @@
+.mypk_titel{
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff
+}
+.my_pk_back_but a{
+    color: #fff;
+}
+.my_pk_back_but{
+    position: fixed;
+    line-height: 60px;
+    font-size: 17px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    bottom: 0px;
+    color: #fff;
+    background: #32CF85;
+}
+#emptypk{
+    text-align: center;
+    color: #888;
+    margin-top: 25%; 
+}
+.emptypk_text{
+    margin: 10px;
+}

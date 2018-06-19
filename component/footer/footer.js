@@ -30,7 +30,7 @@
                 </a>\
                 </li>\
             <li class="footer_list">\
-                <a>\
+                <a href="user.html">\
                 <img class="act_img" src="img/caidan5.png" style="width: 19px;margin-bottom: 8px">\
                 <img class="no_act" src="img/user_light.png" style="width: 19px;margin-bottom: 8px">\
                 <span>我的</span>\

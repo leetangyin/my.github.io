@@ -1,0 +1,10 @@
+body{
+	background: #f8f8f8
+}
+.user_content{
+	clear: both;
+	padding-top: 50px;
+}
+.otherheader_right{
+    display: none
+}
