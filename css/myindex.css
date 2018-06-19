@@ -1,0 +1,159 @@
+html,body{
+	background-color: #eeeeee;
+}
+#myindex_img{
+	height: 100px;
+	background-color: #32CE85;
+	width: 100%;
+	text-align: center;
+    color: #fff;
+    padding-top:50px;
+}
+#myindex_img img{
+	width: 60px;
+}
+.otherheader_right{
+    display: none;
+}
+#my_placeholder .placeholder{
+	text-align: center;
+	height: 80px;
+	background-color: #3BC589;
+	color: #fff;
+	border:none;
+	padding-top: 15px;
+	border:none;
+	position: relative;
+}
+.my_line{
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	background-color: #fff;
+	right:0;
+	top:23px;
+}
+#analysis{
+	width: 100%;
+	height: 118px;
+	padding:0 15px;
+	background-color: #fff;
+}
+.analysis_left{
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	border-radius: 50%;
+	border:4px solid #eeeeee;
+	padding-top: 18px; 
+	margin-top: 20px; 
+	float: left;
+}
+.analysis_left p{
+	margin: 0;
+	padding: 0;
+}	
+.analysis_right{
+	float: left;
+	margin-top: 24px;
+
+}
+.analysis_right_titel{
+	height: 25px;
+	line-height: 25px;
+	text-align: right;
+	width: 50px;
+	float: left;
+	padding-right: 8px;
+}
+.analysis_right_line{
+	background-color: #eeeeee;
+	height: 20px;
+	line-height: 20px;
+	width: 160px;
+	float: left;
+}
+.analysis_right_line span{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background-color: #32CE85; 
+}
+.analysis_right_content{
+	margin-bottom:5px;
+	clear: both;
+	height: 20px;
+}
+.analysis_right_num{
+	float: left;
+	margin-left: 5px;
+	color:  #32CE85;
+}
+.myidnex_titel{
+	background-color: #eeeeee;
+	line-height: 30px;
+	height: 30px;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+.myidnex_titel_line{
+	position: absolute;;
+	background-color: #32CE85;
+	width: 3px;
+	top:2px;
+	left: 15px;
+	height: 25px;
+}
+.mypk_list .placeholder{
+		background-color:#fff;
+		color: #333;
+}
+.mypk_list .placeholder span{
+		color: #333;
+} 
+.mypk_list {
+    padding: 0 10px;
+    background-color: #fff;
+    clear: both;
+}
+	.mypk{
+		padding-bottom: 55px;
+	}
+	.mypk_titel{
+		font-size: 16px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.mypk_list{
+		padding: 0 10px;
+		background-color: #fff;
+		margin-bottom: 12px;
+	}
+	.my_type_pk{
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 20px;
+		line-height: 20px;
+		background-color: red;
+		top: 0px;
+		background-color: #32CF85;
+		color: #fff;
+		text-align: center;
+	}
+	.my_pk_back_but a{
+		color: #fff;
+	}
+	.my_pk_back_but{
+		position: fixed;
+		line-height: 60px;
+		font-size: 17px;
+		width: 100%;
+		height: 60px;
+		text-align: center;
+		bottom: 0px;
+		color: #fff;
+		background: #32CF85;
+	}

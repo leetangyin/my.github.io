@@ -40,4 +40,72 @@ html,body{
 }
 #topup_list ul li:last-child{
     float: right;
+}	.placeholder{
+    width: 100px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    text-align:center;
+    border:1px solid #ddd;
+}
+.placeholder span{
+    display: block;
+    line-height: 30px;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+    color: #ccc;
+}
+.weui-flex{
+    margin-bottom: 18px;
+}
+.but_titel{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    color: #333;
+    font-size: 16px;
+}
+.zhifu_title_text{
+    padding-left: 10px;
+    color: #333;
+    font-size: 16px; 
+    font-weight: bold;
+}
+.zhifu_img{
+    padding-left: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+.zhifu_img img{
+    margin-right: 10px;
+}
+.zhifu_img_last{
+    position: absolute;
+    right: 0px;
+    width:28px;
+    display: inline-block;
+    float:right;
+    margin-top:3px
+}
+.zhifu_title_text_right{
+    display:inline-block;
+    float:right;
+    margin-top:8px;
+    margin-right:12px;
+    color: #30CE81;
+    font-size: 14px;
+}
+.weui-picker__hd a{
+    display: inline-block;
+    width: 50%;
+    text-align: center;;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+.topup_num{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
