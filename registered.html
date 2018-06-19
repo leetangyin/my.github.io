@@ -12,8 +12,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/registered.css" />
 </head>
 <body>
-    <div class="my_registered">
-        <span onclick="goBackClick()">×</span>
+    <div class="my_registered" style="padding-left: 8px">
+        <span onclick="goBackClick()">
+            <img style="width: 25px;" src="img/my_left.png">
+        </span>
         <span><a href="login.html">登录</a></span>
     </div>
     <div id="register_content">
@@ -26,12 +28,12 @@
         </div> 
 
         <div class="row" style="margin-top:12px">
-            <div class="col-xs-2" style="height: 50px;line-height: 50px;"><span class="glyphicon glyphicon-phone"></span></div>
+            <div class="col-xs-2" style="height: 50px;line-height: 50px;"><span class="glyphicon glyphicon-lock"></span></div>
             <div class="col-xs-10"><input type="password" placeholder="设置密码"/></div>
         </div>        
 
         <div class="row" style="margin-top:12px">
-            <div class="col-xs-2" style="height: 50px;line-height: 50px;"><span class="glyphicon glyphicon-phone"></span></div>
+            <div class="col-xs-2" style="height: 50px;line-height: 50px;"><span class="glyphicon glyphicon-lock"></span></div>
             <div class="col-xs-5"><input type="text" placeholder="输入验证码"/></div>
             <div class="col-xs-5 my-text-center"  style="height: 50px;line-height: 50px;">
                 <span id="yzcode">获取验证码</span>
@@ -43,10 +45,10 @@
             </div>
         </div>   
     </div>
-    <div class="terms">
+    <!-- <div class="terms">
         <div>img</div>
         <span>注册服务</span><a href="###">《条款》</a>
-    </div>        
+    </div>         -->
 </body>
 </html>
 <!-- third-第三方库(必须) begin -->
