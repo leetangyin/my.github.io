@@ -37,3 +37,6 @@ function gotoLoginYClick(){
     $('#forgetpage').hide()
     $('#forgetpage_t').hide()  
 }
+
+
+
