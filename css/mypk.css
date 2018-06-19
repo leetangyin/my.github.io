@@ -19,6 +19,7 @@ html,body{
 .mypk_list{
     background-color: #fff;
     margin-bottom: 12px;
+    padding:0 5px;
 }
 .my_type_pk{
     display: block;
