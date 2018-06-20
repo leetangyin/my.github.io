@@ -19,7 +19,7 @@
                 <a href="quiz.html" style="display:block;width:100%;height:100%">\
                     <img class="act_img"  src="img/caidan3.png" style="width: 48px;margin-bottom: 8px">\
                     <img class="no_act" src="img/caidan03.png" style="width: 48px;margin-bottom: 8px">\
-                    <span>竞猜</span>\
+                    <span>赛事</span>\
                 </a>\
             </li>\
             <li class="footer_list">\

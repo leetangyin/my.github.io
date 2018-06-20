@@ -5,7 +5,7 @@
             <div id="header_img" style="line-height: 49px;">\
                 <a href="choselogin.html"><img src="img/user_light.png"/></a>\
             </div>\
-            <span>头条</span>\
+            <span>赛报</span>\
         </div>\
         <div id="header_nav">\
             <div class="slide-box">\

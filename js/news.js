@@ -1,5 +1,5 @@
 //初始化头部
-light.otherheader.createHeadeer('详情')
+light.otherheader.createHeadeer('赛报')
 
 //评论框获取焦点，评论变为提交事件
 function getSubmitBtnClick(){

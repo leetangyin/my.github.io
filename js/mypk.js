@@ -1,2 +1,2 @@
 //初始化头部
-light.otherheader.createHeadeer('我的竞赛')
+light.otherheader.createHeadeer('我的赛事')
