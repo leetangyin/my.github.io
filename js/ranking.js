@@ -16,3 +16,7 @@ $('.ranking_nav_right').click(function(){
     $('#victory').hide();
     $('#integral').show();
 })
+//初始化底部导航
+$('.footer_list').eq(1).find('span').css('color','#25C58D')
+$('.no_act').eq(1).show().css('display','block');
+$('.act_img').eq(1).hide();
