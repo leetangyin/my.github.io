@@ -5,6 +5,9 @@
     text-align: center;
     background: #fff
 }
+.otherheader_right{
+    display: none;
+}
 .my_pk_back_but a{
     color: #fff;
 }
