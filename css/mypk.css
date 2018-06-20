@@ -17,9 +17,9 @@ html,body{
     text-align: center;
 }
 .mypk_list{
+    padding: 0 5px;
     background-color: #fff;
     margin-bottom: 12px;
-    padding:0 5px;
 }
 .my_type_pk{
     display: block;
