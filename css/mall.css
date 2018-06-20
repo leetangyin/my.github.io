@@ -1,0 +1,103 @@
+html,body{
+    background: #eeeeee;
+}
+/* 首页轮播图样式 */
+.swiper-container {
+    width: 100%;
+    height: 170px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: lightblue;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#otherheader{
+    z-index: 9999;
+}
+.myswiper{
+    padding-top: 100px;
+}
+.my_well_right{
+    width: 100px;
+    background: #32CE85;
+    border-radius: 20px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+}
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+.slide-item{
+    min-width: 65px;
+    height: 80px;
+    text-align: center;
+    padding-top:15px;
+}
+.slide-item span{
+    display: inline-block;
+    display: block;
+    height: 30px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+#quiz_nav{
+    background: #fff;
+}
+#recommended{
+    color: #32CE85;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+.goods_type{
+
+}
+.goods_name{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.goods_value{
+
+}
+.goods_money{
+    margin: 20px 0;
+    color: #32CE85;
+}
+.goods_bottom{
+    color: #777
+}
+.goods_img{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+}
+#load{
+    position: fixed;
+    bottom:60px
+    ;text-align:center;
+    width:100%;
+    display: none;
+}

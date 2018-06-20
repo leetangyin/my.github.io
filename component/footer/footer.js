@@ -23,7 +23,7 @@
                 </a>\
             </li>\
             <li class="footer_list">\
-                <a style="display:block;width:100%;height:100%">\
+                <a href="mall.html" style="display:block;width:100%;height:100%">\
                     <img class="act_img"  src="img/caidan4.png" style="width: 22px">\
                     <img class="no_act" src="img/caidan04.png" style="width: 22px">\
                     <span>积分商城</span>\
