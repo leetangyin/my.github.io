@@ -50,6 +50,7 @@ html,body{
     height: 80px;
     text-align: center;
     padding-top:15px;
+    width: 20%;
 }
 .slide-item span{
     display: inline-block;
@@ -77,21 +78,29 @@ html,body{
 }
 .goods_name{
     font-size: 12px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 .goods_value{
 
 }
 .goods_money{
-    margin: 20px 0;
+    margin: 17px 0;
+    font-size: 12px;
+    position: relative;
     color: #32CE85;
+    text-indent: 22px;
+}
+.goods_money img{
+    display: block;
+    position: absolute;
+    top: -3px;
 }
 .goods_bottom{
     color: #777
 }
 .goods_img{
     position: absolute;
-    top: 70px;
+    top: 57px;
     right: 0px;
 }
 #load{
