@@ -156,3 +156,14 @@ html,body{
 		color: #fff;
 		background: #32CF85;
 	}
+.my_lv{
+    width: 60px;
+    display: inline-block;
+    line-height: 16px;
+    background: url(../img/lv.png) no-repeat;
+    background-size: 100% 100%; 
+    text-align: center;
+    color: #fff;
+    font-size:14px; 
+	
+}
