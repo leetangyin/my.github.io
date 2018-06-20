@@ -20,9 +20,11 @@ html,body{
     padding: 0 5px;
     background-color: #fff;
     margin-bottom: 12px;
+    font-size: 13px;
+    height: 113px;
 }
 .my_type_pk{
-    display: block;
+    display: blocqk;
     position: absolute;
     width: 50px;
     height: 20px;

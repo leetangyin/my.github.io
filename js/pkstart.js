@@ -11,20 +11,20 @@ $('.act_img').eq(2).hide();
 function betClick(text){
     $('#bet').show();
     $('#my_mode').show();
-    $('#choose_text').html(text);
+    $('#choose_text').val(text);
 }
 function closeBetClick(){
     $('#bet').hide();
     $('#my_mode').hide();
-    $('#choose_text').html('');
+    $('#choose_text').val('');
 }
 function addClick(){
-    $('.bet_but_num').html(parseInt($('.bet_but_num').html()) + 1)
-    $('#integral_num').html(parseInt($('.bet_but_num').html()) * 100)
+    $('.bet_but_num').find('input').val(parseInt($('.bet_but_num').find('input').val()) + 1)
+    $('#integral_num').html(parseInt($('.bet_but_num').find('input').val())*100)
 }
 function reductionClick(){
-    if(parseInt($('.bet_but_num').html())>0){
-        $('.bet_but_num').html(parseInt($('.bet_but_num').html()) - 1)
-        $('#integral_num').html(parseInt($('.bet_but_num').html()) * 100)
+    if(parseInt($('.bet_but_num').find('input').val())>0){
+        $('.bet_but_num').find('input').val(parseInt($('.bet_but_num').find('input').val()) - 1)
+        $('#integral_num').html(parseInt($('.bet_but_num').find('input').val())*100)
     }
 }
