@@ -71,3 +71,12 @@ html,body{
     transform: scaleY(0.5);
     z-index: 2;  
 }
+#footer{
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 0px;
+    background: #26C688;
+}
