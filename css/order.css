@@ -1,0 +1,28 @@
+html,body{
+    background: #ffffff;
+}
+.otherheader_right{
+    display: none
+}
+#order_list{
+    padding-top: 50px;
+}
+#order_list ul{
+    width: 100%;
+}
+#order_list ul li{
+    width: 25%;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    float: left;
+}
+
+#order_list ul li:first-child{
+    border-bottom: 1px solid #26C688;
+}
+.order_list{
+    display: none;
+}
+

@@ -12,8 +12,9 @@ html,body{
     float: right;
     margin-top:3px; 
 }
-.my_placeholder span{
+.my_placeholder strong{
     display: block;
+    color: #26C688;
     float: right;
 }
 .my_placeholder_money{

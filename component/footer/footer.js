@@ -5,7 +5,7 @@
                 <a href="index.html" style="display:block;width:100%;height:100%">\
                     <img class="act_img" src="img/caidan1.png" />\
                     <img class="no_act" src="img/caidan01.png">\
-                    <span>头条</span>\
+                    <span>赛报</span>\
                 </a>\
             </li>\
             <li class="footer_list">\
