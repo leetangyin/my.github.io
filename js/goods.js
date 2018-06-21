@@ -12,3 +12,7 @@ function successfulClick(){
         $('#toast').hide();
     }, 1000);
 }
+//兑换点击事件
+function showshClick(){
+    $('#my_page_buttom').show();
+}
