@@ -8,7 +8,10 @@ $('.footer_list').eq(2).find('span').css('color','#25C58D')
 $('.no_act').eq(2).show().css('display','block');
 $('.act_img').eq(2).hide();
 
-function betClick(text){
+function betClick(text,index){
+    $('.my-but-style-t').css('background','#F5F5F5').css('color','#333')
+    $('.my-but-style-t').eq(index).css('background','#26C688').css('color','#fff')
+    console.log(index)
     $('#bet').show();
     $('#my_mode').show();
     $('#choose_text').val(text);

@@ -35,7 +35,7 @@
             <div class="row my_row">
                 <div class="col-xs-4">
                         <!-- bootstrap 进度条是bootstrap进度条组件，用法参考bootstrap组件-->
-                    <button class="btn btn-default my-but-style-t" type="submit" onclick="betClick('主胜')">主胜</button>
+                    <button class="btn btn-default my-but-style-t" type="submit" onclick="betClick('主胜',0)">主胜</button>
                     <div>
                         <div class="progress">
                             <div class="progress-bar progress-bar-my" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default my-but-style-t" onclick="betClick('平局')"  type="submit">平局</button>
+                    <button class="btn btn-default my-but-style-t" onclick="betClick('平局',1)"  type="submit">平局</button>
                     <div>
                         <div class="progress">
                             <div class="progress-bar progress-bar-my" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -61,7 +61,7 @@
                     </div>                        
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default my-but-style-t" onclick="betClick('客胜')" type="submit">客胜</button>
+                    <button class="btn btn-default my-but-style-t" onclick="betClick('客胜',2)" type="submit">客胜</button>
                     <div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar progress-bar-my" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -135,8 +135,8 @@
         <form>
         <div id="bet_titel" class="my-text-color-t">
 
-            你当前选择为：<input type="text" value="" id="choose_text"  readonly="readonly" style="border:none;background: #eeeeee"/>  
-            <div id="close" onclick="closeBetClick()"><img style="width:20px;" src="img/colse.png"/></div>
+            你当前选择为：<input type="text" value="" id="choose_text" class="choose_type" readonly="readonly"/>  
+            <div id="close" onclick="closeBetClick()"><img src="img/colse.png"/></div>
         </div>
         <div id="bet_content">
             <div>我的积分：<span class="my-text-color-t">100</span></div>
@@ -144,7 +144,7 @@
         <div id="bet_but">
             <ul>
                 <li onclick="reductionClick()">-</li>
-                <li class="bet_but_num"><input type="text" value="0" style="border: none;width: 100%;text-align: center;height: 40px;" readonly="readonly"></li>
+                <li class="bet_but_num"><input type="text" value="0" readonly="readonly"></li>
                 <li class="my-text-color-t" onclick="addClick()">+</li>
             </ul>
             <div id="my_submit">
