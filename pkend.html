@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/pkend.css" />
@@ -14,20 +13,17 @@
 <body>
     <div id="pkend_header">
         <div id="pkend_header_left"><img src="img/left.png" onclick="goBackClick()"/></div>
-        <ul>
-            <li class="pkend_guo"><img src="img/guo1.png"/></li>
-            <li class="pkend_text">
-                <div class="pkend_results">
-                    <p class="pkend_top_text">世界杯 A组</p>
-                    <p class="pkend_bottom_text">5 : 0</p>
-                </div>
-            </li>
-            <li class="pkend_guo"><img src="img/guo2.png"></li>
-        </ul>
-        <div style="clear: both;"></div>
+        <div class="pk_countries">
+                <span>俄国</span>
+                <img class="pk_countries_guoone" src="img/guo1.png">
+                <span class="pk_title">世界波世界波世界波世界波</span>
+                <img class="pk_countries_guotwo" src="img/guo2.png">
+                <span>沙特</span>
+        </div>
+        <div class="pkend_bottom_text">5:000</div>
         <div id="pk_name">
             <div class="pk_name_lfet">俄国</div>
-            <span>已经结束</span>
+            <img class="pk_time_img" src="img/my_pktiem.png" /><span>23：00</span>
             <div class="pk_name_right">沙特</div>
         </div>
     </div>
@@ -38,12 +34,4 @@
     </div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
-<script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
 <script type="text/javascript"  src="js/pkend.js"></script>

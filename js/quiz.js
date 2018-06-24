@@ -1,6 +1,3 @@
-//初始化头部
-light.otherheader.createHeadeer('赛事')
-
 // 启动轮播器
 var swiper = new Swiper('.swiper-container', {
     // navigation: {

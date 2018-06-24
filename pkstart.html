@@ -6,34 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/pkstart.css" />
 </head>
 <body>
-    <div id="pkend_header" style="height: 100px;">
-        <div id="pkend_header_left"><img src="img/left.png" onclick="goBackClick()" /></div>
-        <div style="text-align: center;height: 45px;line-height: 55px">
-            <img src="img/guo1.png" style="width: 30px"/>
-            <span style="margin: 0 10px;">32426</span>
-            <img src="img/guo2.png" style="width: 30px"/></div>
-        <div style="text-align: center;position: absolute;width: 100%;top:40px">5 : 0</div>
-
-        <!-- <ul>
-            <li class="pkend_guo"><img src="img/guo1.png"/></li>
-            <li class="pkend_text">
-                <div class="pkend_results">
-                    <p class="pkend_top_text">世界杯 A组</p>
-                    <p class="pkend_bottom_text">5 : 0</p>
-                </div>
-            </li>
-            <li class="pkend_guo"><img src="img/guo2.png"></li>
-        </ul> -->
-        <div style="clear: both;"></div>
+    <div id="pkend_header">
+        <div id="pkend_header_left"><img src="img/left.png" onclick="goBackClick()"/></div>
+        <div class="pk_countries">
+                <span>俄国</span>
+                <img class="pk_countries_guoone" src="img/guo1.png">
+                <span class="pk_title">世界波世界波世界波世界波</span>
+                <img class="pk_countries_guotwo" src="img/guo2.png">
+                <span>沙特</span>
+        </div>
+        <div class="pkend_bottom_text">5:000</div>
         <div id="pk_name">
             <div class="pk_name_lfet">俄国</div>
-            <img src="img/my_pktiem.png" style="width: 14px;margin-right: 2px"><span>23：00</span>
+            <img class="pk_time_img" src="img/my_pktiem.png" /><span>23：00</span>
             <div class="pk_name_right">沙特</div>
         </div>
     </div>
@@ -45,10 +35,10 @@
             <div class="row my_row">
                 <div class="col-xs-4">
                         <!-- bootstrap 进度条是bootstrap进度条组件，用法参考bootstrap组件-->
-                    <button class="btn btn-default my_but" style="background: #F5F5F5;border-radius: 0px;width: 80px" type="submit" onclick="betClick('主胜')">主胜</button>
+                    <button class="btn btn-default my-but-style-t" type="submit" onclick="betClick('主胜')">主胜</button>
                     <div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div class="progress-bar progress-bar-my" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                             60%
                             </div>
                         </div>                            
@@ -58,10 +48,10 @@
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default" onclick="betClick('平局')" style="background: #F5F5F5;border-radius: 0px;width: 80px" type="submit">平局</button>
+                    <button class="btn btn-default my-but-style-t" onclick="betClick('平局')"  type="submit">平局</button>
                     <div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div class="progress-bar progress-bar-my" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                             60%
                             </div>
                         </div>                            
@@ -71,10 +61,10 @@
                     </div>                        
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default" onclick="betClick('客胜')" style="background: #F5F5F5;border-radius: 0px;width: 80px" type="submit">客胜</button>
+                    <button class="btn btn-default my-but-style-t" onclick="betClick('客胜')" type="submit">客胜</button>
                     <div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div class="progress-bar" role="progressbar progress-bar-my" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                             60%
                             </div>
                         </div>                            
@@ -88,17 +78,20 @@
         <div id="pkstart_list">
             <div class="media">
                 <div class="media-left media-middle" >
-                    <div class="my_media_img"><img class="media-object" src="img/pk_current.png" alt="..." style="width: 38px;margin: 0 auto"></div>
+                    <div class="my_media_img"><img class="media-object danqian" src="img/pk_current.png"></div>
                 </div>
                 <div class="media-body">
                     <h4 class="my_meia_titel my-font-bold"> 当前奖池</h4>
-                    <h4 class="my_meia_titel my_meia_titel_line"><span class="my-text-color-t">349999999</span><span style="margin-left:6px; ;color: #ccc;font-size: 13px;">积分</span></h4>
+                    <h4 class="my_meia_titel my_meia_titel_line">
+                        <span class="my-text-color-t">349999999</span>
+                        <span class="my_meia_titel_line_b">积分</span>
+                    </h4>
                 </div>
             </div>
            
             <div class="media">
                 <div class="media-left media-middle" >
-                    <div class="my_media_img"><img class="media-object" src="img/time.png" alt="..." style="width: 38px;margin: 0 auto"></div>
+                    <div class="my_media_img"><img class="media-object danqian" src="img/time.png"></div>
                 </div>
                 <div class="media-body">
                     <h4 class="my_meia_titel my-font-bold">
@@ -114,14 +107,14 @@
 
             <div class="media">
                 <div class="media-left media-middle" >
-                    <div class="my_media_img"><img class="media-object" src="img/canyu.png" alt="..." style="width: 38px;margin: 0 auto"></div>
+                    <div class="my_media_img"><img class="media-object danqian" src="img/canyu.png"></div>
                 </div>
                 <div class="media-body">
                     <h4 class="my_meia_titel">
                         <span class="my-font-bold">参与者</span>
-                        <span style="color: #ccc">(1000/324834758)</span>
+                        <span class="my_font_bold_num">(1000/324834758)</span>
                     </h4>
-                    <h4 class="my_meia_titel" style="height: 50px;">
+                    <h4 class="my_meia_titel my_meia_titel_list">
                         <img src="img/user_img.png">
                         <img src="img/user_img.png">
                         <img src="img/user_img.png">
@@ -160,16 +153,46 @@
         </div>
         </form>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+            <ul id="footer_content">
+                <li class="footer_list">
+                    <a href="index.html" class="my_footer_a my_footer_a_home">
+                        <img class="act_img" src="img/caidan1.png"/>
+                        <img class="no_act footer_list_t" src="img/caidan01.png"/>
+                        <span>赛报</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="ranking.html" class="my_footer_a my_footer_a_bang">
+                        <img class="act_img"  src="img/caidan2.png">
+                        <img class="no_act" src="img/caidan02.png">
+                        <span>榜单</span>
+                    </a>
+                </li>
+                <li class="footer_list footer_list_sai">
+                    <a href="quiz.html"class="my_footer_a my_footer_sai">
+                        <img class="act_img"  src="img/caidan3.png">
+                        <img class="no_act" src="img/caidan03.png">
+                        <span>赛事</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="mall.html" class="my_footer_a my_footer_show">
+                        <img class="act_img"  src="img/caidan4.png">
+                        <img class="no_act" src="img/caidan04.png">
+                        <span>积分商城</span>
+                    </a>
+                    </li>
+                <li class="footer_list">
+                    <a href="user.html" class="my_footer_a my_footer_my">
+                    <img class="act_img" src="img/caidan5.png"/>
+                    <img class="no_act" src="img/user_light.png"/>
+                    <span>我的</span>
+                    </a>
+                </li>
+            </ul>	
+        </div>    
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
-<script src="component/footer/footer.js"></script>
 <script type="text/javascript"  src="js/pkstart.js"></script>

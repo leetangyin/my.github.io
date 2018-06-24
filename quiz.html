@@ -12,58 +12,33 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/quiz.css" />
 </head>
 <body>
-    <div id="otherheader" ></div>
-    <!-- <div id="quiz_header">
-        <div id="header_top">
-            <div id="header_img">
-                <a href="###"><img src="img/user_light.png"/></a>
-            </div>
-            <span style="color: #fff;">赛事</span>
-        </div>
-    </div> -->
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>赛事</span></div>
+    </div>    
     <div id="quiz_top">
-        <div class="quiz_top_group">
-            <img class="media-object" src="img/user_img.png" alt="...">
+        <div class="quiz_top_group quiz_top_group_one ">
+            <img class="media-object" src="img/user_img.png">
         </div>
-        <div class="quiz_top_group" style="margin-left:10px;">
+        <div class="quiz_top_group quiz_top_group_two">
             <h4 class="my_username">羊羊羊</h4>
             <p class="my_lv">LvO</p>
         </div>
-        <div class="fr" style="margin-right:15px;margin-top:3px">
+        <div class="fr">
             <div id="quiz_top_right">
                 <img style="width: 20px" src="img/momey.png">
                 <span>0</span>
                 <img style="width:28px" src="img/add.png">
             </div>            
         </div>
-        <!-- <div class="row">
-            <div class="col-xs-7">
-                <div class="media my_media">
-                    <div class="media-left media-middle">
-                        <img class="media-object" src="img/user_img.png" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="my_username">羊羊羊</h4>
-                        <p class="my_lv">LvO</p>
-                    </div>
-                </div>               
-            </div>
-            <div class="col-xs-5">
-                <div id="quiz_top_right">
-                    <img src="img/momey.png">
-                    <span>0</span>
-                    <img src="img/add.png">
-                </div>
-            </div>
-        </div> -->
     </div>
     <div style="clear: both;">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" style="width: 100%;"></div>
-                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" style="width: 100%;"></div>
-                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" style="width: 100%;"> </div>
-                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" style="width: 100%;"></div>
+                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" ></div>
+                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide"></div>
+                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide"> </div>
+                <div class="swiper-slide"><img src="img/nav1.png" alt="First slide" ></div>
             </div>
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -97,7 +72,7 @@
                 <a href="pkend.html">
                 <div class="pk">
                     <div class="pk_top">
-                        <span>世界杯 A组 23：00</span>
+                        <span>世界杯 A组 23：00世界杯 A组 23：00世界杯 A组 23：00世界杯 A组 23：00世界杯 A组 23：00世界杯 A组 23：00</span>
                         <span  class="pk_but">对战</span>
                     </div>
                     <div class="pk_countries">
@@ -135,18 +110,46 @@
         </div>
     </div>	
     <div id="footer">
-    </div>
+            <ul id="footer_content">
+                <li class="footer_list">
+                    <a href="index.html" class="my_footer_a my_footer_a_home">
+                        <img class="act_img" src="img/caidan1.png"/>
+                        <img class="no_act footer_list_t" src="img/caidan01.png"/>
+                        <span>赛报</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="ranking.html" class="my_footer_a my_footer_a_bang">
+                        <img class="act_img"  src="img/caidan2.png">
+                        <img class="no_act" src="img/caidan02.png">
+                        <span>榜单</span>
+                    </a>
+                </li>
+                <li class="footer_list footer_list_sai">
+                    <a href="quiz.html"class="my_footer_a my_footer_sai">
+                        <img class="act_img"  src="img/caidan3.png">
+                        <img class="no_act" src="img/caidan03.png">
+                        <span>赛事</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="mall.html" class="my_footer_a my_footer_show">
+                        <img class="act_img"  src="img/caidan4.png">
+                        <img class="no_act" src="img/caidan04.png">
+                        <span>积分商城</span>
+                    </a>
+                    </li>
+                <li class="footer_list">
+                    <a href="user.html" class="my_footer_a my_footer_my">
+                    <img class="act_img" src="img/caidan5.png"/>
+                    <img class="no_act" src="img/user_light.png"/>
+                    <span>我的</span>
+                    </a>
+                </li>
+            </ul>	
+        </div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
 <script src="third/swiper/swiper.min.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
-<script src="component/footer/footer.js"></script>
-<script src="component/header/otherheader.js"></script>
 <script src="js/quiz.js"></script>
