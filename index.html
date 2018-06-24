@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<!--HTML5 doctype-->
+
+<html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="third/swiper/swiper.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 </head>
 <body>
-    <div id="header"></div>
+<div id="header">
+<div id="header_top">
+	<div id="header_img">
+		<a href="choselogin.html" id="header_a"><img src="img/user_light.png"/></a>
+	</div>
+	<span>赛报</span>
+</div>
+<div id="header_nav">
+	<div class="slide-box">
+		<div class="slide-item"><span>世界杯</span></div>
+		<div class="slide-item"><span>欧冠</span></div>
+		<div class="slide-item"><span>亚冠</span></div>
+		<div class="slide-item"><span>意甲</span></div>
+		<div class="slide-item"><span>英超</span></div>
+		<div class="slide-item"><span>世界杯</span></div>
+		<div class="slide-item"><span>欧冠</span></span></div>
+		<div class="slide-item"><span>亚冠</span></div>
+		<div class="slide-item"><span>意甲</span></div>
+		<div class="slide-item"><span>英超</span></div>
+		<div class="slide-item"><span>欧冠</span></div>
+		<div class="slide-item"><span>亚冠</span></div>
+		<div class="slide-item"><span>意甲</span></div>
+		<div class="slide-item"><span>英超</span></div>
+	</div>
+</div>
+ </div>
     <div id="index_page_conent">
         <div class="index_page">
             <div class="myswiper">
@@ -20,123 +45,145 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/nav1.png" alt="First slide" style="width: 100%;">
+                                <img src="img/nav1.png" >
                                 <div class="my_swiper_bg"></div>
-                                <div class="my_swiper_text">天下足球标题1</div>
+                                <div class="my_swiper_text">天下足球标题</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/nav1.png" alt="First slide" style="width: 100%;">
+                                <img src="img/nav1.png">
                                 <div class="my_swiper_bg"></div>
-                                <div class="my_swiper_text">天下足球标题1</div>
-                            </div>                            
+                                <div class="my_swiper_text">天下足球标题</div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/nav1.png" alt="First slide" style="width: 100%;">
+                                <img src="img/nav1.png">
                                 <div class="my_swiper_bg"></div>
-                                <div class="my_swiper_text">天下足球标题</div>
-                            </div>                            
+                                <div class="my_swiper_text">天下足球标题天下足球标题天下足球标题天下足球标题天下足球标题</div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/nav1.png" alt="First slide" style="width: 100%;">
+                                <img src="img/nav1.png">
                                 <div class="my_swiper_bg"></div>
                                 <div class="my_swiper_text">天下足球标题</div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination" style="text-align:right;"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px;">测试缩放</p>
-                    <p style="font-size: 13px;color: #888888;" class="grand">
-                        <span>足球战报</span><span>评论1</span>
-                    </p>
-                </div>
-            </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px">天下足球</p>
-                    <p style="font-size: 13px;color: #888888;"class="grand">
-                        <span>足球战报</span><span>评论2</span>
-                    </p>
-                </div>
-            </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px;">天下足球天下足球天下足球天下足球天下足球天下足球</p>
-                    <p style="font-size: 13px;color: #888888;" class="grand">
-                        <span>足球战报</span><span>评论1</span>
-                    </p>
-                </div>
-            </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px">天下足球</p>
-                    <p style="font-size: 13px;color: #888888;"class="grand">
-                        <span>足球战报</span><span>评论2</span>
-                    </p>
-                </div>
-            </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px;">天下足球天下足球天下足球天下足球天下足球天下足球</p>
-                    <p style="font-size: 13px;color: #888888;" class="grand">
-                        <span>足球战报</span><span>评论1</span>
-                    </p>
-                </div>
-            </div>
-            <div class="weui-cell" onclick="goDetails()">
-                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <img src="img/test.jpg" style="width: 80px;display: block">
-                </div>
-                <div class="weui-cell__bd">
-                    <p style="margin-bottom:10px">天下足球</p>
-                    <p style="font-size: 13px;color: #888888;"class="grand">
-                        <span>足球战报</span><span>评论2</span>
-                    </p>
-                </div>
-            </div>                
+            
+            <div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="my_img" src="img/test.jpg"/>
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">天下足球标题</h4>
+                        <p class="weui-media-box__desc">
+                            <div class="weui-flex">
+                                <div class="weui-flex__item"><div class="placeholder"><span class="zhanbao">足球战报</span></div></div>
+                                <div class="weui-flex__item"><div class="placeholder"><span class="pinlun">评论1223123</span></div></div>
+                            </div>                            
+                        </p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="my_img" src="img/test.jpg"/>
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">天下足球标题</h4>
+                        <p class="weui-media-box__desc">
+                            <div class="weui-flex">
+                                <div class="weui-flex__item"><div class="placeholder"><span class="zhanbao">足球战报</span></div></div>
+                                <div class="weui-flex__item"><div class="placeholder"><span class="pinlun">评论1223123</span></div></div>
+                            </div>                            
+                        </p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="my_img" src="img/test.jpg"/>
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">天下足球标题</h4>
+                        <p class="weui-media-box__desc">
+                            <div class="weui-flex">
+                                <div class="weui-flex__item"><div class="placeholder"><span class="zhanbao">足球战报</span></div></div>
+                                <div class="weui-flex__item"><div class="placeholder"><span class="pinlun">评论1223123</span></div></div>
+                            </div>                            
+                        </p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="my_img" src="img/test.jpg"/>
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">天下足球标题</h4>
+                        <p class="weui-media-box__desc">
+                            <div class="weui-flex">
+                                <div class="weui-flex__item"><div class="placeholder"><span class="zhanbao">足球战报</span></div></div>
+                                <div class="weui-flex__item"><div class="placeholder"><span class="pinlun">评论1223123</span></div></div>
+                            </div>                            
+                        </p>
+                    </div>
+                </a>                                                 
+            </div>           
+            
         </div>
+    </div>
+    <div id="footer">
+        <ul id="footer_content">
+            <li class="footer_list">
+                <a href="index.html" class="my_footer_a my_footer_a_home">
+                    <img class="act_img" src="img/caidan1.png"/>
+                    <img class="no_act footer_list_t" src="img/caidan01.png"/>
+                    <span>赛报赛报</span>
+                </a>
+            </li>
+            <li class="footer_list">
+                <a href="ranking.html" class="my_footer_a my_footer_a_bang">
+                    <img class="act_img"  src="img/caidan2.png" style="width: 21px">
+                    <img class="no_act" src="img/caidan02.png" style="width: 21px">
+                    <span>榜单</span>
+                </a>
+            </li>
+            <li class="footer_list footer_list_sai">
+                <a href="quiz.html"class="my_footer_a my_footer_sai">
+                    <img class="act_img"  src="img/caidan3.png" style="width: 48px;margin-bottom: 8px">
+                    <img class="no_act" src="img/caidan03.png" style="width: 48px;margin-bottom: 8px">
+                    <span>赛事</span>
+                </a>
+            </li>
+            <li class="footer_list">
+                <a href="mall.html" class="my_footer_a my_footer_show">
+                    <img class="act_img"  src="img/caidan4.png" style="width: 22px">
+                    <img class="no_act" src="img/caidan04.png" style="width: 22px">
+                    <span>积分商城</span>
+                </a>
+                </li>
+            <li class="footer_list">
+                <a href="user.html" class="my_footer_a my_footer_my">
+                <img class="act_img" src="img/caidan5.png" style="width: 19px;margin-bottom: 8px">
+                <img class="no_act" src="img/user_light.png" style="width: 23px;margin-bottom: 3px;margin-top:8px;">
+                <span>我的</span>
+                </a>
+            </li>
+        </ul>	
     </div>
     <div class="weui-loadmore" id="load">
         <i class="weui-loading"></i>
         <span class="weui-loadmore__tips">正在加载</span>
     </div>
-    <div id="footer">
-    </div>
 </body>
 </html>
 <!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
 <script src="third/swiper/swiper.min.js"></script>
-<!-- component 头部，底部引用 -->
-<script src="component/footer/footer.js"></script>
-<script src="component/header/header.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
 <script src="js/index.js"></script>
+
