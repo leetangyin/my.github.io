@@ -8,21 +8,6 @@ html,.weui-cell{
     width:100%;
     display: none;
 }
-.grand span{
-    display: inline-block;
-}
-.grand span:first-child{
-    float: left;
-    color: #1DBE96;
-}
-.grand span:last-child{
-    background: url(../img/pinglun.png) no-repeat;
-    background-size: 100%;
-    display: inline;
-    float: right;
-    width: 80px;
-    text-align: center;
-}
 .index_page{
     padding-top: 100px; 
 }
@@ -50,6 +35,9 @@ html,.weui-cell{
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper-slide img{
+	width:100%;
+}
 .my_swiper_bg{
     opacity: 0.3;
     color: #fff;
@@ -71,4 +59,53 @@ html,.weui-cell{
 }
 .my_swiper_text{
     text-align: center;
+}
+.swiper-wrapper .swiper-slide img{
+	width:100%
+}
+.swiper-pagination{
+	text-align:right;
+}
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+#header_nav .slide-item{
+	height: 40px;
+	line-height: 40px;
+    text-align: center;
+    width:25%;
+}
+#header_nav .slide-item span{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+.my_img{
+    width: 80px;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+    width: 80px;
+}
+.zhanbao{
+    color: #1DBE96;
+}
+.pinlun{
+    background: url(../img/pinglun.png) no-repeat;
+    background-size: 100%;
+    display: inline;
+    float: right;
+    width: 80px;
+    text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.weui-panel__bd{
+    padding-bottom: 100px;
 }

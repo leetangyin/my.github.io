@@ -8,7 +8,7 @@ html,body{
     line-height: 40px;
     background: #ffffff;
     width: 100%;
-    margin-top:110px; 
+    margin-top:87px; 
 }
 #pkstart_content{
     padding: 15px;
@@ -16,7 +16,7 @@ html,body{
 #pkstart_content_but{
     text-align: center;
     background: #FFFFFF;
-    height: 115px;
+    height: 110px;
 }
 .row{
     padding: 0;

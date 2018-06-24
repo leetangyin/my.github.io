@@ -30,30 +30,7 @@ $(window).scroll(function(){
     }    
 })
 
-//根据导航初始化页面模板
-function initPage(){
-    var pagesize = $('#header_nav').find('.slide-item').length;
-    for(var i = 1; i<=pagesize; i++){
-        var titel = $('#header_nav').find('.slide-item').eq(i).find('span').html();
-        var tmp = '<div class="index_page">\
-                    <div class="weui-cell" onclick="goDetails()">\
-                        <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">\
-                    <img src="img/test.jpg" style="width: 80px;display: block">\
-                </div>\
-                <div class="weui-cell__bd">\
-                    <p style="margin-bottom:10px;">'+titel+'的天下足球天下足球天</p>\
-                    <p style="font-size: 13px;color: #888888;" class="grand">\
-                    <span>足球战报</span><span>评论1</span>\
-                </p>\
-                </div>\
-                </div>\
-            </div>\
-        ' 
-        $('#index_page_conent').append(tmp);            
-    }
-    $('.index_page').hide();
-    $('.index_page').eq(0).show();
-}
+
 
 //顶部导航栏点击事件
 $('#header_nav').find('.slide-item').each(function(index,ele){
@@ -70,7 +47,7 @@ function goDetails(){
     window.location.href="news.html" 
 }
 
-initPage();
+
 
 
 

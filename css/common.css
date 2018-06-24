@@ -80,6 +80,7 @@ textarea{
 /* 底部导航栏样式 */
 #footer{
 	height: 55px;
+	height: 55px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -89,6 +90,7 @@ textarea{
 }
 #footer_content{
     width: 100%;
+	border-top:1px solid #ccc;
 }
 .footer_list{
 	width: 20%;
@@ -100,12 +102,30 @@ textarea{
  margin: 6px auto;
  width: 17px;
 }
+.my_footer_a_home img{
+	width:20px
+}
+.my_footer_a_home img:first-child{
+	width: 22px;
+	margin-bottom:4px;
+}
+
 .footer_list a{
 	color: #000;
 	font-size: 14px
 }
+.my_footer_a{
+	display:block;width:100%;height:100%
+}
 .footer_list .no_act{
     display: none;
+}
+
+.footer_list .footer_list_t{
+	margin-bottom:4px;
+}
+.footer_list_sai{
+	position: relative;top:-30px
 }
 /* 头部部导航栏样式（有导航 */
 #header{
@@ -127,13 +147,12 @@ textarea{
 	position: absolute;
 	height: 40px;
 	width: 40px;
+	line-height:49px;
 	background: #fff;
 	border-radius: 50%;
 	text-align: center;
 	top: 10px;
 	left: 13px;
-    line-height: 49
-    px;
 }
 #header_img img{
 	width: 23px;
@@ -142,25 +161,8 @@ textarea{
     font-weight: bold;
     font-size: 16px;
 }
-.slide-box{
-    display: -webkit-box;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling:touch;
-}
-
-#header_nav .slide-item{
-	height: 40px;
-	line-height: 40px;
-    text-align: center;
-    padding: 0 10px
-}
-#header_nav .slide-item span{
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: center
+#header_nav .slide-item:first-child span{
+	border-bottom:2px solid #fff
 }
 /* #header_nav ul li{
 	float: left;
