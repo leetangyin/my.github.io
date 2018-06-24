@@ -188,6 +188,7 @@ textarea{
     width: 100%;
     text-align: left;
     position: fixed;
+    z-index: 2
     
 }
 #otherheader .otherheader_left{
