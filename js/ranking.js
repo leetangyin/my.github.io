@@ -1,5 +1,3 @@
-//初始化头部
-light.otherheader.createHeadeer('排行榜')
 
 //胜率页面切换
 $('.ranking_nav_left').click(function(){
@@ -20,3 +18,8 @@ $('.ranking_nav_right').click(function(){
 $('.footer_list').eq(1).find('span').css('color','#25C58D')
 $('.no_act').eq(1).show().css('display','block');
 $('.act_img').eq(1).hide();
+
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}

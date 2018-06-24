@@ -55,10 +55,11 @@ html,.weui-cell{
     width:100%;
     line-height:40px;
     text-align: left;
-    padding-left:10px; 
-}
-.my_swiper_text{
-    text-align: center;
+    padding-left:10px;
+    text-align: center; 
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .swiper-wrapper .swiper-slide img{
 	width:100%

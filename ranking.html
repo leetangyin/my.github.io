@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">   
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/ranking.css" />
 </head>
 <body>
-    <div id="otherheader"></div>
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>排行榜</span></div>
+        <div class="otherheader_right"><img src="img/share.png"></div>
+    </div>       
     <div id="ranking_nav">
         <div class="ranking_nav_left">
             <span>胜率排行</span>
@@ -21,88 +24,99 @@
             <span>积分排行</span>
         </div>
     </div>
-
     <div id="victory">
         <div class="row ranking_titel">
-            <div class="col-xs-2" style="padding: 0"><span class="my_ranking_top">排名</span></div>
+            <div class="col-xs-2"><span class="my_ranking_top">排名</span></div>
             <div class="col-xs-3">玩家</div>
             <div class="col-xs-3">　胜/总</div>
             <div class="col-xs-4">近30天胜率</div>
         </div>
-        <div class="row ranking_my_list" style="border: none">
+        <div class="row ranking_my_list">
             <div class="col-xs-2 my-text-center" >100</div>
-            <div class="col-xs-4" style="padding: 0;"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
+            <div class="col-xs-4 my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
             <div class="col-xs-2">98/100</div>
             <div class="col-xs-3">　99.99%</div>
         </div>
-        <div class="ranking_list">
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center" >100</div>
-                <div class="col-xs-4" style="padding: 0;"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
-                <div class="col-xs-2">98/100</div>
-                <div class="col-xs-3">　99.99%</div>
-            </div>
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center" >100</div>
-                <div class="col-xs-4" style="padding: 0;"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
-                <div class="col-xs-2">98/100</div>
-                <div class="col-xs-3">　99.99%</div>
-            </div>             
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center" >100</div>
-                <div class="col-xs-4" style="padding: 0;"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
-                <div class="col-xs-2">98/100</div>
-                <div class="col-xs-3">　99.99%</div>
-            </div>
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center" >100</div>
-                <div class="col-xs-4" style="padding: 0;"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
-                <div class="col-xs-2">98/100</div>
-                <div class="col-xs-3">　99.99%</div>
-            </div>
+        <div class="row ranking_my_list ranking_my_list_f">
+            <div class="col-xs-2 my-text-center" >100</div>
+            <div class="col-xs-4 my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
+            <div class="col-xs-2">98/100</div>
+            <div class="col-xs-3">　99.99%</div>
+        </div>
+        <div class="row ranking_my_list">
+            <div class="col-xs-2 my-text-center" >100</div>
+            <div class="col-xs-4 my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>胜率排行</div>
+            <div class="col-xs-2">98/100</div>
+            <div class="col-xs-3">　99.99%</div>
         </div>
     </div>
-
     <div id="integral">
         <div class="row ranking_titel">
-            <div class="col-xs-2" style="padding: 0"><span class="my_ranking_top">排名</span></div>
-            <div class="col-xs-7">玩家</div>
-            <div class="col-xs-3">积分</div>
+        <div class="col-xs-2"><span class="my_ranking_top">排名</span></div>
+        <div class="col-xs-7">玩家</div>
+        <div class="col-xs-3">积分</div>
         </div>
-        <div class="row ranking_my_list" style="border: none">
-            <div class="col-xs-2 my-text-center">1</div>
-            <div class="col-xs-7"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
-            <div class="col-xs-3">123</div>
+        <div class="row ranking_my_list">
+        <div class="col-xs-2 my-text-center">1</div>
+        <div class="col-xs-7  my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
+        <div class="col-xs-3">123</div>
         </div>          
-        <div class="ranking_list">
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center">1</div>
-                <div class="col-xs-7"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
-                <div class="col-xs-3">123</div>
-            </div>
-            <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center">1</div>
-                <div class="col-xs-7"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
-                <div class="col-xs-3">123</div>
-            </div>
-             <div class="row ranking_my_list">
-                <div class="col-xs-2 my-text-center">1</div>
-                <div class="col-xs-7"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
-                <div class="col-xs-3">123</div>
-            </div>                       
+        <div class="row ranking_my_list ranking_my_list_f">
+            <div class="col-xs-2 my-text-center">1</div>
+            <div class="col-xs-7  my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
+            <div class="col-xs-3">123</div>
         </div>
+        <div class="row ranking_my_list">
+            <div class="col-xs-2 my-text-center">1</div>
+            <div class="col-xs-7  my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
+            <div class="col-xs-3">123</div>
+        </div>
+            <div class="row ranking_my_list">
+            <div class="col-xs-2 my-text-center">1</div>
+            <div class="col-xs-7  my-text_xs_4"><img class="my_top_img" src="img/my_top.png"/>积分排行</div>
+            <div class="col-xs-3">123</div>
+        </div>                       
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+        <ul id="footer_content">
+            <li class="footer_list">
+                <a href="index.html" class="my_footer_a my_footer_a_home">
+                    <img class="act_img" src="img/caidan1.png"/>
+                    <img class="no_act footer_list_t" src="img/caidan01.png"/>
+                    <span>赛报</span>
+                </a>
+            </li>
+            <li class="footer_list">
+                <a href="ranking.html" class="my_footer_a my_footer_a_bang">
+                    <img class="act_img"  src="img/caidan2.png" style="width: 21px">
+                    <img class="no_act" src="img/caidan02.png" style="width: 21px">
+                    <span>榜单</span>
+                </a>
+            </li>
+            <li class="footer_list footer_list_sai">
+                <a href="quiz.html"class="my_footer_a my_footer_sai">
+                    <img class="act_img"  src="img/caidan3.png" style="width: 48px;margin-bottom: 8px">
+                    <img class="no_act" src="img/caidan03.png" style="width: 48px;margin-bottom: 8px">
+                    <span>赛事</span>
+                </a>
+            </li>
+            <li class="footer_list">
+                <a href="mall.html" class="my_footer_a my_footer_show">
+                    <img class="act_img"  src="img/caidan4.png" style="width: 22px">
+                    <img class="no_act" src="img/caidan04.png" style="width: 22px">
+                    <span>积分商城</span>
+                </a>
+                </li>
+            <li class="footer_list">
+                <a href="user.html" class="my_footer_a my_footer_my">
+                <img class="act_img" src="img/caidan5.png" style="width: 19px;margin-bottom: 8px">
+                <img class="no_act" src="img/user_light.png" style="width: 23px;margin-bottom: 3px;margin-top:8px;">
+                <span>我的</span>
+                </a>
+            </li>
+        </ul>	
+    </div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
-<script src="component/header/otherheader.js"></script>
-<script src="component/footer/footer.js"></script>
 <script type="text/javascript"  src="js/ranking.js"></script>
