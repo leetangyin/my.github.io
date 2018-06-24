@@ -14,3 +14,45 @@ html,body{
 #pkend_content_top{
     margin: 10px 0;
 }
+.pk_countries{
+    text-align: center;
+    height: 50px;
+    padding-top: 17px;
+}
+.pk_countries_guoone{
+    width: 40px;
+    margin-left: 5px;
+}
+.pk_countries_pk_img{
+    margin: 0 15px;
+    width: 18px;
+}
+.pk_countries_guotwo{
+    margin-right: 5px;
+    width: 40px;
+}
+.pkend_bottom_text{
+    text-align: center
+}
+.pk_title{
+    display: inline-block;
+    max-width:120px;
+    overflow: hidden;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pk_countries_pk_img span{
+    display: inline-block;
+    text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+.pk_time_img{
+    width: 14px;
+    margin-right: 2px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
