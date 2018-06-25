@@ -4,6 +4,9 @@ html,body{
 #otherheader{
 	z-index: 999;
 }
+.myindex{
+	padding-top: 50px
+}
 #myindex_img{
 	padding: 20px 0;
 	background-color: #32CE85;
