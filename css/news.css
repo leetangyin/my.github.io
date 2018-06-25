@@ -23,8 +23,8 @@
     width: 100%;
     border: none;
     border-top:1px solid #ccc; 
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
 }
 #talks{
     position: absolute;
@@ -36,4 +36,7 @@
 }
 .speaksend{
     display: none;
+}
+.my_img{
+    width: 100%;
 }

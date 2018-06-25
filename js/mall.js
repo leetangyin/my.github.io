@@ -20,6 +20,10 @@ $('.footer_list').eq(3).find('span').css('color','#25C58D')
 $('.no_act').eq(3).show().css('display','block');
 $('.act_img').eq(3).hide();
 
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}
 
 //监控滚动条事件,填充数据
 $(window).scroll(function(){

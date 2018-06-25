@@ -4,44 +4,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-<title>{site.seo_title}</title>
-<meta name="keywords" content="{site.seo_keyword}" />
-<meta name="description" content="{site.seo_description}" />
-<link rel="stylesheet" type="text/css" href="/css/idangerous.swiper.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<script type="text/javascript" charset="utf-8" src="/js/zepto.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/js/weui.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/js/common.js"></script>
-<script type="text/javascript" charset="utf-8" src="/js/idangerous.swiper-2.1.min.js"></script>
-        
-    <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/goods.css" />
+<title>世界杯</title>
+<link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/goods.css" />
 </head>
 <body>
-
-    <div id="otherheader"></div>
-    <div style="padding-bottom: 80px;">
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>商品详情</span></div>        
+    </div>
+    <div>
         <div id="my_pic">
             <img src="img/goods_money.png">
         </div>
-        <div class="page__bd page__bd_spacing" style="padding: 0 15px">
+        <div class="page__bd page__bd_spacing my_page_bd">
             <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder" style="margin: 10px 0 7px 0;">世界杯1</div></div>
+                <div class="weui-flex__item">
+                    <div class="placeholder my_placeholder_top">世界杯1</div>
+                </div>
             </div>
             <div class="weui-flex">
                 <div class="weui-flex__item"><div class="placeholder">充值卡13123</div></div>
                 <div class="weui-flex__item"><div class="placeholder my_placeholder">
                     <strong>290000</strong>
-                    <img  style="width: 20px" src="img/goods_money.png">
+                    <img  class="money_img" src="img/goods_money.png">
                 </div>
             </div>
             </div>
-            <div class="weui-flex my_flex_border" style="position: relative;">
+            <div class="weui-flex my_flex_border">
                 <div class="weui-flex__item"><div class="placeholder my_placeholder_money">(价值 ￥300)</div></div>
             </div>
         </div>
@@ -52,14 +43,8 @@
             </div> 
         <div class="line"></div>
      </div>
-    <div id="footer" onclick="showshClick()"><a href="determine.html" style="display: block;width: 100%;height: 100%;color: #ffffff">立即兑换</a></div>
+    <div id="footer" onclick="showshClick()"><a href="determine.html">立即兑换</a></div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<script src="component/header/otherheader.js"></script>
 <script src="js/goods.js"></script>

@@ -9,7 +9,13 @@
 .logo{
     margin-top: 100px;
 }
+.logo img{
+    width: 100px;
+}
 .my_but{
     padding: 0 20px;
     margin-top: 15px
+}
+.cells__title_my{
+    text-align:center
 }

@@ -5,111 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/mypk.css" />
 </head>
 <body>
-    <div id="otherheader"></div> 
-    <div class="mypk">
-        <div class="mypk_titel" style="padding-top: 50px">所有的赛事记录</div>
-        <div class="mypk_list" onclick="goDetailsPageClick('pkstart')">
-            <div class="weui-flex" style="background-color:#fff;padding-top:20px;position:relative;margin-bottom: 10px;">
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>我的赛事</span></div>        
+    </div>
+   <div class="mypk">
+        <div class="mypk_list" onclick="goDetailsPageClick('pkend')">
+            <div class="weui-flex my_flex">
                 <span class="my_type_pk">世界杯</span>
-                <div class="weui-flex__item" style="padding-top:13px">
-                    <div class="placeholder" style="position: relative;">
-                        <span style="display:inline-block;margin-right:10px;max-width:48px;">俄罗斯</span>
-                        <span style="display:inline-block;position:absolute;right:15px;"><img style="width:16px;" src="img/my_pk.png"></span>
+                <div class="weui-flex__item my_type_pk_top">
+                    <div class="placeholder my_type_pk_top_all">
+                        <span class="my_type_pk_top_span_o">俄罗斯</span>
+                        <span class="my_type_pk_top_span_t"><img  src="img/my_pk.png"></span>
                     </div>
                 </div>
-                <div class="weui-flex__item" style="padding-top:13px"><div class="placeholder">沙特</div></div>
-                <div class="weui-flex__item"><div class="placeholder" style="padding-top:13px">---</div></div>
-                <div class="weui-flex__item" style="padding-top:3px">
+                <div class="weui-flex__item my_type_pk_top"><div class="placeholder">沙特</div></div>
+                <div class="weui-flex__item"><div class="placeholder my_placeholder_shu">输</div></div>
+                <div class="weui-flex__item my_type_pk_th">
                     <div class="placeholder">
-                        <p style="color:#ccc;margin-bottom:0px;">5/1000</p>
-                        <p>未开奖</p>
+                        <p class="can_color can_mar">5/1000</p>
+                        <p>已结束</p>
                     </div>
                 </div>
             </div>
-            <div class="weui-flex" style="background-color:#fff">
+            <div class="weui-flex my_list_b">
                 <div class="weui-flex__item">
                     <div class="placeholder">
-                        <span style="color:#ccc">参战费:</span>100积分
+                        <span class="can_color">参战费:</span>100积分
                     </div>
                 </div>
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">奖池:</span>3000积分</div></div>
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">日期:</span>2008.10.20</div></div>
+                <div class="weui-flex__item"><div class="placeholder"><span class="can_color">奖池:</span>3000积分</div></div>
+                <div class="weui-flex__item"><div class="placeholder"><span class="can_color">日期:</span>2008.10.20</div></div>
             </div>		
         </div>
-        <div class="mypk_list" onclick="goDetailsPageClick('pkend')">
-            <div class="weui-flex" style="background-color:#fff;padding-top:20px;position:relative;margin-bottom: 10px;">
+         <div class="mypk_list" onclick="goDetailsPageClick('pkend')">
+            <div class="weui-flex my_flex">
                 <span class="my_type_pk">世界杯</span>
-                <div class="weui-flex__item" style="padding-top:13px">
-                    <div class="placeholder" style="position: relative;">
-                        <span style="display:inline-block;margin-right:10px;max-width:48px;">俄罗斯</span>
-                        <span style="display:inline-block;position:absolute;right:15px;"><img style="width:16px;" src="img/my_pk.png"></span>
+                <div class="weui-flex__item my_type_pk_top">
+                    <div class="placeholder my_type_pk_top_all">
+                        <span class="my_type_pk_top_span_o">俄罗斯</span>
+                        <span class="my_type_pk_top_span_t"><img  src="img/my_pk.png"></span>
                     </div>
                 </div>
-                <div class="weui-flex__item" style="padding-top:13px"><div class="placeholder">沙特</div></div>
-                <div class="weui-flex__item"><div class="placeholder" style="padding-top:8px;font-size: 16px;color:#32CE85">+800</div></div>
-                <div class="weui-flex__item" style="padding-top:3px">
+                <div class="weui-flex__item my_type_pk_top"><div class="placeholder">沙特</div></div>
+                <div class="weui-flex__item"><div class="placeholder my_placeholder_shu">输</div></div>
+                <div class="weui-flex__item my_type_pk_th">
                     <div class="placeholder">
-                        <p style="color:#ccc;margin-bottom:0px;">5/1000</p>
+                        <p class="can_color can_mar">5/1000</p>
                         <p>已结束</p>
                     </div>
                 </div>
             </div>
-            <div class="weui-flex" style="background-color:#fff">
+            <div class="weui-flex my_list_b">
                 <div class="weui-flex__item">
                     <div class="placeholder">
-                        <span style="color:#ccc">参战费:</span>100积分
+                        <span class="can_color">参战费:</span>100积分
                     </div>
                 </div>
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">奖池:</span>3000积分</div></div>
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">日期:</span>2008.10.20</div></div>
+                <div class="weui-flex__item"><div class="placeholder"><span class="can_color">奖池:</span>3000积分</div></div>
+                <div class="weui-flex__item"><div class="placeholder"><span class="can_color">日期:</span>2008.10.20</div></div>
             </div>		
-        </div> 
-        <div class="mypk_list" onclick="goDetailsPageClick('pkend')">
-            <div class="weui-flex" style="background-color:#fff;padding-top:20px;position:relative;margin-bottom: 10px;">
-                <span class="my_type_pk">世界杯</span>
-                <div class="weui-flex__item" style="padding-top:13px">
-                    <div class="placeholder" style="position: relative;">
-                        <span style="display:inline-block;margin-right:10px;max-width:48px;">俄罗斯</span>
-                        <span style="display:inline-block;position:absolute;right:15px;"><img style="width:16px;" src="img/my_pk.png"></span>
-                    </div>
-                </div>
-                <div class="weui-flex__item" style="padding-top:13px"><div class="placeholder">沙特</div></div>
-                <div class="weui-flex__item"><div class="placeholder" style="padding-top:8px;font-size: 16px;">输</div></div>
-                <div class="weui-flex__item" style="padding-top:3px">
-                    <div class="placeholder">
-                        <p style="color:#ccc;margin-bottom:0px;">5/1000</p>
-                        <p>已结束</p>
-                    </div>
-                </div>
-            </div>
-            <div class="weui-flex" style="background-color:#fff">
-                <div class="weui-flex__item">
-                    <div class="placeholder">
-                        <span style="color:#ccc">参战费:</span>100积分
-                    </div>
-                </div>
-                
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">奖池:</span>3000积分</div></div>
-                <div class="weui-flex__item"><div class="placeholder"><span style="color:#ccc">日期:</span>2008.10.20</div></div>
-            </div>		
-        </div> 
-    </div>
+        </div>       
+   </div>
+
     <div class="my_pk_back_but"><a href="quiz.html">返回赛事</a></div>	   
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<script src="component/header/otherheader.js"></script>
 <script src="js/mypk.js"></script>

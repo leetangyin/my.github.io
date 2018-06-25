@@ -1,6 +1,8 @@
-//初始化头部
-light.otherheader.createHeadeer('我的积分')
 
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}
 //点击充值，显示充值页面
 $('#my_show_but').click(function(){
     $('#my_page_buttom').show();

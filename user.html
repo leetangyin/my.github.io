@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="third/swiper/swiper.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/user.css" />
 </head>
 <body>
-    <div id="otherheader"></div>
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>个人中心</span></div>        
+    </div
 	<div class="user">
             <div class="user_content">
-                <div class="weui-panel" style="margin-bottom:20px;">
+                <div class="weui-panel user_content_top">
                     <div class="weui-panel__bd">
                         <div class="weui-media-box weui-media-box_small-appmsg">
                             <div class="weui-cells" onclick="goPageClick('myindex')">
-                                <div class="weui-cell weui-cell_access" style="height: 70px;">
+                                <div class="weui-cell weui-cell_access my_wei_user_content_t">
                                     <div class="weui-cell__hd my_hp" >
-                                        <img src="img/my_top.png" style="width:55px;margin-right:5px;display:block;border-radius: 50%;">
+                                        <img class="my_p" src="img/my_top.png">
                                     </div>
-                                    <div class="weui-cell__bd weui-cell_primary" style="margin-top:11px;">
+                                    <div class="weui-cell__bd weui-cell_primary user_name">
                                         <p>羊羊羊</p>
                                     </div>
                                     <span class="weui-cell__ft">个人主页</span>
@@ -32,34 +33,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="user_content_list" style="background:#fff">
+                <div class="user_content_list">
                     <div class="weui-cell weui-cell_access" onclick="goPageClick('topup')">
                         <div class="weui-cell__bd">
-                            <span style="vertical-align: middle"><img style="width:23px" src="img/momey_package.png"/></span>
-                            <span style="margin-left: 5px;">钱包</span>
+                            <span class="user_img_p"><img src="img/momey_package.png"/></span>
+                            <span class="user_img_t" >钱包</span>
                         </div>
                         <div class="weui-cell__ft"></div>
                     </div>
                     <div class="weui-cell weui-cell_access" onclick="goPageClick('rush')">
                         <div class="weui-cell__bd">
-                            <span style="vertical-align: middle"><img style="width:23px" src="img/top-up.png"/></span>
-                                <span  style="margin-left: 5px;">充值</span>
+                            <span class="user_img_p"><img src="img/top-up.png"/></span>
+                                <span  class="user_img_t">充值</span>
                         </div>
                         <div class="weui-cell__ft"></div>
                     </div>
                 </div>
-                <div class="user_content_list" style="background:#fff;margin-top:20px;">
+                <div class="user_content_list user_margin_r">
                     <div class="weui-cell weui-cell_access" onclick="goPageClick('mypk')">
                         <div class="weui-cell__bd">
-                            <span style="vertical-align: middle"><img style="width:23px" src="img/my_pk.png"/></span>
-                            <span style="margin-left: 5px;">我的赛事</span>
+                            <span class="user_img_p"><img src="img/my_pk.png"/></span>
+                            <span class="user_img_t">我的赛事</span>
                         </div>
                         <div class="weui-cell__ft"></div>
                     </div>
                     <div class="weui-cell weui-cell_access" onclick="goPageClick('ranking')">
                         <div class="weui-cell__bd">
-                            <span style="vertical-align: middle"><img style="width:23px" src="img/my_top_pk.png"/></span>
-                                <span  style="margin-left: 5px;">我的排名</span>
+                            <span class="user_img_p" ><img  src="img/my_top_pk.png"/></span>
+                                <span  class="user_img_t">我的排名</span>
                         </div>
                         <div class="weui-cell__ft"></div>
                     </div> 
@@ -73,20 +74,47 @@
                 </div>
             </div>
         </div>
-    <div id="footer">
-    </div>
+        <div id="footer">
+            <ul id="footer_content">
+                <li class="footer_list">
+                    <a href="index.html" class="my_footer_a my_footer_a_home">
+                        <img class="act_img" src="img/caidan1.png"/>
+                        <img class="no_act footer_list_t" src="img/caidan01.png"/>
+                        <span>赛报</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="ranking.html" class="my_footer_a my_footer_a_bang">
+                        <img class="act_img"  src="img/caidan2.png">
+                        <img class="no_act" src="img/caidan02.png">
+                        <span>榜单</span>
+                    </a>
+                </li>
+                <li class="footer_list footer_list_sai">
+                    <a href="quiz.html"class="my_footer_a my_footer_sai">
+                        <img class="act_img"  src="img/caidan3.png">
+                        <img class="no_act" src="img/caidan03.png">
+                        <span>赛事</span>
+                    </a>
+                </li>
+                <li class="footer_list">
+                    <a href="mall.html" class="my_footer_a my_footer_show">
+                        <img class="act_img"  src="img/caidan4.png">
+                        <img class="no_act" src="img/caidan04.png">
+                        <span>积分商城</span>
+                    </a>
+                    </li>
+                <li class="footer_list">
+                    <a href="user.html" class="my_footer_a my_footer_my">
+                    <img class="act_img" src="img/caidan5.png"/>
+                    <img class="no_act" src="img/user_light.png"/>
+                    <span>我的</span>
+                    </a>
+                </li>
+            </ul>	
+        </div>
 </body>
 </html>
 <!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/swiper/swiper.min.js"></script>
-
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
-<script src="component/footer/footer.js"></script>
-<script src="component/header/otherheader.js"></script>
 <script src="js/user.js"></script>

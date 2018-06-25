@@ -4,6 +4,11 @@ html,body{
 .topup{
     padding-top: 49px; 
 }
+.top_num{
+    padding-top:39px;
+    margin:0
+}
+
 .otherheader_right{
     display: none
 }
@@ -102,4 +107,60 @@ html,body{
     color: #fff;
     height: 50px;
     line-height: 50px;
+}
+.my_to_centent{
+    padding:20px
+}
+.my_c_n{
+    color:#32CF85
+}
+.my_picker_h{
+    height:475px
+}
+.my_p_t{
+    padding-top:10px
+}
+.placeholder .topup_num{
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+.my_zhi_lv{
+    margin:6px;
+    color:#ccc
+}
+.but_all{
+    padding:0;
+    margin:0;
+    text-align:center
+}
+.quxiao{
+    color:#888;
+    background-color:#EEEEEE;
+    text-align:center
+}
+.queding{
+    color:#fff;
+    background-color:#30CE81;
+    text-align:center
+}
+#my_page_buttom{
+    display: none;
+}
+.zhif_lv{
+    margin:6px;
+    color:#ccc
+}
+.zhifu_title_text_right span{
+    font-size:19px
+}
+.wei_shi_fu_i{
+    width:30px;
+}
+.but_all{
+    padding: 0;
+    margin: 0
+}
+#toast{
+    display: none
 }

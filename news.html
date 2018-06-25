@@ -8,13 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/news.css" />
 </head>
 <body>
-    <div id="otherheader"></div>
+    <div id="otherheader">
+        <div class="otherheader_left"  onclick="goBackClick()"><img src="img/left.png" style="width:11px"></div>
+        <div class="otherheader_text"><span>赛报</span></div>
+        <div class="otherheader_right"><img src="img/share.png"></div>
+    </div>
+    </div>
     <div id="news_content">
         <div>
             <h4 class="news_titel">球是怎样踢的,球是怎样踢的.球是怎样踢的</h4>
@@ -23,7 +27,7 @@
             </div>
         </div>
         <div>
-            <img src="img/nav1.png" style="width: 100%;">
+            <img class="my_img" src="img/nav1.png">
         </div>
         <div>
             <div class="news_t">
@@ -43,14 +47,5 @@
     </div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/jquery/bootstrap.min.js"></script>
-<script src="third/swiper/swiper.min.js"></script>
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<!-- component 头部，底部引用 -->
-<script src="component/header/otherheader.js"></script>
 <script type="text/javascript"  src="js/news.js"></script>

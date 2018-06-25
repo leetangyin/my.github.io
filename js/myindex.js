@@ -1,7 +1,9 @@
-//初始化头部
-light.otherheader.createHeadeer('个人主页')
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}
 
-//赛事详情页面跳转
+//赛事跳转
 function goDetailsPageClick (url){
     window.location.href = url + ".html" 
 }

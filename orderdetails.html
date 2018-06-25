@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/orderdetails.css" />
 </head>
 <body>
-    <div id="otherheader"></div>
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>兑换详情</span></div>        
+    </div>
     <div id="orderdetail_top">
-        <h4 style="margin-top:20px ">成功兑换等待发货</h4>
+        <h4 class="my_su_titel">成功兑换等待发货</h4>
         <p>消费积分：100000</p>
     </div>
 
-    <div class="orderdetails_page" style="padding: 15px 0;">
-        <div class="weui-cells__title" style="margin: 0;">中国移动 13800138000</div>
-        <div class="weui-cells__title" style="margin: 0">中国移动过东莞第一国际分公司</div>
+    <div class="orderdetails_page orderdetails_title">
+        <div class="weui-cells__title my_cells__title">中国移动 13800138000</div>
+        <div class="weui-cells__title my_cells__title">中国移动过东莞第一国际分公司</div>
     </div>
-    <div class="orderdetails_page" style="padding:0">
-        <div class="weui-panel weui-panel_access" style="clear: both;">
+    <div class="orderdetails_page orderdetails_page_p">
+        <div class="weui-panel weui-panel_access my_panel_access_b">
             <div class="weui-panel__ft">
-                <div class="weui-panel__hd" style="position: relative; text-indent: 23px;">
-                    <img style="position: absolute;display: block;width: 20px;top:11px" src="img/caidan4.png"/>
+                <div class="weui-panel__hd weui_panel_h">
+                    <img src="img/caidan4.png"/>
                     <strong>中国移动充值卡</strong>
                 </div>    
             </div>
-            <div class="weui-panel__hd" style="padding: 0;margin: 0"></div>        
+            <div class="weui-panel__hd my_m_p"></div>        
             <div class="weui-panel__bd">
                 <a href="googs.html" class="weui-media-box weui-media-box_appmsg">
                     <div class="weui-media-box__hd">
@@ -38,65 +40,59 @@
                     <div class="weui-media-box__bd">
                         <h5 class="weui-media-box__title">
                             <span>中国移动1008</span>
-                            <div style="float: right;position: relative;padding-left:20px ">
-                                    <span style="display: inline-block;color:#26C688">1000</span>
-                                    <img style="width: 18px;position: absolute;top:4px;left: 0"  src="img/momey.png"/>
+                            <div class="my_left_img">
+                                    <span>1000</span>
+                                    <img src="img/momey.png"/>
                             </div>
                         </h5>
-                        <p class="weui-media-box__desc" style="text-align: right">x1</p>
+                        <p class="weui-media-box__desc my_cells_left">x1</p>
                     </div>
                 </a>
             </div>
-            <div class="weui-panel__hd" style="padding: 0;margin: 0"></div>
+            <div class="weui-panel__hd my_m_p"></div>
         </div>        
     </div>
-    <div class="orderdetails_page" style="padding: 10px 15px;">
+    <div class="orderdetails_page orderdetails_page_show">
         <div class="weui-flex">
-            <div class="weui-flex__item" style="text-align: left；color: #666;"><div class="placeholder">商品小计</div></div>
-            <div class="weui-flex__item" style="text-align: right">
+            <div class="weui-flex__item my_item_o"><div class="placeholder">商品小计</div></div>
+            <div class="weui-flex__item my_item_t">
                 <div class="placeholder">
-                <div  style="position: relative;float: right;padding-left: 20px;">
-                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
-                        <span style="color:#26C688;">230000000</span>
+                <div class="flex_item_all">
+                        <img src="img/momey.png"/>
+                        <span>230000000</span>
                 </div>
             </div>
         </div>
         </div>
         <div class="weui-flex">
-            <div class="weui-flex__item" style="text-align: left"><div class="placeholder">运费</div></div>
-            <div class="weui-flex__item" style="text-align: right">
-                <div class="placeholder" style="position: relative;">
-                <div  style="position: relative;float: right;padding-left: 20px;">
-                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
-                        <span style="color:#26C688;">230000000</span>
+            <div class="weui-flex__item my_cells__left my_item_o"><div class="placeholder">运费</div></div>
+            <div class="weui-flex__item my_cells_left">
+                <div class="placeholder flex_item_all">
+                <div  class="flex_item_all">
+                        <img src="img/momey.png"/>
+                        <span>230000000</span>
                 </div>
             </div>
         </div>
         </div>
         <div class="weui-flex">
-            <div class="weui-flex__item" style="text-align: left"><div class="placeholder">实付积分（含运费）</div></div>
-            <div class="weui-flex__item" style="text-align: right">
-                <div class="placeholder" style="position: relative;">
-                <div  style="position: relative;float: right;padding-left: 20px;">
-                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
-                        <span style="color:#26C688;">230000000</span>
+            <div class="weui-flex__item my_item_o"><div class="placeholder">实付积分（含运费）</div></div>
+            <div class="weui-flex__item my_cells_left">
+                <div class="placeholder flex_item_all">
+                <div class="flex_item_all">
+                        <img src="img/momey.png"/>
+                        <span>230000000</span>
                 </div>
                 </div>
             </div>
         </div>                
     </div>
-    <div class="orderdetails_page" style="padding-bottom:0;height: 58px;">
-        <div class="weui-cells__title" style="margin: 0;">兑换编号 13800138000</div>
-        <div class="weui-cells__title" style="margin: 0">创建时间 2018-05-01 17:20:10</div>
-        <div class="weui-panel__hd" style="padding: 0;margin: 0;margin-top: 15px;"></div>        
+    <div class="orderdetails_page orderdetails_page_dui">
+        <div class="weui-cells__title my_cells__title">兑换编号 13800138000</div>
+        <div class="weui-cells__title my_cells__title">创建时间 2018-05-01 17:20:10</div>
+        <div class="weui-panel__hd weui_panel_bottom"></div>        
     </div>
 </body>
 </html>
-<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<script src="component/header/otherheader.js"></script>
 <script src="js/orderdetails.js"></script>

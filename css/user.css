@@ -8,3 +8,33 @@ body{
 .otherheader_right{
     display: none
 }
+.user_content_top{
+	margin-bottom:20px;
+}
+.my_wei_user_content_t{
+	height: 70px;
+}
+.my_p{
+	width:55px;
+	margin-right:5px;
+	height: 55px;
+	display:block;
+	border-radius: 50%;
+}
+.user_content_list{
+	background: #fff
+}
+.user_margin_r{
+}
+.user_name{
+	margin-top:11px;
+}
+.user_img_p{
+	vertical-align: middle
+}
+.user_img_p img{
+	width:23px
+}
+.user_img_t{
+	margin-left: 5px;
+}

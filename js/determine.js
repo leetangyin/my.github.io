@@ -1,5 +1,4 @@
-//初始化头部
-light.otherheader.createHeadeer('兑换确认')
+
 //兑换取消点击事件
 function cancelClick(){
     $('#my_page_buttom').hide();
@@ -76,3 +75,7 @@ function isMobile(mobile) {
         return true;
     }
 };
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}

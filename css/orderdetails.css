@@ -13,3 +13,85 @@
     margin-top: 10px;
     padding: 10px 0;
 }
+.my_su_titel{
+    margin-top:20px
+}
+.orderdetails_title{
+    padding: 15px 0;
+}
+.my_cells__title{
+    margin: 0;
+}
+.orderdetails_page_p{
+    padding: 0;
+}
+.weui_panel_h{
+    position: relative; 
+    text-indent: 23px;
+}
+
+.weui_panel_h img{
+    position: absolute;
+    display: block;
+    width: 20px;top:11px
+}
+.my_m_p{
+    margin: 0;
+    padding: 0;
+}
+.my_left_img{
+    float: right;
+    position: relative;
+    padding-left:20px
+}
+.my_left_img span{
+    display: inline-block;
+    color:#26C688
+}
+.my_left_img img{
+    width: 18px;
+    position: absolute;
+    top:4px;
+    left: 0
+}
+
+.flex_item_all{
+    position: relative;
+    float: right;
+    padding-left: 20px;
+}
+.flex_item_all img{
+    width: 18px;
+    display: block;
+    position: absolute;
+    top:1px;
+    left: 0;
+}
+.flex_item_all span{
+    color:#26C688;
+}
+.my_item_o{
+    text-align: left;
+    color: #666;
+}
+.my_item_t{
+    text-align: right
+}
+.my_cells_left{
+    text-align: right
+}
+.my_panel_access_b{
+    clear: both;
+}
+.orderdetails_page_show{
+    padding: 10px 15px;
+}
+.orderdetails_page_dui{
+    padding-bottom:0;
+    height: 58px;
+}
+.weui_panel_bottom{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}

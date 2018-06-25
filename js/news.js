@@ -1,5 +1,4 @@
-//初始化头部
-light.otherheader.createHeadeer('赛报')
+
 
 //评论框获取焦点，评论变为提交事件
 function getSubmitBtnClick(){
@@ -15,3 +14,8 @@ function gotalkLsitBtnClick(){
 function speaksendClick(){
     //提交代码写在这里
 } 
+
+//返回上一级事件
+goBackClick = function (){
+    window.history.go(-1);
+}
