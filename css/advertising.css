@@ -10,7 +10,7 @@ html,body{
 }
 .yaoqing{
     display: block;
-    width: 180px;
+    width: 160px;
     margin: 0 auto;
     height: 35px;
     line-height: 35px;
@@ -25,19 +25,18 @@ html,body{
     text-align: center;
 }
 .erm{
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     background: url(../img/ewm.png);
-    background-size:100% 100%;
+    background-size: 100% 100%;
     margin: 0 auto;
-    margin-top: 20px;    
+    margin-top: 20px;
+    text-align: center;
+    line-height: 300px;   
 }
 .erm img{
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 0 au;
+    width: 105px;
+    height: 105px;
     margin: 0 auto;
     /* margin-top: 3px; */
-    padding-top: 49px;
 }
