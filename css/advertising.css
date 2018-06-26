@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.advertising_cn{
+    height: 100%;
+    width: 100%;
+    background: url(../img/advertising_bg.jpg);
+    background-size:100% 100%; 
+}
+.yaoqing{
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 9px;
+    color: #fff;
+}
+.my_text{
+    padding-top: 84%;
+    text-align: center;
+}
+.erm{
+    width: 220px;
+    height: 220px;
+    background: url(../img/ewm.png);
+    background-size:100% 100%;
+    margin: 0 auto;
+    margin-top: 20px;    
+}
+.erm img{
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 0 au;
+    margin: 0 auto;
+    /* margin-top: 3px; */
+    padding-top: 49px;
+}
