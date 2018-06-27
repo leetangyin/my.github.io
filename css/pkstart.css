@@ -25,6 +25,7 @@ html,body{
 .pk_countries_guoone{
     width: 40px;
     margin-left: 5px;
+    height: 40px;
 }
 .pk_countries_pk_img{
     margin: 0 15px;
@@ -33,6 +34,7 @@ html,body{
 .pk_countries_guotwo{
     margin-right: 5px;
     width: 40px;
+    height: 40px;
 }
 .pkend_bottom_text{
     text-align: center
@@ -240,4 +242,8 @@ html,body{
 .choose_type{
     border:none;
     background: #eeeeee;
+}
+#choose_num{
+    display: inline-block;
+    width: 10px;
 }

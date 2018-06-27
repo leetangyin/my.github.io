@@ -115,3 +115,13 @@ html,.weui-cell{
 .weui-panel__bd{
     padding-bottom: 100px;
 }
+.over_hidden{
+    overflow: hidden
+}
+my_header{
+    background: #26C688;
+}
+.header .back .my_left{
+    color:#fff;
+}
+

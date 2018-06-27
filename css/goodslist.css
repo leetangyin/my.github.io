@@ -70,6 +70,7 @@ html,body{
     display: block;
     position: absolute;
     top: -2px;
+    width: 18px;
 }
 .goods_bottom{
     color: #777
@@ -78,6 +79,10 @@ html,body{
     position: absolute;
     top: 57px;
     right: 0px;
+}
+.goods_img img{
+    width:90px;
+    height: 50px;
 }
 #load{
     position: fixed;
@@ -104,4 +109,59 @@ html,body{
     position: absolute;
     left: 50%;
     top: 62px;
+}
+#placeholder_left{
+    position: relative;
+}
+#placeholder_right{
+    position: relative;
+}
+.placeholder_span{
+    display: inline-block;
+}
+.placeholder_img_left{
+    width: 17px;
+    display:inline-block;
+    position: absolute;
+    top:20px
+}
+.placeholder_img_left_t{
+    width: 17px;
+    display:inline-block;
+    position: absolute;
+    top:20px
+}
+.placeholder_img_left_c{
+    width: 17px;
+    display: none;
+    position: absolute;
+    top:20px;
+}
+.placeholder_img_left_f{
+    width: 17px;
+    display: none;
+    position: absolute;
+    top:20px;
+}
+.placeholder_right_img_t{
+    width: 17px;
+    display: inline-block;
+    position: absolute;
+    top:20px;
+}
+.placeholder_right_img_c{
+    width: 17px;
+    display:none;
+    position: absolute;
+    top:20px
+}
+.my_wei_grids{
+    background: #fff;
+    padding-bottom: 80px;
+}
+.my_wei_grids_a{
+    width: 50%;
+    padding:0;
+    font-size: 13px;
+    padding: 3px 0 3px 15px;
 }

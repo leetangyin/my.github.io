@@ -1,7 +1,12 @@
+html,body{
+    overflow-x:hidden;
+    overflow-y:hidden
+}
 .row{
     padding: 0;
     margin: 0;
 }
+
 /* 轮播图样式 */
 .swiper-container {
     width: 100%;
@@ -196,4 +201,49 @@
 }
 #quiz_nav .slide-item:first-child{
     color: #26C688;
+}
+.weui_mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.weui-dialog{
+    position: fixed;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.my_hb{
+    width: 150px;
+    height: 150px;
+    background: url(../img/hb.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 153px;
+}
+.c_text{
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+}
+.my_hb_bg{
+    width: 300px;
+    height: 300px;
+}
+.cl_img{
+    position: absolute;
+    top: 133px;
+    width: 26px;
+    right: 67px;
 }

@@ -19,6 +19,7 @@ html,body{
     background-size: 100% 100%;
     color: #fff;
     text-align: center;
+    padding-top: 50px;
 }
 #topup_top p{
     margin-top:10px;
@@ -162,5 +163,9 @@ html,body{
     margin: 0
 }
 #toast{
+    display: none
+}
+
+.my_input{
     display: none
 }
