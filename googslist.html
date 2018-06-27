@@ -5,100 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/goodslist.css" />
 </head>
 <body>
-    <div id="otherheader"></div>
+    <div id="otherheader">
+        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+        <div class="otherheader_text"><span>商品列表</span></div>        
+    </div>
     <div class="weui-flex my_weui_flex">
         <div class="my_lien"></div>
         <div class="weui-flex__item">
-            <div class="placeholder" style="position: relative;" id="placeholder_left">
-                <span style="display: inline-block;">兑换价格</span>
-                <img src="img/top.png"  style="width: 17px;display:inline-block;position: absolute;top:20px">
-                <img src="img/none_chose.png" style="width: 17px;display: none;position: absolute;top:20px;">
-                <img src="img/bottom.png" style="width: 17px;display: none;position: absolute;top:20px;">
+            <div class="placeholder"  id="placeholder_left">
+                <span class="placeholder_span" >兑换价格</span>
+                <img src="img/top.png" class="placeholder_img_left_t">
+                <img src="img/none_chose.png"  class="placeholder_img_left_c">
+                <img src="img/bottom.png" class="placeholder_img_left_f">
             </div>
         </div>
         <div class="weui-flex__item">
-            <div class="placeholder" style="position: relative;" id="placeholder_right">
-                <span style="display: inline-block;">剩余数量</span>
-                <img src="img/none_chose.png" style="width: 17px;display: inline-block;position: absolute;top:20px"> 
-                <img src="img/top.png"  style="width: 17px;display:none;position: absolute;top:20px">
-                <img src="img/bottom.png" style="width: 17px;display: none;position: absolute;top:20px;">              
+            <div class="placeholder"  id="placeholder_right">
+                <spanclass="placeholder_span">剩余数量</span>
+                <img src="img/none_chose.png" class="placeholder_right_img_t"> 
+                <img src="img/top.png" class="placeholder_right_img_c">
+                <img src="img/bottom.png"  class="placeholder_img_left_f" >              
             </div>
         </div>
     </div>
-    <div class="weui-grids" style="background: #fff;padding-bottom: 80px;">
-        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+    <div class="weui-grids my_wei_grids">
+        <a href="googs.html" class="weui-grid my_wei_grids_a">
             <p class="goods_type">世界杯1</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img style="width:90px;height: 50px;" src="img/zuilogo.png"/>
+                <img src="img/zuilogo.png"/>
             </div>
         </a>
         
-        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+        <a href="googs.html" class="weui-grid my_wei_grids_a">
             <p class="goods_type">商品分类</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img style="width:90px;height: 50px;" src="img/zuilogo.png"/>
+                <img src="img/zuilogo.png"/>
             </div>
         </a>  
         
-        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+        <a href="googs.html" class="weui-grid my_wei_grids_a">
             <p class="goods_type">商品分类</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img style="width:90px;height: 50px;" src="img/zuilogo.png"/>
+                <img src="img/zuilogo.png"/>
             </div>
         </a>  
         
-        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+        <a href="googs.html" class="weui-grid my_wei_grids_a">
             <p class="goods_type">商品分类</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img style="width:90px;height: 50px;" src="img/zuilogo.png"/>
+                <img src="img/zuilogo.png"/>
             </div>
         </a>  
         
-        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+        <a href="googs.html" class="weui-grid my_wei_grids_a">
             <p class="goods_type">商品分类</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img  style="width: 18px" src="img/goods_money.png">290000</div>
+            <div class="goods_money"><img src="img/goods_money.png">290000</div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img style="width:90px;height: 50px;" src="img/zuilogo.png"/>
+                <img  src="img/zuilogo.png"/>
             </div>
         </a>  
     </div>
@@ -110,9 +112,4 @@
 </html>
 <!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
-
-<!-- base lib-基础库 end-->
-<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
-<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
-<script src="component/header/otherheader.js"></script>
 <script src="js/goodslist.js"></script>
