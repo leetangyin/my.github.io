@@ -277,3 +277,22 @@ html,body{
     margin: 0 auto;
     color: #d95209
 }
+.qu_feng{
+    color: #d95209;
+    font-size: 31px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.qu{
+    display: none;
+}
+.qu_feng a{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    border-radius: 15px;
+    color: #d95209;
+    font-size: 14px;
+}
