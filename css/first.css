@@ -223,8 +223,8 @@ html,body{
     overflow: hidden;
 }
 .my_hb{
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     background: url(../img/hb.png) no-repeat;
     background-size: 100% 100%;
     padding-top: 40px;
@@ -244,6 +244,6 @@ html,body{
 .cl_img{
     position: absolute;
     top: 133px;
-    width: 26px;
-    right: 67px;
+    width: 28px;
+    right: 38px;
 }
