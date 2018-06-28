@@ -100,22 +100,10 @@
 }
 
 .pk_countries{
-    text-align: center;
     height: 50px;
     line-height: 50px;
 }
-.pk_countries_guoone{
-    width: 40px;
-    margin-left: 5px;
-}
-.pk_countries_pk_img{
-    margin: 0 15px;
-    width: 18px;
-}
-.pk_countries_guotwo{
-    margin-right: 5px;
-    width: 40px;
-}
+
 
 
 .pk_state{
@@ -196,4 +184,41 @@
 }
 #quiz_nav .slide-item:first-child{
     color: #26C688;
+}
+.pk_countries_left{
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pk_countries_right{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pk_countries_guoone{
+    width: 40px;
+    height: 40px;
+}
+.pk_countries_pk_img{
+    width: 18px;
+    margin: 0 15px;
+}
+.pk_countries_guotwo{
+    width: 40px;
+}
+.pk_countries_center{
+    padding: 0;
+    margin: 0;
+}
+.col-xs-3{
+    width: 30%;
+}
+.col-xs-6{
+    width: 40%;
 }
