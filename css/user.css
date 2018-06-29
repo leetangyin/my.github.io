@@ -54,6 +54,10 @@ body{
     border-radius: 3px;
     overflow: hidden;
 }
+.song_img{
+	color: #32CE85;
+	margin: 5px;
+}
 .song_img img{
 	width: 20px;
 	position: relative;
