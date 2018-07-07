@@ -69,7 +69,8 @@ html,body{
 #pkstart_content_but{
     text-align: center;
     background: #FFFFFF;
-    height: 110px;
+    height: 85px;
+    padding-top:18px; 
 }
 .row{
     padding: 0;
