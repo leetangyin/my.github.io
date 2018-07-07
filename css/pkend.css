@@ -276,7 +276,7 @@ html,body{
     width: 24px;
     position: fixed;
     right: 15px;
-    top: 18px;
+    top: 22px;
 }
 .pk_countries_left{
     display: inline-block;
@@ -295,5 +295,13 @@ html,body{
     text-align: left;
 
 }
-
+.my_col-xs-4{
+    position: relative;
+}
+.win{
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    width: 21px;
+}
 
