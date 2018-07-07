@@ -13,6 +13,7 @@ html,body{
 }
 #pkstart_content{
     padding: 15px;
+    padding-bottom: 50px;
 }
 
 
@@ -37,7 +38,8 @@ html,body{
     height: 40px;
 }
 .pkend_bottom_text{
-    text-align: center
+    text-align: center;
+    font-size: 25px;
 }
 .pk_title{
     display: inline-block;
@@ -120,11 +122,11 @@ html,body{
     width: 28px;
 }
 #pkstart_footer{
-    height: 150px;
     width: 100%;
     background: #fff;
     margin-top: 15px;
     padding: 0 15px;
+    padding-bottom: 15px;
 }
 
 #my_mode{
