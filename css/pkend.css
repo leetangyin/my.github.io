@@ -300,7 +300,7 @@ html,body{
 }
 .win{
     position: absolute;
-    right: 18px;
+    right: 0px;
     top: 10px;
     width: 21px;
 }
