@@ -1,0 +1,37 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#poster{
+    height: 100%;
+    width: 100%;
+    background: url(../img/poster_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#poster_logo img{
+    width: 200px;
+    height: 68px;
+}
+#poster_content{
+    text-align: center;
+    color: #fff;
+    font-size: 20px; 
+}
+#user_img{
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    margin: 0 auto;
+}
+.f_b{
+    font-weight: bold
+}
+.user_wei{
+    margin-bottom: 15px;
+}
+#ewm{
+    width: 160px;
+    height: 160px;
+    background: #fff;
+    margin: 15px auto
+}
