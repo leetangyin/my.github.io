@@ -9,8 +9,8 @@ html,body{
     background-size: 100% 100%;
 }
 #poster_logo img{
-    width: 200px;
-    height: 68px;
+    width: 160px;
+    height: 55px;
 }
 #poster_content{
     text-align: center;
@@ -18,8 +18,8 @@ html,body{
     font-size: 20px; 
 }
 #user_img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     background: #fff;
     margin: 0 auto;
 }
@@ -28,10 +28,11 @@ html,body{
 }
 .user_wei{
     margin-bottom: 15px;
+    font-size:18px; 
 }
 #ewm{
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     background: #fff;
     margin: 15px auto
 }
