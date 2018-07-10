@@ -9,8 +9,8 @@ html,body{
     background-size: 100% 100%;
 }
 #poster_logo img{
-    width: 160px;
-    height: 55px;
+    width: 150px;
+    height: 53px;
 }
 #poster_content{
     text-align: center;
@@ -31,8 +31,8 @@ html,body{
     font-size:18px; 
 }
 #ewm{
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     background: #fff;
     margin: 15px auto
 }
