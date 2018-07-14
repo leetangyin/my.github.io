@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: red
+}
+#hw_logo img{
+    width: 133px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+#hw_content{
+    width: 100%;
+    height: 320px;
+    background: url(../img/ling_bg.png) no-repeat;
+    background-size: 110% 110%;
+    background-position:center center;
+    margin: 0 auto;
+    color: #E9C687;
+    text-align: center;
+    margin-top: 15px;
+}
+.hw_titel{
+    padding-top: 40px;
+    font-size: 18px;
+}
+.hw_top_num{
+    font-size: 27px;
+    font-weight: bold;
+}
+.ewm{
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    margin: 0 auto;
+}
+.hw_bottom{
+
+}

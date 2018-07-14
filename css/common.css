@@ -106,7 +106,7 @@ textarea{
 	width:20px
 }
 .my_footer_a_home img:first-child{
-	width: 20px;
+	width: 22px;
 	margin-bottom:4px;
 }
 
@@ -122,30 +122,10 @@ textarea{
 }
 
 .footer_list .footer_list_t{
-    margin-bottom:3px;
-    margin-top: 7px;
+	margin-bottom:4px;
 }
 .footer_list_sai{
 	position: relative;top:-30px
-}
-.my_footer_a_bang img{
-    width: 21px
-}
-.my_footer_sai img{
-    width: 48px;
-    margin-bottom: 8px
-}
-.my_footer_show img{
-    width: 22px
-}
-.my_footer_my .act_img{
-    width: 19px;
-    margin-bottom: 8px
-}
-.my_footer_my .no_act{
-    width: 23px;
-    margin-bottom: 3px;
-    margin-top:8px;
 }
 /* 头部部导航栏样式（有导航 */
 #header{
@@ -181,6 +161,26 @@ textarea{
     font-weight: bold;
     font-size: 16px;
 }
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+#header_nav .slide-item{
+	height: 40px;
+	line-height: 40px;
+    text-align: center;
+    padding: 0 10px
+}
+#header_nav .slide-item span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center
+}
 #header_nav .slide-item:first-child span{
 	border-bottom:2px solid #fff
 }
@@ -207,7 +207,6 @@ textarea{
     width: 100%;
     text-align: left;
     position: fixed;
-    z-index: 2
     
 }
 #otherheader .otherheader_left{
@@ -233,14 +232,11 @@ textarea{
 #otherheader .otherheader_right img{
     width: 24px;
 }
-.otherheader_left_img{
-    width: 11px;
-}
 /* 竞猜头部公共样式 */
 #pkend_header{
     position: fixed;
     top: 0;
-    height: 94px;
+    height: 94;
     background: #26C688;
     width: 100%;
     z-index: 12;
@@ -276,7 +272,11 @@ textarea{
     background:url(../img/pk_name_bg.png) no-repeat;
     background-size:100% 100%; 
     width: 100%;
+    margin-top: 15px;
     line-height: 30px;
+}
+.pkend_bottom_text{
+    font-size: 16px;
 }
 #pk_name{
     text-align: center;
@@ -295,7 +295,8 @@ textarea{
     text-align: center;
     top: 0;
 }
-
-a:link{text-decoration:none ;}
-a:visited {text-decoration:none;}
-a:hover {text-decoration:none ; color:#333;}
+.pkend_results{
+    position: relative;
+    top: 15px;
+}
+a{text-decoration:none;}
