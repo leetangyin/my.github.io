@@ -21,7 +21,7 @@ html, body{
     margin-top: 15px;
 }
 .hw_titel{
-    padding-top: 60px;
+    padding-top: 57px;
     font-size: 27px;
     color: #fff;
     margin-bottom: 15px;
@@ -35,4 +35,8 @@ html, body{
 }
 .hw_bottom{
     margin-top:13px;
+}
+.hw_titel_gt{
+    font-size: 32px;
+    font-weight: bold;
 }
