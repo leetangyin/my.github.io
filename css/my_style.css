@@ -1,4 +1,7 @@
-.menu {}
+html,
+body {
+    background: #fff;
+}
 
 .my_style_menu_titel {
     width: 100%;
@@ -78,4 +81,32 @@ ul {
 
 .my_nav li .my_menu_first_check {
     color: #29A57C;
+}
+
+
+/* 新闻资讯 */
+
+.new_lsit {
+    padding: 0px 10px 0px 10px;
+}
+
+.list-news li {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: #ddd dashed 1px;
+    padding: 10px 0;
+}
+
+.c-title {
+    font-weight: bold;
+    color: #29A57C;
+    margin-top: 15px;
+}
+
+.list-news a {
+    background: url(../img/li-icon.gif) no-repeat;
+    background-position: 3px 4px;
+    padding-left: 12px;
 }
