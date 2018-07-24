@@ -4,8 +4,8 @@
     width: 100%;
     padding: 11px 10px;
     border-bottom: #3ECE9F solid 1px;
+    color: #29A57C;
     font-size: 12px;
-    color: #999;
     clear: both
 }
 
@@ -58,12 +58,6 @@ ul {
     position: absolute;
 }
 
-.drop-down-content li:hover a {}
-
-.my_nav .drop-down:hover .drop-down-content {
-    display: block;
-}
-
 .my_nav li .my_nav_first_a {
     border-radius: 4px;
 }
@@ -80,4 +74,8 @@ ul {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.my_nav li .my_menu_first_check {
+    color: #29A57C;
 }
