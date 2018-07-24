@@ -1,0 +1,71 @@
+.position {
+	width: 100%;
+	padding: 11px 10px;
+	border-bottom: #3ECE9F solid 1px;
+	font-size: 12px;
+	color: #999;
+}
+.position a {
+	padding: 0 3px;
+	color: #999;
+}
+.position a:hover, .position a:active {
+	color: #29A57C;
+}
+.menu {
+	width: 100%;
+	height: 38px;
+	padding: 0 10px;
+	margin-top: 12px;
+	overflow: hidden;
+}
+.menu ul li {
+	float: left;
+	margin: 0 10px;
+}
+.menu ul li a {
+	display: block;
+	height: 32px;
+	padding: 0 15px;
+	background: #f3f3f3;
+	line-height: 32px;
+	text-align: center;
+	color: #333;
+	border-radius: 16px;
+}
+.menu ul li.thisclass a {
+	background: #EAF9FC;
+	color: #29A57C;
+}
+/*在线课程*/
+.list-course {
+	width: 100%;
+	overflow: hidden;
+}
+.list-course ul {
+	width: 100%;
+	padding: 0 5px 7px;
+	overflow: hidden;
+}
+.list-course ul li {
+	float: left;
+	width: 50%;
+	padding: 8px 5px;
+}
+.list-course ul li a {
+	display: block;
+}
+.list-course ul li a img {
+	display: block;
+	width: 100%;
+}
+.list-course ul li a span {
+	display: block;
+	width: 100%;
+	margin-top: 6px;
+	font-size: 14px;
+	color: #333;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
