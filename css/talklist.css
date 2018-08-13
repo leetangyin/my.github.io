@@ -24,6 +24,7 @@
 .talkcontent{
     height: 50px;
     background: #FAFAFA;
+    margin-top: 50px;
 }
 .talkcontent_left{
     float: left;
@@ -83,7 +84,4 @@
 }
 .news_tt{
     line-height: 25px;
-}
-.media_left_my{
-    min-width: 100px;
 }

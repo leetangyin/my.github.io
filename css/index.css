@@ -8,6 +8,28 @@ html,.weui-cell{
     width:100%;
     display: none;
 }
+#index_page_conent{
+	padding-bottom:100px;
+}
+
+.grand span{
+    display: inline-block;
+}
+.grand span:first-child{
+    float: left;
+    color: #1DBE96;
+}
+.grand span:last-child{
+    background: url(../img/pinglun.png) no-repeat;
+    background-size: 100%;
+    display: inline;
+    float: right;
+    width: 80px;
+    text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
 .index_page{
     padding-top: 100px; 
 }
@@ -55,11 +77,10 @@ html,.weui-cell{
     width:100%;
     line-height:40px;
     text-align: left;
-    padding-left:10px;
-    text-align: center; 
-    overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+    padding-left:10px; 
+}
+.my_swiper_text{
+    text-align: center;
 }
 .swiper-wrapper .swiper-slide img{
 	width:100%
@@ -67,61 +88,20 @@ html,.weui-cell{
 .swiper-pagination{
 	text-align:right;
 }
-.slide-box{
-    display: -webkit-box;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling:touch;
-}
-
 #header_nav .slide-item{
-	height: 40px;
-	line-height: 40px;
-    text-align: center;
-    width:25%;
+	width:25%;
 }
-#header_nav .slide-item span{
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: center;
-    text-align: center;
-	overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width:100px;
+.my_wei_hd{
+	position: relative;
+	margin-right: 10px;
 }
-.my_img{
-    width: 80px;
+.my_wei_hd img{
+	width: 80px;
+	display: block;
 }
-.weui-media-box_appmsg .weui-media-box__hd{
-    width: 80px;
+.my_wei_bd p:first-child{
+	margin-bottom:10px;
 }
-.zhanbao{
-    color: #1DBE96;
+.my_wei_bd p:last-child{
+	font-size: 13px;color: #888888;
 }
-.pinlun{
-    background: url(../img/pinglun.png) no-repeat;
-    background-size: 100%;
-    display: inline;
-    float: right;
-    width: 80px;
-    text-align: center;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.weui-panel__bd{
-    padding-bottom: 100px;
-}
-.over_hidden{
-    overflow: hidden
-}
-my_header{
-    background: #26C688;
-}
-.header .back .my_left{
-    color:#fff;
-}
-

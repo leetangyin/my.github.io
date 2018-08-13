@@ -5,99 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/determine.css" />
 </head>
 <body>
-    <div id="otherheader">
-        <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
-        <div class="otherheader_text"><span>兑换确认</span></div>        
-    </div>
-    <div class="orderdetails_page_add">
+    <div id="otherheader"></div>
+    <div class="orderdetails_page_add" style="display: block">
        <div onclick="addArrdClick()"><div class="my_add">+</div><div class="my_add_text">添加地址</div></div>
     </div>
-    <div class="orderdetails_page" id="dete">
-        <div class="weui-cells__title my_wei_title"id="dete_name">收货人:<span></span> 电话:<span></span></div>
-        <div class="weui-cells__title my_wei_title">地址:<span id="det_add"></span></div>
+    <div class="orderdetails_page" id="dete" style="padding: 65px 0 15px 0;display: none">
+        <div class="weui-cells__title" style="margin: 0;" id="dete_name">收货人:<span></span> 电话:<span></span></div>
+        <div class="weui-cells__title" style="margin: 0">地址:<span id="det_add"></span></div>
     </div>
-    <div class="orderdetails_page orderdetails_page_t">
-        <div class="weui-panel weui-panel_access panel_access_titel">
+    <div class="orderdetails_page" style="padding:0">
+        <div class="weui-panel weui-panel_access" style="clear: both;">
             <div class="weui-panel__ft">
-                <div class="weui-panel__hd panel__hd_type">
-                    <img src="img/caidan4.png"/>
+                <div class="weui-panel__hd" style="position: relative; text-indent: 23px;">
+                    <img style="position: absolute;display: block;width: 20px;top:11px" src="img/caidan4.png"/>
                     <strong>中国移动充值卡</strong>
                 </div>    
             </div>
-            <div class="weui-panel__hd my_style_hd"></div>        
+            <div class="weui-panel__hd" style="padding: 0;margin: 0"></div>        
             <div class="weui-panel__bd">
                 <a href="googs.html" class="weui-media-box weui-media-box_appmsg">
                     <div class="weui-media-box__hd">
-                        <img class="weui-media-box__thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAeFBMVEUAwAD///+U5ZTc9twOww7G8MYwzDCH4YcfyR9x23Hw+/DY9dhm2WZG0kbT9NP0/PTL8sux7LFe115T1VM+zz7i+OIXxhes6qxr2mvA8MCe6J6M4oz6/frr+us5zjn2/fa67rqB4IF13XWn6ad83nxa1loqyirn+eccHxx4AAAC/klEQVRo3u2W2ZKiQBBF8wpCNSCyLwri7v//4bRIFVXoTBBB+DAReV5sG6lTXDITiGEYhmEYhmEYhmEYhmEY5v9i5fsZGRx9PyGDne8f6K9cfd+mKXe1yNG/0CcqYE86AkBMBh66f20deBc7wA/1WFiTwvSEpBMA2JJOBsSLxe/4QEEaJRrASP8EVF8Q74GbmevKg0saa0B8QbwBdjRyADYxIhqxAZ++IKYtciPXLQVG+imw+oo4Bu56rjEJ4GYsvPmKOAB+xlz7L5aevqUXuePWVhvWJ4eWiwUQ67mK51qPj4dFDMlRLBZTqF3SDvmr4BwtkECu5gHWPkmDfQh02WLxXuvbvC8ku8F57GsI5e0CmUwLz1kq3kD17R1In5816rGvQ5VMk5FEtIiWislTffuDpl/k/PzscdQsv8r9qWq4LRWX6tQYtTxvI3XyrwdyQxChXioOngH3dLgOFjk0all56XRi/wDFQrGQU3Os5t0wJu1GNtNKHdPqYaGYQuRDfbfDf26AGLYSyGS3ZAK4S8XuoAlxGSdYMKwqZKM9XJMtyqXi7HX/CiAZS6d8bSVUz5J36mEMFDTlAFQzxOT1dzLRljjB6+++ejFqka+mXIe6F59mw22OuOw1F4T6lg/9VjL1rLDoI9Xzl1MSYDNHnPQnt3D1EE7PrXjye/3pVpr1Z45hMUdcACc5NVQI0bOdS1WA0wuz73e7/5TNqBPhQXPEFGJNV2zNqWI7QKBd2Gn6AiBko02zuAOXeWIXjV0jNqdKegaE/kJQ6Bfs4aju04lMLkA2T5wBSYPKDGF3RKhFYEa6A1L1LG2yacmsaZ6YPOSAMKNsO+N5dNTfkc5Aqe26uxHpx7ZirvgCwJpWq/lmX1hA7LyabQ34tt5RiJKXSwQ+0KU0V5xg+hZrd4Bn1n4EID+WkQdgLfRNtvil9SPfwy+WQ7PFBWQz6dGWZBLkeJFXZGCfLUjCgGgqXo5TuSu3cugdcTv/HjqnBTEMwzAMwzAMwzAMwzAMw/zf/AFbXiOA6frlMAAAAABJRU5ErkJggg==" alt="">
+                        <img class="weui-media-box__thumb" src="img/man.jpg" alt="">
                     </div>
                     <div class="weui-media-box__bd">
                         <h5 class="weui-media-box__title">
-                            <span>中国移动1008</span>
-                            <div class="my_type_t">
-                                    <span>1000</span>
-                                    <img src="img/momey.png"/>
+                            <span>赖嘉敏</span>
+                            <div style="float: right;position: relative;padding-left:20px ">
+                                    <span style="display: inline-block;color:#26C688">1000</span>
+                                    <img style="width: 18px;position: absolute;top:4px;left: 0"  src="img/momey.png"/>
                             </div>
                         </h5>
-                        <p class="weui-media-box__desc my_box__desc">x1</p>
+                        <p class="weui-media-box__desc" style="text-align: right">x1</p>
                     </div>
                 </a>
             </div>
-            <div class="weui-panel__hd my_box__desc_b"></div>
+            <div class="weui-panel__hd" style="padding: 0;margin: 0"></div>
         </div>        
     </div>
-    <div class="orderdetails_page orderdetails_page_shan">
+    <div class="orderdetails_page" style="padding: 10px 15px;">
         <div class="weui-flex">
-            <div class="weui-flex__item orderdetails_page_xiao" ><div class="placeholder">商品小计</div></div>
-            <div class="weui-flex__item orderdetails_page_yun">
+            <div class="weui-flex__item" style="text-align: left；color: #666;"><div class="placeholder">商品小计</div></div>
+            <div class="weui-flex__item" style="text-align: right">
                 <div class="placeholder">
-                <div class="orderdetails_page_yang">
-                        <img src="img/momey.png"/>
-                        <span>230000000</span>
+                <div  style="position: relative;float: right;padding-left: 20px;">
+                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
+                        <span style="color:#26C688;">230000000</span>
                 </div>
             </div>
         </div>
         </div>
         <div class="weui-flex">
-            <div class="weui-flex__item my_style_yun"><div class="placeholder">运费</div></div>
-            <div class="weui-flex__item my_style_yun_right">
-                <div class="placeholde my_style_yun_placeholde">
-                <div class="my_style_yun_img">
-                     <img  src="img/momey.png"/>
-                    <span>230000000</span>
+            <div class="weui-flex__item" style="text-align: left"><div class="placeholder">运费</div></div>
+            <div class="weui-flex__item" style="text-align: right">
+                <div class="placeholder" style="position: relative;">
+                <div  style="position: relative;float: right;padding-left: 20px;">
+                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
+                        <span style="color:#26C688;">230000000</span>
                 </div>
             </div>
         </div>
         </div>
         <div class="weui-flex">
-            <div class="weui-flex__item my_style_yun"><div class="placeholder">实付积分（含运费）</div></div>
-            <div class="weui-flex__item my_style_yun_right">
-                <div class="placeholder my_style_yun_placeholde">
-                <div class="my_style_yun_img">
-                        <img src="img/momey.png"/>
-                        <span>230000000</span>
+            <div class="weui-flex__item" style="text-align: left"><div class="placeholder">实付积分（含运费）</div></div>
+            <div class="weui-flex__item" style="text-align: right">
+                <div class="placeholder" style="position: relative;">
+                <div  style="position: relative;float: right;padding-left: 20px;">
+                        <img style="width: 18px;display: block;position: absolute;top:1px;left: 0;" src="img/momey.png"/>
+                        <span style="color:#26C688;">230000000</span>
                 </div>
                 </div>
             </div>
         </div>                
     </div>
-    <div class="orderdetails_page orderdetails_page_b">
-        <div class="weui-cells__title my_wei_title">兑换编号 13800138000</div>
-        <div class="weui-cells__title my_wei_title">创建时间 2018-05-01 17:20:10</div>
-        <div class="weui-panel__hd my_style_add"></div>        
+    <div class="orderdetails_page" style="padding-bottom:0;height: 58px;">
+        <div class="weui-cells__title" style="margin: 0;">兑换编号 13800138000</div>
+        <div class="weui-cells__title" style="margin: 0">创建时间 2018-05-01 17:20:10</div>
+        <div class="weui-panel__hd" style="padding: 0;margin: 0;margin-top: 15px;"></div>        
     </div>
     <div style="display: none" id="my_page_buttom">
         <div class="weui-mask weui-animate-fade-in"></div>
-        <div class="weui-picker weui-animate-slide-up weui-animate-slide-up_my">
-            <div class="weui-picker__bd my_picker__bd_h">
+        <div class="weui-picker weui-animate-slide-up" style="z-index: 9999999;">
+            <div class="weui-picker__bd" style="height:210pxs">
             <div class="weui-picker__group">
                 <div class="weui-picker__mask" >
-                    <p  class="my_add_addr">添加收货地址</p>
-                    <div class="weui-cells weui-cells_form my_clels_form">
+                    <p style="padding: 15px">添加收货地址</p>
+                    <div class="weui-cells weui-cells_form" style="margin-top: 0">
                         <div class="weui-cell">
                             <div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
                             <div class="weui-cell__bd">
@@ -113,35 +111,41 @@
                         <div class="weui-cell">
                             <div class="weui-cell__hd"><label class="weui-label">收货地址</label></div>
                             <div class="weui-cell__bd">
-                                <textarea class="weui-input my_wei_input" rows="3"  type="txt" placeholder="填入详细地址包括省市区门牌号"></textarea>
+                                <textarea class="weui-input" rows="3" style="max-width: 95%;height: 50px;" type="txt" placeholder="填入详细地址包括省市区门牌号"></textarea>
                             </div>
                         </div>                                                                        
                     </div>
                 </div>
             </div>
             </div>
-            <div class="weui-picker__hd my_wei_but_g">
-                <a onclick="cancelClick()" class="my_wei_but_o" style="" href="javascript:;" data-action="cancel" class="weui-picker__action">取消</a>
-                <a  onclick="successfulClick()" class="my_wei_but_t"  href="javascript:;" data-action="select" class="weui-picker__action" id="weui-picker-confirm">确定</a>
+            <div class="weui-picker__hd" style="padding:0;margin:0;text-align:center">
+                <a onclick="cancelClick()" style="color:#888;background-color:#EEEEEE;text-align:center" href="javascript:;" data-action="cancel" class="weui-picker__action">取消</a>
+                <a  onclick="successfulClick()" style="color:#fff;background-color:#30CE81;text-align:center" href="javascript:;" data-action="select" class="weui-picker__action" id="weui-picker-confirm">确定</a>
             </div>            
         </div>
         </div>
-        <div id="toast">
+        <div id="toast" style="display: none;">
             <div class="weui-mask_transparent"></div>
             <div class="weui-toast">
                 <i class="weui-icon-success-no-circle weui-icon_toast"></i>
                 <p class="weui-toast__content">兑换成功，等待收货</p>
             </div>
         </div>
-        <div id="toast_add">
+        <div id="toast_add" style="display: none;">
             <div class="weui-mask_transparent"></div>
             <div class="weui-toast">
-                    <i class="weui-icon-cancel weui-icon-cancel_s"></i>
+                    <i class="weui-icon-cancel" style="color: #cccccc;font-size: 34px;margin:23px 0 10px 0 "></i>
                 <p class="weui-toast__content" id="toast_text">请填收货地址</p>
             </div>
         </div>
     <div id="footer" onclick="showshClick()">确定</div>
 </body>
 </html>
+<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
+
+<!-- base lib-基础库 end-->
+<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
+<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
+<script src="component/header/otherheader.js"></script>
 <script src="js/determine.js"></script>

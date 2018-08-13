@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">    
     <title>世界杯</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="third/weiui/weui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="third/swiper/swiper.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
@@ -13,22 +14,23 @@
 <body>
     <div id="mallheader">
         <div id="otherheader">
-            <div class="otherheader_left" onclick="goBackClick()"><img src="img/left.png" class="otherheader_left_img"></div>
+            <div class="otherheader_left"  onclick="goBackClick()"><img src="img/left.png" style="width:11px"></div>
             <div class="otherheader_text"><span>商城</span></div>
             <div>
-                <div class="weui-cell my_wei_cell_top">
-                    <div class="weui-cell__hd my_cell_hd_top">
-                        <img src="img/user_img1.png">
+                <div class="weui-cell" style="background: #fff;position: relative;">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="img/man.jpg" style="width: 45px;display: block">
                     </div>
                     <div class="weui-cell__bd">
                         <p>天下足球</p>
-                        <p class="user_name">
-                            <img src="img/goods_money.png">
-                            <span>12123</span>
+                        <p style="font-size: 13px;color: #888888;position: relative;text-indent: 12px;">
+                            <img src="img/goods_money.png" style="width: 20px;display: block;position: absolute">
+                            <span style="display: inline-block;">12123</span>
                         </p>
                     </div>
+                    <!-- href="order.html" -->
                     <div class="my_well_right">
-                        <a class="my_top_dui_but" href="order.html">兑换记录</a>
+                        <a style="width: 100%;height:100%;display: inline-block;color: #fff;">兑换记录</a>
                     </div>
                 </div> 
             </div>
@@ -39,62 +41,64 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div>
-                            <img src="img/nav1.png">
+                            <img src="img/man.jpg" alt="First slide" style="width: 100%;">
                             <div class="my_swiper_bg"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            <img src="img/nav1.png">
+                            <img src="img/man.jpg" alt="First slide" style="width: 100%;">
                             <div class="my_swiper_bg"></div>
                         </div>                            
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            <img src="img/nav1.png">
+                            <img src="img/man.jpg" alt="First slide" style="width: 100%;">
                             <div class="my_swiper_bg"></div>
                         </div>                            
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            <img src="img/nav1.png">
+                            <img src="img/man.jpg" alt="First slide" style="width: 100%;">
                             <div class="my_swiper_bg"></div>
                         </div>                            
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination" style="text-align:center;"></div>
             </div>
         </div>
     <div id="quiz_nav" >
         <div class="slide-box">
                 <div class="slide-item">
                     <a href="googslist.html">
-                        <div><img src="img/user_img1.png"></div>
-                        <div class="nav_text">世界杯</div>
+                        <div><img src="img/man.jpg" style="width: 40px"></div>
+                        <div>童鞋一</div>
                     </a>
                 </div> 
                 <div class="slide-item">
                     <a href="googslist.html">
-                        <div><img src="img/user_img1.png"></div>
-                        <div>世界杯2</div>
+                        <div><img src="img/man.jpg" style="width: 40px"></div>
+                        <div>童鞋二</div>
                    </a> 
                 </div>
                 <div class="slide-item">
                     <a href="googslist.html">
-                    <div><img src="img/user_img1.png"></div>
-                    <div>世界杯3</div>
+                    <div><img src="img/man.jpg" style="width: 40px"></div>
+                    <div>童鞋三</div>
                     </a>
                 </div>                
                 <div class="slide-item">
                     <a href="googslist.html">
-                    <div><img src="img/user_img1.png"></div>
-                    <div>世界杯4</div>
+                    <div><img src="img/man.jpg" style="width: 40px"></div>
+                    <div>童鞋四</div>
                     </a>
                 </div>
                 <div class="slide-item">
                     <a href="googslist.html">
-                    <div><img src="img/user_img1.png"></div>
-                    <div>世界杯5</div>
+                    <div><img src="img/man.jpg" style="width: 40px"></div>
+                    <div>童鞋五</div>
                     </a>
                 </div>                
         </div>
@@ -102,62 +106,78 @@
     <div id="recommended">
         —— 推荐商品 ——
     </div>
-    <div class="weui-grids my_wei_grids">
-        <a href="googs.html" class="weui-grid my_wei_grids_d">
-            <p class="goods_type">商品大类商品大类商品大类商品大类商品大类商品大类商品大类商品大类</p>
+    <div class="weui-grids" style="background: #fff;">
+        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+            <p class="goods_type">赖嘉敏</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img  src="img/zuilogo.png"/>
+                <img style="width:90px;height: 50px;" src="img/man.jpg"/>
             </div>
         </a>
         
-        <a href="googs.html" class="weui-grid my_wei_grids_d">
-            <p class="goods_type">商品分类</p>
+        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+            <p class="goods_type">赖嘉敏</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img src="img/zuilogo.png"/>
+                <img style="width:90px;height: 50px;" src="img/man.jpg"/>
             </div>
         </a>  
         
-        <a href="googs.html" class="weui-grid my_wei_grids_d">
-            <p class="goods_type">商品分类</p>
+        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+            <p class="goods_type">赖嘉敏</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img src="img/zuilogo.png"/>
+                <img style="width:90px;height: 50px;" src="img/man.jpg"/>
             </div>
-        </a>
+        </a>  
         
-        <a href="googs.html" class="weui-grid my_wei_grids_d">
-            <p class="goods_type">商品分类</p>
+        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+            <p class="goods_type">赖嘉敏</p>
             <h3 class="goods_name">花费充值卡1888元</h3>
             <p class="goods_value">价值￥99</p>
-            <div class="goods_money"><img src="img/goods_money.png"><strong>290000</strong></div>
+            <div class="goods_money"><img style="width: 18px" src="img/goods_money.png"><strong>290000</strong></div>
             <div class="goods_bottom">
                 <p>剩余49份</p>
                 <p>截止到2018.12.31</p>
             </div>
             <div class="goods_img">
-                <img src="img/zuilogo.png"/>
+                <img style="width:90px;height: 50px;" src="img/man.jpg"/>
             </div>
-        </a>          
+        </a>  
+        
+        <a href="googs.html" class="weui-grid" style="width: 50%;padding:0;font-size: 13px;padding: 3px 0 3px 15px;">
+            <p class="goods_type">商品分类</p>
+            <h3 class="goods_name">花费充值卡1888元</h3>
+            <p class="goods_value">价值￥99</p>
+            <div class="goods_money"><img  style="width: 18px" src="img/goods_money.png">290000</div>
+            <div class="goods_bottom">
+                <p>剩余49份</p>
+                <p>截止到2018.12.31</p>
+            </div>
+            <div class="goods_img">
+                <img style="width:90px;height: 50px;" src="img/man.jpg"/>
+            </div>
+        </a>         
+
+
     </div>
     <div class="weui-loadmore" id="load">
         <i class="weui-loading"></i>
@@ -165,6 +185,13 @@
     </div>
 </body>
 </html>
+<!-- third-第三方库(必须) begin -->
 <script src="third/jquery/jquery.min.js"></script>
 <script src="third/swiper/swiper.min.js"></script>
+<script src="component/footer/footer.js"></script>
+
+
+<!-- base lib-基础库 end-->
+<script src="lib/namespace.js"></script><!--namespace 全局匿名空间封装  -->
+<script src="lib/utlis.js"></script><!--untils 公共函数封装，包括验证方法 -->
 <script src="js/mall.js"></script>

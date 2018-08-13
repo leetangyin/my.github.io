@@ -4,16 +4,12 @@ html,body{
 #otherheader{
 	z-index: 999;
 }
-.myindex{
-	padding-top: 50px
-}
 #myindex_img{
 	padding: 20px 0;
 	background-color: #32CE85;
 	width: 100%;
 	text-align: center;
 	color: #fff;
-	
 }
 #myindex_img img{
 	width: 60px;
@@ -131,7 +127,7 @@ html,body{
 		padding: 0 5px;
 		margin-bottom: 12px;
 		font-size: 13px;
-		height: 85px;
+		height: 85;
 		padding-top: 23px;
 	}
 	.my_type_pk{
@@ -170,58 +166,4 @@ html,body{
     color: #fff;
     font-size:14px; 
 	
-}
-.user_name{
-	margin-top:10px
-}
-.shenlv{
-	color: #32CE85;
-	margin-top: 15px
-}
-
-.mypk_list .placeholder .can_color{
-	color:#ccc
-}
-.can_mar{
-	margin-bottom: 0px
-}
-.my_flex{
-	background-color:#fff;
-	position:relative;
-	margin-bottom: 7px;
-}
-.my_type_pk_top{
-	padding-top:13px;
-}
-.my_type_pk_top_all{
-	position: relative;
-}
-.my_type_pk_top_span_o{
-	display:inline-block;
-	margin-right:10px;
-	max-width:48px;
-}
-.my_type_pk_top_span_t{
-	display:inline-block;
-	position:absolute;
-	right:15px;
-}
-.my_type_pk_top_span_t img{
-	width: 16px
-}
-.my_list_b{
-	background-color:#fff;
-	margin-bottom: 7px;
-}
-.my_type_pk_th{
-	padding-top:3px
-}
-.mypk_list  .my_type_pk_co{
-	padding-top:8px;
-	color:#32CE85;
-	font-size: 16px;
-}
-.my_placeholder_shu{
-	padding-top:8px;
-	font-size: 16px;
 }

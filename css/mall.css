@@ -5,6 +5,7 @@ html,body{
 .swiper-container {
     width: 100%;
     height: 170px;
+    padding-top: 150px
 }
 
 .swiper-slide {
@@ -24,12 +25,6 @@ html,body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-.swiper-slide img{
-    width: 100%
-}
-.slide-item img{
-    width: 40px
 }
 #otherheader{
     z-index: 9999;
@@ -80,21 +75,14 @@ html,body{
     line-height: 50px;
 }
 .goods_type{
-	overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
+
 }
 .goods_name{
     font-size: 12px;
     margin-top: 10px;
-    overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
 }
 .goods_value{
-	overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
+
 }
 .goods_money{
     margin: 17px 0;
@@ -102,15 +90,11 @@ html,body{
     position: relative;
     color: #32CE85;
     text-indent: 20px;
-    overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
 }
 .goods_money img{
     display: block;
     position: absolute;
     top: -2px;
-    width: 18px
 }
 .goods_bottom{
     color: #777
@@ -120,66 +104,10 @@ html,body{
     top: 57px;
     right: 0px;
 }
-.goods_img img{
-    width:90px;
-    height: 50px;
-}
 #load{
     position: fixed;
     bottom:60px
     ;text-align:center;
     width:100%;
     display: none;
-}
-.my_wei_cell_top{
-    background: #fff;
-    position: relative;
-}
-.my_cell_hd_top{
-    position: relative;
-    margin-right: 10px;
-}
-.my_cell_hd_top img{
-    width: 45px;
-    display: block
-}
-.user_name{
-    font-size: 13px;
-    color: #888888;
-    position: relative;
-    text-indent: 12px;
-}
-.user_name img{
-    width: 20px;
-    display: block;
-    position: absolute
-}
-.user_name span{
-    display: inline-block
-}
-.my_top_dui_but{
-    width: 100%;
-    height:100%;
-    display: inline-block;
-    color: #fff;
-}
-#quiz_nav img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.my_wei_grids{
-    background: #fff;
-    padding-bottom: 80px;
-}
-.my_wei_grids_d{
-    width: 50%;
-    padding:0;
-    font-size: 13px;
-    padding: 3px 0 3px 15px;
-}
-.nav_text{
-	overflow: hidden;
-	white-space: nowrap;
-    text-overflow: ellipsis;
 }

@@ -9,7 +9,6 @@ html,body{
 }
 .mypk{
     padding-bottom: 55px;
-    padding-top: 61px
 }
 .mypk_titel{
     font-size: 16px;
@@ -48,52 +47,4 @@ html,body{
     bottom: 0px;
     color: #fff;
     background: #32CF85;
-}
-
-.mypk_list .placeholder .can_color{
-	color:#ccc
-}
-.can_mar{
-	margin-bottom: 0px
-}
-.my_flex{
-	background-color:#fff;
-	position:relative;
-    margin-bottom: 7px;
-    padding-top: 20px
-}
-.my_type_pk_top{
-	padding-top:13px;
-}
-.my_type_pk_top_all{
-	position: relative;
-}
-.my_type_pk_top_span_o{
-	display:inline-block;
-	margin-right:10px;
-	max-width:48px;
-}
-.my_type_pk_top_span_t{
-	display:inline-block;
-	position:absolute;
-	right:15px;
-}
-.my_type_pk_top_span_t img{
-	width: 16px
-}
-.my_list_b{
-	background-color:#fff;
-	margin-bottom: 7px;
-}
-.my_type_pk_th{
-	padding-top:3px
-}
-.mypk_list  .my_type_pk_co{
-	padding-top:8px;
-	color:#32CE85;
-	font-size: 16px;
-}
-.my_placeholder_shu{
-	padding-top:8px;
-	font-size: 16px;
 }

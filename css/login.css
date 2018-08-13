@@ -4,9 +4,6 @@ html,body{
 .myclose{
     padding: 0 10px;
 }
-.myclose img{
-    width: 20px
-}
 .myclose span{
     display: inline-block;
     font-size: 20px;
@@ -61,6 +58,8 @@ html,body{
     line-height: 40px;
     background: #2FCE81;
 }
+#otherlogin{
+}
 #yzcode{
     display: block;
     margin:0 auto;
@@ -71,79 +70,5 @@ html,body{
     background: #2FCE81;
 }
 #loginpage{
-    display: block;
-}
-.my_padding_c{
-    clear: both;
-    
-}
-.my_padding_t{
-    padding-top: 25%
-}
-.my_xs_2{
-    height: 50px;
-    line-height: 50px;
-}
-.my_xs_f_o{
-    height: 70px;
-    line-height: 70px;
-    text-align:left;
-    padding:0
-}
-.my_xs_f_t{
-    height: 70px;line-height: 70px;
-}
-.my_xs_f_l{
-    text-align: center
-}
-.my_row_s{
-    margin-top:12px
-}
-.my_row_b{
-    border: none;
-}
-.my_row_but{
-    border: none;
-    margin-top:15px
-}
-.my_default_but{
-    width: 70%;
-    text-align: center;
-    height:50px;
-    font-size:16px;
-    color:#111
-}
-.myclose_p{
-    padding-left: 7px;
-}
-.my_img_w{
-    width: 25px;
-}
-.forget_content_t{
-    padding-top: 25%;
-    clear: both
-}
-
-#login_t{
     display: none;
-}
-#forgetpage{
-    display: none;
-}
-#forgetpage_t{
-    display: none;
-}
-.my_row_line{
-    margin-top:12px;
-    margin-bottom:30px
-}
-.my_row_margin{
-    border: none;
-    margin-top:15px
-}
-.my_yzm_but_m{
-    margin-top:12px
-}
-.my_zhuce_textg{
-    padding-left:8px;
 }

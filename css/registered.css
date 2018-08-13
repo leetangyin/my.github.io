@@ -3,7 +3,6 @@ html,body{
 }
 .my_registered{
     padding: 0 10px;
-    padding-left: 8px
 }
 .my_registered span{
     display: inline-block;
@@ -61,25 +60,4 @@ html,body{
 }
 .terms a{
     color:#44D38E;
-}
-.my_registered img{
-    width: 25px;
-}
-.col-xs-2_my{
-    height: 50px;
-    line-height: 50px;
-}
-.my_row_mr_se{
-    margin-top:12px
-}
-.my_but_row{
-    border: none;
-    margin-top: 30px
-}
-.my_but_sub{
-    width: 70%;
-    text-align: center;
-    height:50px;
-    font-size:16px;
-    color:#111
 }
