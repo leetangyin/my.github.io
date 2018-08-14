@@ -48,12 +48,12 @@
                  '\n地址：' + obj.formattedAddress + 
                  '\n地址信息：' + JSON.stringify(obj.addressComponent, null, 4);
                  var testfan =  obj.accuracy || '尼玛高德地图定的位，不准不赖我'
-                 document.getElementById('test1').append( '用户赖嘉敏：经纬度：' + obj.position);
-                 document.getElementById('test2').append('用户赖嘉敏：精度范围：' + testfan);
-                 document.getElementById('test3').append('用户赖嘉敏：定位结果的来源' + obj.location_type);
-                 document.getElementById('test4').append('用户赖嘉敏：状态信息' + obj.info);
-                 document.getElementById('test4').append('用户赖嘉敏：地址' + obj.formattedAddress);
-                 document.getElementById('test6').append('用户赖嘉敏：地址信息' + JSON.stringify(obj.addressComponent, null, 4));
+                 document.getElementById('test1').append( '用户：经纬度：' + obj.position);
+                 document.getElementById('test2').append('用户：精度范围：' + testfan);
+                 document.getElementById('test3').append('用户：定位结果的来源' + obj.location_type);
+                 document.getElementById('test4').append('用户：状态信息' + obj.info);
+                 document.getElementById('test4').append('用户：地址' + obj.formattedAddress);
+                 document.getElementById('test6').append('用户：地址信息' + JSON.stringify(obj.addressComponent, null, 4));
      }
  
      function onError(obj) {
