@@ -6,16 +6,20 @@
     <title>获取地理位置</title>
     <style type="text/css">#iCenter{width:300px; height: 280px; border:1px #000 solid;margin:20px auto;}</style>    
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=e45a565e8325bb4c2796a62a03126b2d"></script>
+    <style>
+        .testclass{
+            color: lightsalmon;
+        }
+    </style>
  </head>
- <body>
- 
- <div id="iCenter"></div>
- <div id="test1"></div>
- <div id="test2"></div>
- <div id="test3"></div>
- <div id="test4"></div>
- <div id="test5"></div>
- <div id="test6"></div>
+ <body style="background: #000">
+     <h1 class="testclass">屌丝李棠寅出品</h1>
+ <div class="testclass" id="test1"><span>经纬度：</span></div>
+ <div class="testclass" id="test2"><span>精度范围：</span></div>
+ <div class="testclass" id="test3"><span>定位结果的来源：</span></div>
+ <div class="testclass" id="test4"><span>详细地址：</span></div>
+ <div class="testclass" id="test6"><span>地址信息：</span></div>
+ <div class="testclass" id="iCenter"></div>
  <script type="text/javascript">
      var mapObj = new AMap.Map('iCenter');
    
@@ -48,12 +52,12 @@
                  '\n地址：' + obj.formattedAddress + 
                  '\n地址信息：' + JSON.stringify(obj.addressComponent, null, 4);
                  var testfan =  obj.accuracy || '尼玛高德地图定的位，不准不赖我'
-                 document.getElementById('test1').append( '用户：经纬度：' + obj.position);
-                 document.getElementById('test2').append('用户：精度范围：' + testfan);
-                 document.getElementById('test3').append('用户：定位结果的来源' + obj.location_type);
-                 document.getElementById('test4').append('用户：状态信息' + obj.info);
-                 document.getElementById('test4').append('用户：地址' + obj.formattedAddress);
-                 document.getElementById('test6').append('用户：地址信息' + JSON.stringify(obj.addressComponent, null, 4));
+                 document.getElementById('test1').append(  obj.position);
+                 document.getElementById('test2').append(testfan);
+                 document.getElementById('test3').append(obj.location_type + '个人定位');
+                 document.getElementById('test4').append(obj.info.slice(7,obj.info.length));
+                 document.getElementById('test4').append(obj.formattedAddress);
+                 document.getElementById('test6').append(JSON.stringify(obj.addressComponent, null, 4));
      }
  
      function onError(obj) {
