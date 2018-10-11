@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="css/common.css">
     <script src="js/bootstrap.min.js"></script>
     <style>
- 
-
-
-
         html,
         body {
             width: 100%;
@@ -52,7 +48,7 @@
             font-size: 48px;
         }
 
-        #banner { 
+        #banner {
             /* height: calc(100% - 60px);    */
             height: 100%;
             background: url(img/truck.jpg) no-repeat;
@@ -61,17 +57,94 @@
             color: #fff;
             box-sizing: border-box;
         }
-        .banner_content{
-            padding-top:19%;
+
+        .banner_content {
+            padding-top: 19%;
         }
-        .banner_text_titel{
-            font-size:60px;
+
+        .banner_text_titel {
+            font-size: 60px;
             text-align: left;
             text-indent: 45px;
         }
-        .banner_text_en{
-            font-size: 45px; 
+
+        .banner_text_en {
+            font-size: 45px;
             text-indent: 45px;
+        }
+
+        #server {
+            background: #f7f7f7
+        }
+
+        #weserver {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        #weserver .thumbnail {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            border: none;
+            background: #f7f7f7
+        }
+
+        .s_img {
+            width: 75%;
+        }
+
+        #difference {
+            max-width: 900px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+            clear: both
+        }
+
+        #difference .row {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 40px;
+            line-height: 80px;
+        }
+
+        #weserver .caption h3 {
+            text-align: center;
+        }
+
+        #guanyu p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        #footer {
+            height: 420px;
+            width: 100%;
+            background: url(img/foot_bg.jpg) no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .my_difference_ico {
+            height: 80px;
+            background: url(img/right.png) no-repeat;
+            background-size: 30%;
+            background-position: center center;
+            position: relative;
+            top: -28px;
+        }
+        #footer .thumbnail {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            border: none;
+            background: #f7f7f7
+        }
+        #footer  p{
+            text-align: center;
+            color: #fff;
         }
     </style>
 </head>
@@ -103,20 +176,126 @@
         </div>
     </nav>
     <div id="banner" class="img-responsive" alt="Responsive image">
-
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-md-12">
                     <div class="banner_content">
-                    <p class="banner_text_titel">总厨网，一站式采购平台</p>
-                    <p class="banner_text_titel">让餐饮没有难做的生意</p>
-                    <p class="banner_text_en">There is no hard business</p>
-                    <div>
+                        <p class="banner_text_titel">总厨网，一站式采购平台</p>
+                        <p class="banner_text_titel">让餐饮没有难做的生意</p>
+                        <p class="banner_text_en">There is no hard business</p>
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="guanyu">
+        <h1 style="text-align:center;margin: 60px 0;color: #ff8821;margin-top: 0px;padding-top:80px ">• 关于总厨网 •</h1>
+        <p>提供一站式食材供应链服务，打造“透明”、“靠谱”的食材管家。</p>
+    </div>
+    <div id="server">
 
-        <!-- <img style="width:100%;    padding: 105px 7%;" src="img/truck.jpg"> -->
+        <div id="weserver">
+            <div>
+                <h1 style="text-align:center;margin: 60px 0;color: #ff8821;margin-top: 0px;padding-top:80px ">• 我们的服务 •</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img class="s_img" src="img/server_01.jpg" alt="...">
+                            <div class="caption">
+                                <h3>采购管理</h3>
+                                <p>智能采购，供货商管理，采购订单，采购入库,餐厅必备食材360度全方位供应，满足你的个性化采购需求，无需再去超市补货</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img class="s_img" src="img/server_02.jpg" alt="...">
+                            <div class="caption">
+                                <h3>客户运营</h3>
+                                <p>商机管理，客户管理，促销管理，营销工具,为你的餐厅提供专业的互联网营销支持，互联网+不是梦</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img class="s_img" src="img/server_03.jpg" alt="...">
+                            <div class="caption">
+                                <h3>库存管理</h3>
+                                <p>入库/出库/盘点，仓库调拨，扫码出库，发货核验,流水电子账单每日出具，价格透明，分店账目明细一目了然，时刻掌握后厨损耗情况</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img class="s_img" src="img/server_04.jpg" alt="...">
+                            <div class="caption">
+                                <h3>品牌餐饮</h3>
+                                <p>私人定制后厨标准化流程，一对一服务，尽享VIP尊贵体</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="difference">
+        <div class="container-fluid">
+            <div>
+                <h1 style="text-align:center;margin: 60px 0;color: #ff8821;margin-top: 0px;padding-top:80px ">• 我们和传统供应企业的区别
+                    •
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-5" style="font-weight: 400;    line-height: 28px;">我们不是采购经理的帮手</div>
+                <div class="col-md-2">
+                    <div class="my_difference_ico"></div>
+                </div>
+                <div class="col-md-5" style="color: #4d5269!important; font-weight: 600!important;    line-height: 28px;">我们是老板的食材管家</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" style="font-weight: 400;    line-height: 28px;">我们卖的不是食材本身</div>
+                <div class="col-md-2">
+                    <div class="my_difference_ico"></div>
+                </div>
+                <div class="col-md-5" style="color: #4d5269!important; font-weight: 600!important;    line-height: 28px;">我们给客户提供有效的解决方案</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" style="font-weight: 400;    line-height: 28px;">我们不做客户食材端利润的获取者</div>
+                <div class="col-md-2">
+                    <div class="my_difference_ico"></div>
+                </div>
+                <div class="col-md-5" style="color: #4d5269!important; font-weight: 600!important;    line-height: 28px;">我们与顾客一起共创终端价值</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" style="font-weight: 400;    line-height: 28px;">总厨网，一站式采购平台</div>
+                <div class="col-md-2">
+                    <div class="my_difference_ico"></div>
+                </div>
+                <div class="col-md-5" style="color: #4d5269!important; font-weight: 600!important;    line-height: 28px;">手机上的后厨仓库</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container-fluid" style="margin:0 auto">
+            <div class="row">
+                <div class="col-md-12" style="margin:0 auto">
+                    <div class="thumbnail" style="background:none;margin: 0 auto;text-align: center;margin-top: 100px;">
+                        <img src="img/zcw1.jpg">
+                        <div class="caption">
+                            <p>总厨网</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                        <p>copyright © 2015-2018 深圳市当下云厨网络科技有限公司 400-661-3029
+                        深圳市前海深港合作区前湾一路1号A栋201室 粤ICP备17051649号-2</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -130,20 +309,27 @@
     //     } })
 </script>
 <style>
-
-        @media only screen and (max-width: 736px) {
-            .banner_text_titel {
-                font-size: 26px;
-                text-align: center;
-            }
-            .banner_text_en {
-                font-size: 18px;
-                text-align: center;
-            }
-            .banner_content{
-                padding-top: 85%
-            }
+    @media only screen and (max-width: 736px) {
+        .banner_text_titel {
+            font-size: 26px;
+            text-align: center;
+            text-indent: 0px
         }
-        
-
+        .banner_text_en {
+            font-size: 18px;
+            text-align: center;
+            text-indent: 0px
+        }
+        .banner_content {
+            padding-top: 85%
+        }
+        .my_difference_ico {
+            height: 80px;
+            background: url(img/right.png) no-repeat;
+            background-size: 15%;
+            background-position: center center;
+            position: relative;
+            top: -5px
+        }
+    }
 </style>
