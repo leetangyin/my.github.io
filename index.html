@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +19,7 @@
             width: 100%;
             height: 100%;
             padding: 0;
-            margin: 0
+            margin: 0;
         }
 
         .logo {
@@ -31,7 +32,7 @@
             background: #fff;
         }
 
-        .nav>li a {
+        .nav > li a {
             font-size: 16px;
             height: 60px;
             line-height: 60px;
@@ -74,7 +75,7 @@
         }
 
         #server {
-            background: #f7f7f7
+            background: #f7f7f7;
         }
 
         #weserver {
@@ -82,12 +83,12 @@
             margin: 0 auto;
         }
 
-        #weserver .thumbnail {
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            border: none;
-            background: #f7f7f7
-        }
+            #weserver .thumbnail {
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                border: none;
+                background: #f7f7f7;
+            }
 
         .s_img {
             width: 75%;
@@ -98,14 +99,14 @@
             text-align: center;
             margin: 0 auto;
             font-size: 16px;
-            clear: both
+            clear: both;
         }
 
-        #difference .row {
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 40px;
-            line-height: 80px;
-        }
+            #difference .row {
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 40px;
+                line-height: 80px;
+            }
 
         #weserver .caption h3 {
             text-align: center;
@@ -137,15 +138,31 @@
             position: relative;
             top: -28px;
         }
+
         #footer .thumbnail {
             box-shadow: none;
             -webkit-box-shadow: none;
             border: none;
-            background: #f7f7f7
+            background: #f7f7f7;
         }
-        #footer  p{
+
+        #footer p {
             text-align: center;
             color: #fff;
+        }
+        .service-icon {
+    /* border: 3px solid #999999; */
+    background: #62B134;
+    line-height: 85px;
+    color: #fff;
+    height: 85px;
+    width: 85px;
+    border-radius: 100%;
+        text-align: center;
+    margin:0 auto
+}
+        .service-icon img{
+            width:75%
         }
     </style>
 </head>
@@ -181,8 +198,8 @@
             <div class="row ">
                 <div class="col-md-12">
                     <div class="banner_content">
-                            <p class="banner_text_titel">总厨网</p>
-                        <p class="banner_text_titel">一站式采购平台</p>
+                        <p class="banner_text_titel">总厨网</p>
+                        <p class="banner_text_titel">餐饮食材一站式采购服务平台</p>
                         <p class="banner_text_titel">让餐饮没有难做的生意</p>
                         <p class="banner_text_en">There is no hard business</p>
                         <div>
@@ -194,8 +211,8 @@
     </div>
     <div id="guanyu">
         <h1 style="text-align:center;margin: 60px 0;color: #62B134;margin-top: 0px;padding-top:80px ">• 关于总厨网 •</h1>
-        <p class="phone_p" style="margin-top: -15px;">依托移动互联网技术，通过整合生鲜供应链上下游资源实现领环节一站式职能采购服务。</p>
-        <p class="phone_p"style="margin-top: -26px;">同时专业的餐饮管理团队为中小餐饮店提供开店选址、智能点餐、运营管控、服务培训、餐饮托管等全方位的解决方案服务助推中国餐饮发展。</p>
+        <p class="phone_p" style="margin-top: -15px;">依托移动互联网技术，通过整合生鲜供应链上下游资源实现零环节一站式智能采购服务。</p>
+        <p class="phone_p" style="margin-top: -26px;">同时专业的餐饮管理团队为中小餐饮店提供开店选址、智能点餐、运营管控、服务培训、餐饮托管等全方位的解决方案服务。</p>
     </div>
     <div id="server">
         <div id="weserver">
@@ -206,7 +223,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="thumbnail">
-                                <img class="s_img" src="img/server_02.jpg" alt="...">
+                            <div class="service-icon">
+                                <img src="img/index_cai.png">
+                            </div>
                             <div class="caption">
                                 <h3>智能采购</h3>
                                 <p>智能采购，供货商管理，采购订单，采购入库,餐厅必备食材360度全方位供应，满足你的个性化采购需求，无需再去超市补货</p>
@@ -214,26 +233,32 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                            <div class="thumbnail">
-                                    <img class="s_img" style="width:75%" src="img/xueyua_02.png" alt="...">
-                                    <div class="caption">
-                                        <h3>餐饮商学院</h3>
-                                        <p>为中小餐饮店提供餐饮资讯、服务培训、出品研发、在线管控、在线学习、人才招聘、餐饮托管等相关解决方案服务</p>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="col-md-3">
-                            <div class="thumbnail">
-                                    <img class="s_img" src="img/server_01.jpg" alt="...">
-                                <div class="caption">
-                                    <h3>智慧点餐</h3>
-                                    <p>为餐饮店提供智慧点餐系统，包涵扫码点餐、在线支付、排队等位、粉丝管理、出品管控、营销推广、大数据分析等相关功能</p>
-                                </div>
+                        <div class="thumbnail">
+                            <div class="service-icon">
+                                <img src="img/index_xue.png" style="width: 71%; top: -4px; position: relative;"/>
                             </div>
+                            <div class="caption">
+                                <h3 style="margin-top:2px">餐饮商学院</h3>
+                                <p>为中小餐饮店提供餐饮资讯、服务培训、出品研发、在线管控、在线学习、人才招聘、餐饮托管等相关解决方案服务</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
                         <div class="thumbnail">
-                            <img class="s_img" src="img/server_04.jpg" alt="...">
+                            <div class="service-icon">
+                                <img src="img/index_diancan.png" />
+                            </div>
+                            <div class="caption">
+                                <h3>智慧点餐</h3>
+                                <p>为餐饮店提供智慧点餐系统，包涵扫码点餐、在线支付、排队等位、粉丝管理、出品管控、营销推广、大数据分析等相关功能</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <div class="service-icon">
+                                <img src="img/index_tuoguan.png" />
+                            </div>
                             <div class="caption">
                                 <h3>餐饮托管</h3>
                                 <p>用专业的团队，帮助餐饮店运营管理服务，全店托管以及运营托管服务</p>
@@ -247,7 +272,8 @@
     <div id="difference">
         <div class="container-fluid">
             <div>
-                <h1 style="text-align:center;margin: 60px 0;color: #62B134;margin-top: 0px;padding-top:80px ">• 我们和传统供应企业的区别
+                <h1 style="text-align:center;margin: 60px 0;color: #62B134;margin-top: 0px;padding-top:80px ">
+                    • 我们和传统供应企业的区别
                     •
                 </h1>
             </div>
@@ -289,12 +315,13 @@
                         <img src="img/zcw1.jpg">
                         <div class="caption">
                             <p>总厨网</p>
+                            <p style="margin-bottom: 0px;">深圳市当下云厨网络科技有限公司</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12">
-                        <p>copyright © 2015-2018 深圳市当下云厨网络科技有限公司 400-661-3029
-                        深圳市前海深港合作区前湾一路1号A栋201室 粤ICP备17051649号-2</p>
+                    <p>copyright © 2015-2018 粤ICP备17051649号-2 </p>
+                    <p style="margin-top:-8px">全国服务电话：400-661-3029</p>
                 </div>
             </div>
         </div>
@@ -302,10 +329,11 @@
 </body>
 
 </html>
-<script>        
-    // $(window).scroll(function () { 
+<script>
+
+    // $(window).scroll(function () {
     //     if ($(".navbar").offset().top > 50) {
-    //         $(".navbar-fixed-top").addClass("top-nav"); 
+    //         $(".navbar-fixed-top").addClass("top-nav");
     //     } else {
     //         $(".navbar-fixed-top").removeClass("top-nav");
     //     } })
@@ -315,16 +343,19 @@
         .banner_text_titel {
             font-size: 26px;
             text-align: center;
-            text-indent: 0px
+            text-indent: 0px;
         }
+
         .banner_text_en {
             font-size: 18px;
             text-align: center;
-            text-indent: 0px
+            text-indent: 0px;
         }
+
         .banner_content {
-            padding-top: 75%
+            padding-top: 75%;
         }
+
         .my_difference_ico {
             height: 60px;
             background: url(img/right.png) no-repeat;
@@ -338,7 +369,8 @@
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
         }
-        .phone_p{
+
+        .phone_p {
             padding: 0 25px;
         }
     }
