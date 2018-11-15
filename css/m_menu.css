@@ -1,0 +1,18 @@
+﻿ul{margin:0;padding:0;list-style-type:none;}
+a{color:#222222;}
+a:hover{color:#f60;background-color:#eeeeee;}
+.menu-bar{position:relative;z-index:100;border:1px solid #cccccc;height:40px;}
+
+/*一级*/
+.menu-bar ul{line-height:40px;height:40px;position:fixed;width:100%;top:40px;background-color:#eeeeee;}
+.menu-bar ul li{border-left:1px solid #c6c0b3;width:24%;height:40px;line-height:40px;text-align:center;float:left;position:relative;}
+.menu-bar ul li a{display:block;height:40px;line-height:40px;}
+
+/*二级*/
+.menu-bar ul li ul{text-align:center;display:block;width:100%;height:auto;line-height:40px;left:0;position:absolute;top:42px;z-index:2;display:none;}
+.menu-bar ul li ul li{height:40px;line-height:40px;float:none;border-bottom:1px solid #c6c0b3;width:100%;}
+.menu-bar ul li ul li a{display:block;height:40px;line-height:40px;border-right:1px solid #c6c0b3;}
+
+/*三级*/
+.menu-bar ul li ul li ul{text-align:center;display:none;width:100%;left:100%;height:auto;position:absolute;top:-1px;z-index:1;border-right:1px solid #c6c0b3;border-top:1px solid #c6c0b3;}
+.menu-bar ul li ul li ul li{height:40px;line-height:40px;float:none;}
