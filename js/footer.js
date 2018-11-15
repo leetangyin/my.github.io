@@ -11,11 +11,11 @@ function tooter_menu_slide(obj) {
 }
 
 var header_html = '<div class="footer-menu"><ul id="footer-main-nav">' +
-    '<li id="m1"><a href="/mall/html/index.aspx">' +
+    '<li id="m1"><a href="/html/index.aspx">' +
     '    <p class="footer_img"><img src="../img/footer_1_.png" style="height:94%;"/></p>' +
     '    <p class="footer_title">首页</p>' +
     '</a></li>' +
-    '<li id="m2"><a href="/mall/html/category_list.html">' +
+    '<li id="m2"><a href="/html/category_list.html">' +
     '    <p class="footer_img"><img src="../img/footer_2_.png" style="height:94%;"/></p>' +
     '    <p class="footer_title">分类</p>' +
     '</a></li>' +
