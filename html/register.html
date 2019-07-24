@@ -93,10 +93,9 @@
         }
 
         .reg_bnt {
-            position: relative;
-            bottom: 12%;
-            width: 100%;
-            margin: 0 auto;
+         
+            margin: 78% auto 0 auto;
+            background: red;
         }
 
         .my_wei_bnt {
@@ -195,11 +194,11 @@
             </div>
         </div>
      
-
+        <div class="reg_bnt">
+                <div class="weui-btn weui-btn_block my_wei_bnt" onclick="determineClick()">确定</div>
+            </div>
     </div>
-    <div class="reg_bnt">
-            <div class="weui-btn weui-btn_block my_wei_bnt" style="position: relative" onclick="determineClick()">确定</div>
-        </div>
+
 
 
     <!-- 成功提示 -->
@@ -238,9 +237,9 @@
 
 </html>
 <script>
-    var body =document.getElementsByTagName("body")[0];
-    body.style.width = document.body.clientWidth + 'px';
-    body.style.clientHeight = document.body.clientHeight + 'px';
+    // var body =document.getElementsByTagName("body")[0];
+    // body.style.width = document.body.clientWidth + 'px';
+    // body.style.clientHeight = document.body.clientHeight + 'px';
     //固定底部背景
     var reg_content = document.getElementById('reg_content');
 
