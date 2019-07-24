@@ -2,8 +2,11 @@
 <html>
 
 <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
-        <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
     <title>丑板凳学生注册</title>
     <link href="../css/weiui.css" rel="stylesheet" />
     <style>
@@ -15,7 +18,7 @@
             height: 100%;
             width: 100%;
             background: url(../img/login@2x.png) no-repeat;
-            background-size: 100% 100%;
+            background-size: 100vw 100vh;
             position: fixed;
             bottom: 0px;
             font-size:14px 
@@ -229,6 +232,9 @@
 
 </html>
 <script>
+    //固定底部背景
+
+
     //注册确定事件
     function determineClick() {
         var successful = document.getElementById('successful');
