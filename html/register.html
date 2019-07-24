@@ -10,17 +10,19 @@
     <title>丑板凳学生注册</title>
     <link href="../css/weiui.css" rel="stylesheet" />
     <style>
-        html,body{
+        html,
+        body {
             height: 100%;
             width: 100%;
         }
+
         .reg_content {
             height: 100%;
             width: 100%;
             background: url(../img/login@2x.png) no-repeat;
-            position: fixed;
+            position: relative;
             bottom: 0px;
-            font-size:14px 
+            font-size: 14px
         }
 
         .reg_content_text {
@@ -46,9 +48,11 @@
         .my_weui-cell {
             padding: 0px;
         }
-       .weui-cells {
-            margin-top:0px 
+
+        .weui-cells {
+            margin-top: 0px
         }
+
         .weui-cells:before {
             height: 0;
             border: 0px;
@@ -89,10 +93,11 @@
         }
 
         .reg_bnt {
-            position: absolute;
+            position: relative;
             bottom: 12%;
             width: 100%;
             margin: 0 auto;
+            background: red
         }
 
         .my_wei_bnt {
@@ -149,7 +154,6 @@
             position: fixed;
             bottom: 10%;
             width: 100%;
-
             z-index: 1002;
             text-align: center
         }
@@ -191,41 +195,44 @@
                 </div>
             </div>
         </div>
-        <div class="reg_bnt">
-            <div class="weui-btn weui-btn_block my_wei_bnt" style="position: relative" onclick="determineClick()">确定</div>
-        </div>
 
-        <!-- 成功提示 -->
-        <div id="successful" class="determine" style="display: none">
-            <div class="weui-mask"></div>
-            <div class="determine_content">
-                <div class="determine_content_bg">
-                    <div class="determine_content_text ">已成功加入班级</div>
-                    <div class="determine_content_tip ">请下载丑板凳APP</div>
-                </div>
-                <div class="determine_content_bg_bnt">
-                    <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
-                </div>
+
+    </div>
+
+    <div class="reg_bnt">
+        <div class="weui-btn weui-btn_block my_wei_bnt" style="position: relative" onclick="determineClick()">确定</div>
+    </div>
+
+    <!-- 成功提示 -->
+    <div id="successful" class="determine" style="display: none">
+        <div class="weui-mask"></div>
+        <div class="determine_content">
+            <div class="determine_content_bg">
+                <div class="determine_content_text ">已成功加入班级</div>
+                <div class="determine_content_tip ">请下载丑板凳APP</div>
             </div>
-            <div class="determine_content_close">
-                <img src="../img/tip_close@2x.png" onclick="closeClick()" />
+            <div class="determine_content_bg_bnt">
+                <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
             </div>
         </div>
-        <!-- 失败提示 -->
-        <div id="failure" class="determine" style="display: none">
-            <div class="weui-mask"></div>
-            <div class="determine_content">
-                <div class="determine_content_bg">
-                    <div class="determine_content_text ">加入失败</div>
-                    <div class="determine_content_tip ">请联系老师进行报名后再加入班级</div>
-                </div>
-                <div class="determine_content_bg_bnt">
-                    <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
-                </div>
+        <div class="determine_content_close">
+            <img src="../img/tip_close@2x.png" onclick="closeClick()" />
+        </div>
+    </div>
+    <!-- 失败提示 -->
+    <div id="failure" class="determine" style="display: none">
+        <div class="weui-mask"></div>
+        <div class="determine_content">
+            <div class="determine_content_bg">
+                <div class="determine_content_text ">加入失败</div>
+                <div class="determine_content_tip ">请联系老师进行报名后再加入班级</div>
             </div>
-            <div class="determine_content_close">
-                <img src="../img/tip_close@2x.png" onclick="closeClick()" />
+            <div class="determine_content_bg_bnt">
+                <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
             </div>
+        </div>
+        <div class="determine_content_close">
+            <img src="../img/tip_close@2x.png" onclick="closeClick()" />
         </div>
     </div>
 </body>
@@ -235,7 +242,7 @@
     //固定底部背景
     var reg_content = document.getElementById('reg_content');
 
-    reg_content.style['background-size'] = document.body.clientWidth+'px' + ' ' +document.body.clientHeight+'px'
+    reg_content.style['background-size'] = document.body.clientWidth + 'px' + ' ' + document.body.clientHeight + 'px'
 
     //注册确定事件
     function determineClick() {
