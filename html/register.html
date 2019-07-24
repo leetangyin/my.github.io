@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>丑板凳学生注册</title>
+    <link href="../css/weiui.css" rel="stylesheet" />
+    <style>
+        .reg_content {
+            height: 100vh;
+            width: 100vw;
+            background: url(../img/login@2x.png) no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .reg_content_text {
+            padding: 30% 8% 0 8%;
+        }
+
+        .reg_content_text_top {
+            color: #52555A;
+            letter-spacing: 1px;
+        }
+
+        .reg_content_text_bottom {
+            color: #FE3A26;
+            margin-top: 3px;
+        }
+
+        .my_weui_input {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .my_weui-cell {
+            padding: 0px;
+        }
+
+        .weui-cells:before {
+            height: 0;
+            border: 0px;
+
+        }
+
+        .weui-cells:after {
+            border-bottom: 2px solid #EEEEEE
+        }
+
+        .weui-cell:before {
+            border-bottom: 2px solid #EEEEEE;
+            left: 0px;
+        }
+
+        .weui-vcode-btn {
+            border: none
+        }
+
+        button.weui-vcode-btn {
+            background: #F7B83E;
+            border-radius: 20px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff
+        }
+
+        .my_weui_close {
+            position: relative;
+        }
+
+        .my_weui_close img {
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .reg_bnt {
+            position: absolute;
+            bottom: 12%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .my_wei_bnt {
+            width: 84%;
+            background: #fff;
+            color: #000000;
+            border-radius: 60px;
+        }
+
+        .determine_content {
+            position: absolute;
+            top: 28%;
+            z-index: 10001;
+            width: 100%;
+        }
+
+        .determine_content_bg {
+            margin: 0 auto;
+            background: url(../img/tip_bg@2x.png) no-repeat;
+            background-color: #FFCD59;
+            background-size: 100% 100%;
+            width: 88vw;
+            height: 48vw;
+            background-position: -25px 79px;
+            border-radius: 15px;
+        }
+
+        .determine_content_bg_bnt {
+            margin-top: 23px;
+        }
+
+        .determine_content_bg_bnt .my_wei_bnt {
+            background: #FFCD59;
+            color: #333333;
+            font-size: 19px;
+        }
+
+        .determine_content_text {
+            color: #FF0000;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 60px;
+            font-size: 22px;
+
+        }
+
+        .determine_content_tip {
+            text-align: center;
+            font-size: 19px;
+            color: #333333
+        }
+
+        .determine_content_close {
+            position: fixed;
+            bottom: 10%;
+            width: 100%;
+
+            z-index: 1002;
+            text-align: center
+        }
+
+        .determine_content_close img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reg_content">
+        <div class="reg_content_text">
+            <div class="reg_content_text_top">
+                我的小伙伴，我在丑板凳布置了有趣的作业，快接受我的邀请写作业吧！
+            </div>
+            <div class="reg_content_text_bottom">
+                班群号：10032562
+            </div>
+            <div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell my_weui-cell">
+                        <div class="weui-cell__bd my_weui_close">
+                            <img src="../img/close@2x.png">
+                            <input class="weui-input my_weui_input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_vcode my_weui-cell">
+
+                        <div class="weui-cell__bd">
+                            <input class="weui-input my_weui_input" type="tel" placeholder="请输入手机号">
+                        </div>
+                        <div class="weui-cell__ft">
+                            <button class="weui-vcode-btn">获取验证码</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reg_bnt">
+            <div class="weui-btn weui-btn_block my_wei_bnt">确定</div>
+        </div>
+        <div class="determine successful" style="display: none">
+            <div class="weui-mask"></div>
+            <div class="determine_content">
+                <div class="determine_content_bg">
+                    <div class="determine_content_text ">已成功加入班级</div>
+                    <div class="determine_content_tip ">请下载丑板凳APP</div>
+                </div>
+                <div class="determine_content_bg_bnt">
+                    <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
+                </div>
+            </div>
+            <div class="determine_content_close">
+                <img src="../img/tip_close@2x.png" />
+            </div>
+        </div>
+
+        <div class="determine failure">
+            <div class="weui-mask"></div>
+            <div class="determine_content">
+                <div class="determine_content_bg">
+                    <div class="determine_content_text ">加入失败</div>
+                    <div class="determine_content_tip ">请联系老师进行报名后再加入班级</div>
+                </div>
+                <div class="determine_content_bg_bnt">
+                    <div class="weui-btn weui-btn_block my_wei_bnt">点击下载</div>
+                </div>
+            </div>
+            <div class="determine_content_close">
+                <img src="../img/tip_close@2x.png" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
