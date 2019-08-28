@@ -1,1 +1,56 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel=apple-touch-icon-precomposed href=http://3gimg.qq.com/wap30/info/info5/img/logo_icon.png><title>web前端工程师李棠寅</title><link href=./static/css/app.17c87d3dfb5d43f1169d6ba33951ed26.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.b2a7f18f2869cb2abff1.js></script><script type=text/javascript src=./static/js/app.5eaebc4b0c6e80f08369.js></script></body></html>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <title>1</title>
+    <style>
+        body,html,#box{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        #box{
+            width: 100%;
+            position:relative;
+            overflow: hidden;
+        }
+        #box_left{
+            height: 100%;
+            width: 30%;
+            background: lightblue;
+            float: left;
+            
+        }
+        #box_right{
+            height: 100%;
+            width: 50%;
+            background: lightyellow;
+            float: left;
+        }
+        
+  
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="box_content" style="position: absolute;width: 200%;height: 100%">
+        <div id="box_left">
+
+        </div>
+        <div id="box_right">
+            <div id="text">通讯录</div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#text').click(function(){
+        $("#box_content").animate({left: '-60%'}, "slow");
+    })
+   
+</script>
+</body>
+</html>
+''
