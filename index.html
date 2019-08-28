@@ -55,6 +55,7 @@
         #zgh_c img{
             width:25px;
             top: 7px;
+            position: relative;
             margin-right:5px 
         }
         .box_right_list{
@@ -91,7 +92,35 @@
             right: 15px;
             top: 15px
         }
-
+        .box_right_list_header{
+            padding: 10px;
+            font-weight: bold;
+        }
+        .box_right_list_header {
+            position: relative;
+      
+        }
+        .box_right_list_header img{
+            width: 25px;
+            float: right;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+        }
+        .ss_input{
+            width: 67%;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            border: none;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            outline: none;
+            margin-right: 10px;
+        }
+        #ss_content{
+            display: none
+        }
     </style>
 </head>
 <body>
@@ -121,6 +150,11 @@
             <div id="box_right_top" > <img id="box_right_top_img" src="cd.png">通讯录</div>
             <div>
                 <ul class="box_right_list">
+                        <div class="box_right_list_header">
+                            <div id="lj" style="display: block">&nbsp;中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span></div>
+                            <div id="ss_content"><input type="text" class="ss_input">确定</div>
+                            <img id="ss" src="ss.png"/>
+                        </div>
                         <li class="zs" style="display: none"><img src="nan.png">张三</li>
                         <li class="ls" style="display: none"><img src="nu.png">李四</li>
                         <li class="ww" style="display: none"><img src="nan.png">王五</li>
@@ -146,7 +180,7 @@
         console.log($('#zgh_c').css('display'))
         if( $('#zgh_c').css('display') == 'block'){
             $('#zgh_c').hide()
-
+            $('#lj').html('<span style="color: #4E9BFD">中广核</span>')
         }else{
             $('#zgh_c').show()
         }
@@ -157,40 +191,54 @@
                 $('#hd_c').hide();
                 $('#hd .hd_img_one').show()
                 $('#hd .hd_img_two').hide()
+                $('#lj').html('大亚湾核电站&nbsp;<span style="color: #4E9BFD">中广核</span>')
             }else{
                 $('#hd_c').show()
                 $('#hd .hd_img_one').hide()
                 $('#hd .hd_img_two').show()
         }
    })
-   $('#cbs').click(function(){
+    $('#cbs').click(function(){
     if( $('#cbs_c').css('display') == 'block'){
                 $('#cbs_c').hide()
                 $('#cbs .hd_img_one').show()
                 $('#cbs .hd_img_two').hide()
-
+                $('#lj').html('大亚湾核电站&nbsp;<span style="color: #4E9BFD">承包商管理</span>')
             }else{
                 $('#cbs_c').show()
                 $('#cbs .hd_img_one').hide()
                 $('#cbs .hd_img_two').show()
         }
-   })
+    })
    $('#bz').click(function(){
     $('.box_right_list li').hide() 
     $('.box_right_list .zs').show()         
-
+    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span>')
    })
    $('#ky').click(function(){
     $('.box_right_list li').hide() 
     $('.box_right_list .ls').show()    
+    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">科员</span>')
    })
    $('#js').click(function(){
     $('.box_right_list li').hide();
     $('.box_right_list .ww').show();     
     $('.box_right_list .zl').show(); 
+    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">技术员</span>')
    })
-
-
+   $('#ss').click(function(){
+    if( $('#lj').css('display') == 'block'){
+        $('#lj').hide();
+        $('#ss_content').show();
+    }else{
+        $('#lj').show();
+        $('#ss_content').hide();
+    }
+   })
+   
+   $('.ss_input').click(function(){
+       $('.zs').show()
+   })
 
 
 
