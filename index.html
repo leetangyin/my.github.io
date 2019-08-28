@@ -20,36 +20,129 @@
         #box_left{
             height: 100%;
             width: 30%;
-            background: lightblue;
+            background: #4E9BFD;
             float: left;
+            font-size: 18px;
+            color: #fff;
             
         }
         #box_right{
             height: 100%;
             width: 50%;
-            background: lightyellow;
             float: left;
         }
-        
-  
+        #box_right_top{
+            height: 50px;
+            background: #F7F7F7;
+            text-align: center;
+            line-height: 50px;
+            width: 100%;
+            border-bottom: 0.5px solid #ddd;
+        }
+        #box_right_top img{
+            display: block;
+            float: left;
+            width: 30px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .my_borde{
+            border-bottom: 0.5px solid #fff;
+            padding: 10px;
+            position: relative;
+        }
+        .weui-my_borde:after {
+            content: " ";
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-width: 2px 2px 0 0;
+            border-color: #B2B2B2;
+            border-style: solid;
+            -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: relative;
+            top: -2px;
+            position: absolute;
+            top: 50%;
+            margin-top: -5px;
+            right: 0;
+        }
     </style>
 </head>
 <body>
 <div id="box">
     <div id="box_content" style="position: absolute;width: 200%;height: 100%">
         <div id="box_left">
-
+          <div style="padding: 10px">组织部门</div>
+          <div id="zgh" style="padding: 10px">中广核</div>
+            <div id="zgh_c" style="display: block">
+                <div class="my_borde" id="hd">&nbsp;&nbsp;大亚湾核电站<div class="weui-cell__ft"></div></div>
+                <div id="hd_c" style="display: block">
+                    <div class="my_borde hd_c" id="cbs">&nbsp;&nbsp;&nbsp;&nbsp;承包商管理</div>
+                        <div id="cbs_c" style="display: block">
+                        <div class="my_borde hd_c cbs_c" id="bz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部长</div>
+                        <div class="my_borde hd_c cbs_c" id="ky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科员</div>
+                        <div class="my_borde hd_c cbs_c" id="js">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="box_right">
-            <div id="text">通讯录</div>
+            <div id="box_right_top" > <img id="box_right_top_img" src="cd.png">通讯录</div>
         </div>
     </div>
 </div>
 <script>
-    $('#text').click(function(){
-        $("#box_content").animate({left: '-60%'}, "slow");
+    var localLeft = true
+    $('#box_right_top_img').click(function(){
+        if(localLeft){
+            $("#box_content").animate({left: '-60%'}, "slow");
+            localLeft = false
+        }else{
+            $("#box_content").animate({left: '0'}, "slow");
+            localLeft = true
+        }
     })
-   
+
+    $('#zgh').click(function(){
+        console.log($('#zgh_c').css('display'))
+        if( $('#zgh_c').css('display') == 'block'){
+            $('#zgh_c').hide()
+        }else{
+            $('#zgh_c').show()
+        }
+       
+    })
+   $('#hd').click(function(){
+        if( $('#hd_c').css('display') == 'block'){
+                $('#hd_c').hide()
+            }else{
+                $('#hd_c').show()
+        }
+   })
+   $('#cbs').click(function(){
+    if( $('#cbs_c').css('display') == 'block'){
+                $('#cbs_c').hide()
+            }else{
+                $('#cbs_c').show()
+        }
+   })
+   $('#bz').click(function(){
+
+   })
+   $('#ky').click(function(){
+
+   })
+   $('js').click(function(){
+
+   })
+
+
+
+
+
 </script>
 </body>
 </html>
