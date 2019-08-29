@@ -63,6 +63,7 @@
             padding: 10px;
             padding: 0;
             margin: 0;
+            min-height: 150px;
         }
         .box_right_list li{
             height: 50px;
@@ -122,6 +123,15 @@
             display: none;
             font-weight: normal;
         }
+        .box_right_list li span{
+            display: block;
+            float:right;
+            margin-right: 15px;
+        }
+        #myBack{
+            height: 1000px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -153,15 +163,16 @@
                 <ul class="box_right_list">
                         <div class="box_right_list_header">
                             <div id="lj" style="display: block">&nbsp;中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span></div>
-                            <div id="ss_content"><input type="text" class="ss_input" >确定</div>
+                            <div id="ss_content"><input type="text" class="ss_input" >搜索</div>
                             <img id="ss" src="ss.png"/>
                         </div>
-                        <li class="zs" style="display: none"><img src="nan.png">张三</li>
-                        <li class="ls" style="display: none"><img src="nu.png">李四</li>
-                        <li class="ww" style="display: none"><img src="nan.png">王五</li>
-                        <li class="zl" style="display: none"><img src="nu.png">赵六</li>
+                        <li class="zs" style="display: none"><img src="nan.png">张三(S28001)<span>13800138000</span></li>
+                        <li class="ls" style="display: none"><img src="nu.png">李四(S28002)<span>13800138000</span></li>
+                        <li class="ww" style="display: none"><img src="nan.png">王五((28003)<span>13800138000</span></li>
+                        <li class="zl" style="display: none"><img src="nu.png">赵六(S28004)<span>13800138000</span></li>
                 </ul>
             </div>
+            <div id="myBack"></div>
         </div>
     </div>
 </div>
@@ -192,7 +203,7 @@
                 $('#hd_c').hide();
                 $('#hd .hd_img_one').show()
                 $('#hd .hd_img_two').hide()
-                $('#lj').html('大亚湾核电站&nbsp;<span style="color: #4E9BFD">中广核</span>')
+                $('#lj').html('中广核&nbsp;<span style="color: #4E9BFD">大亚湾核电站</span>')
             }else{
                 $('#hd_c').show()
                 $('#hd .hd_img_one').hide()
@@ -204,7 +215,7 @@
                 $('#cbs_c').hide()
                 $('#cbs .hd_img_one').show()
                 $('#cbs .hd_img_two').hide()
-                $('#lj').html('大亚湾核电站&nbsp;<span style="color: #4E9BFD">承包商管理</span>')
+                $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;<span style="color: #4E9BFD">承包商管理</span>')
             }else{
                 $('#cbs_c').show()
                 $('#cbs .hd_img_one').hide()
@@ -214,12 +225,12 @@
    $('#bz').click(function(){
     $('.box_right_list li').hide() 
     $('.box_right_list .zs').show()         
-    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span>')
+    $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span>')
    })
    $('#ky').click(function(){
     $('.box_right_list li').hide() 
     $('.box_right_list .ls').show()    
-    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">科员</span>')
+    $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">科员</span>')
    })
    $('#js').click(function(){
     $('.box_right_list li').hide();
@@ -241,7 +252,33 @@
        $('.zs').show()
    })
 
+   $('#lj').click(function(){
+       alert('跳转介绍部门UI')
+   })
+   $('.zs').click(function(){
+       alert('跳转个人资料页面')
+   })
 
+   $('.ls').click(function(){
+       alert('跳转个人资料页面')
+   })
+   $('.ww').click(function(){
+       alert('跳转个人资料页面')
+   })
+
+   $('.zl').click(function(){
+       alert('跳转个人资料页面')
+   })
+   
+   $('#myBack').click(function(){
+    if(localLeft){
+            $("#box_content").animate({left: '-60%'}, "slow");
+            localLeft = false
+        }else{
+            $("#box_content").animate({left: '0'}, "slow");
+            localLeft = true
+        }
+   })
 
 </script>
 </body>
