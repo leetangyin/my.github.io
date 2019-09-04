@@ -1,288 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-
+<!doctype html>
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <title>1</title>
-    <style>
-        body,html,#box{
-            padding: 0;
-            margin: 0;
-            height: 100%;
-        }
-        #box{
-            width: 100%;
-            position:relative;
-            overflow: hidden;
-        }
-        #box_left{
-            height: 100%;
-            width: 30%;
-            background: #4E9BFD;
-            float: left;
-            font-size: 14px;
-            color: #fff;
-            
-        }
-        #box_right{
-            height: 100%;
-            width: 50%;
-            float: left;
-        }
-        #box_right_top{
-            height: 40px;
-            background: #F7F7F7;
-            text-align: center;
-            line-height: 40px;
-            width: 100%;
-            border-bottom: 0.5px solid #ddd;
-        }
-        #box_right_top img{
-            display: block;
-            float: left;
-            width: 25px;
-            position: relative;
-            top: 8px;
-            left: 10px;
-        }
-        .my_borde{
-            border-bottom: 0.5px solid #fff;
-            padding: 10px 0 10px 10px;
-            width: 100%
-        }
-        #zgh_c img{
-            width:25px;
-            top: 7px;
-            position: relative;
-            margin-right:5px 
-        }
-        .box_right_list{
-            list-style-type: none;
-            padding: 10px;
-            padding: 0;
-            margin: 0;
-            min-height: 150px;
-        }
-        .box_right_list li{
-            height: 50px;
-            line-height: 50px;
-            font-size:14px; 
-            border-bottom: 1px solid #ddd;
-            color: #333;
-            margin: 0;
-            padding: 0px;
-        }
-        .box_right_list li img{
-            width:20px;
-            margin: 0 5px 0px 10px;
-            position: relative;
-            top: 7px;
-        }
-        #hd{
-            position: relative;
-        }
-        #zgh_c #hd .hd_img_one{
-            position: absolute;
-            right: 15px;
-            top: 15px
-        }
-        #zgh_c #hd .hd_img_two{
-            position: absolute;
-            right: 15px;
-            top: 15px
-        }
-        .box_right_list_header{
-            padding: 10px;
-            font-weight: bold;
-        }
-        .box_right_list_header {
-            position: relative;
-      
-        }
-        .box_right_list_header img{
-            width: 25px;
-            float: right;
-            position: absolute;
-            top: 12px;
-            right: 25px;
-        }
-        .ss_input{
-            width: 67%;
-            height: 25px;
-            line-height: 25px;
-            padding-left: 10px;
-            border: none;
-            border: 1px solid #ddd;
-            border-radius: 15px;
-            outline: none;
-            margin-right: 10px;
-        }
-        #ss_content{
-            display: none;
-            font-weight: normal;
-        }
-        .box_right_list li span{
-            display: block;
-            float:right;
-            margin-right: 15px;
-            position: relative;
-            top: 7px;
-        }
-        #myBack{
-            height: 1000px;
-            width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OrgChart-简单实用的组织结构图表jQuery插件</title>
+<link rel="stylesheet" type="text/css" href="css/jq22.css">
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+<link rel="stylesheet" href="css/jquery.orgchart.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="box">
-    <div id="box_content" style="position: absolute;width: 200%;height: 100%">
-        <div id="box_left">
-          <div style="padding: 10px">组织部门</div>
-          <div id="zgh" style="padding: 10px">中广核</div>
-            <div id="zgh_c" style="display: block;position: relative">
-                <div class="my_borde" id="hd">&nbsp;&nbsp;<img src="zz.png">大亚湾核电站<img class="hd_img_one" src="right.png" style="display: none" /><img class="hd_img_two" src="down.png"/></div>
-                <div id="hd_c" style="display: block">
-                    <div id="cbs" class="my_borde hd_c"  style="position: relative">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="zz.png" />承包商管理
-                        <img class="hd_img_one"  style="position: absolute;top: 15px;right: 15px;display: none;" src="right.png">
-                        <img class="hd_img_two" style="position: absolute;top: 15px;right: 15px;" src="down.png" />
-                    </div>
-                        <div id="cbs_c" style="display: block">
-                        <div class="my_borde hd_c cbs_c" id="bz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gw.png">部长</div>
-                        <div class="my_borde hd_c cbs_c" id="ky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gw.png">科员</div>
-                        <div class="my_borde hd_c cbs_c" id="js">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gw.png">技术</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="box_right">
-            <div id="box_right_top" > <img id="box_right_top_img" src="cd.png">通讯录</div>
-            <div>
-                <ul class="box_right_list">
-                        <div class="box_right_list_header">
-                            <div id="lj" style="display: block">&nbsp;中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span></div>
-                            <div id="ss_content"><input type="text" class="ss_input" >搜索</div>
-                            <img id="ss" src="ss.png"/>
-                        </div>
-                        <li class="zs" style="display: none"><img src="nan.png">张三&nbsp;(S28001)<span>13800138000</span></li>
-                        <li class="ls" style="display: none"><img src="nu.png">李四&nbsp;(S28002)<span>13800138000</span></li>
-                        <li class="ww" style="display: none"><img src="nan.png">王五&nbsp;(28003)<span>13800138000</span></li>
-                        <li class="zl" style="display: none"><img src="nu.png">赵六&nbsp;(S28004)<span>13800138000</span></li>
-                </ul>
-            </div>
-            <div id="myBack"></div>
-        </div>
-    </div>
+
+<div class="jq22 center">
+	<h1>OrgChart-简单实用的组织结构图表jQuery插件 </h1>
+	<p>Simple and direct organization chart plugin based on pure DOM and jQuery</p>
+	<a href="index.html" style="color: aqua">local-datasource</a> <a href="index2.html">ajax-datasource</a> <a href="index3.html">ondemand-loading-data</a> <a href="index4.html">option-createNode</a>
 </div>
-<script>
-    var localLeft = true
-    $('#box_right_top_img').click(function(){
-        if(localLeft){
-            $("#box_content").animate({left: '-60%'}, "slow");
-            localLeft = false
-        }else{
-            $("#box_content").animate({left: '0'}, "slow");
-            localLeft = true
-        }
-    })
+</div>
+<div id="chart-container">
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> 
+<script type="text/javascript" src="js/html2canvas.js"></script> 
+<script type="text/javascript" src="js/jquery.orgchart.js"></script> 
+<script type="text/javascript">
+      	'use strict';
+		(function($){
+		  $(function() {
+		    var datascource = {
+		      'name': 'Lao Lao',
+		      'title': 'general manager',
+		      'relationship': { 'children_num': 8 },
+		      'children': [
+		        { 'name': 'Bo Miao', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Su Miao', 'title': 'department manager', 'relationship': { 'children_num': 2, 'parent_num': 1,'sibling_num': 7 },
+		          'children': [
+		            { 'name': 'Tie Hua', 'title': 'senior engineer', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 1 }},
+		            { 'name': 'Hei Hei', 'title': 'senior engineer', 'relationship': { 'children_num': 2, 'parent_num': 1,'sibling_num': 1 },
+		              'children': [
+		                { 'name': 'Pang Pang', 'title': 'engineer', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 1 }},
+		                { 'name': 'Xiang Xiang', 'title': 'UE engineer', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 1 }}
+		              ]
+		            }
+		          ]
+		        },
+		        { 'name': 'Yu Jie', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Yu Li', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Hong Miao', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Yu Wei', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Chun Miao', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }},
+		        { 'name': 'Yu Tie', 'title': 'department manager', 'relationship': { 'children_num': 0, 'parent_num': 1,'sibling_num': 7 }}
+		      ]
+		    };
 
-    $('#zgh').click(function(){
-        console.log($('#zgh_c').css('display'))
-        if( $('#zgh_c').css('display') == 'block'){
-            $('#zgh_c').hide()
-            $('#lj').html('<span style="color: #4E9BFD">中广核</span>')
-        }else{
-            $('#zgh_c').show()
-        }
-       
-    })
-   $('#hd').click(function(){
-        if( $('#hd_c').css('display') == 'block'){
-                $('#hd_c').hide();
-                $('#hd .hd_img_one').show()
-                $('#hd .hd_img_two').hide()
-                $('#lj').html('中广核&nbsp;<span style="color: #4E9BFD">大亚湾核电站</span>')
-            }else{
-                $('#hd_c').show()
-                $('#hd .hd_img_one').hide()
-                $('#hd .hd_img_two').show()
-        }
-   })
-    $('#cbs').click(function(){
-    if( $('#cbs_c').css('display') == 'block'){
-                $('#cbs_c').hide()
-                $('#cbs .hd_img_one').show()
-                $('#cbs .hd_img_two').hide()
-                $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;<span style="color: #4E9BFD">承包商管理</span>')
-            }else{
-                $('#cbs_c').show()
-                $('#cbs .hd_img_one').hide()
-                $('#cbs .hd_img_two').show()
-        }
-    })
-   $('#bz').click(function(){
-    $('.box_right_list li').hide() 
-    $('.box_right_list .zs').show()         
-    $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">部长</span>')
-   })
-   $('#ky').click(function(){
-    $('.box_right_list li').hide() 
-    $('.box_right_list .ls').show()    
-    $('#lj').html('中广核&nbsp;大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">科员</span>')
-   })
-   $('#js').click(function(){
-    $('.box_right_list li').hide();
-    $('.box_right_list .ww').show();     
-    $('.box_right_list .zl').show(); 
-    $('#lj').html('大亚湾核电站&nbsp;承包商管理&nbsp;<span style="color: #4E9BFD">技术员</span>')
-   })
-   $('#ss').click(function(){
-    if( $('#lj').css('display') == 'block'){
-        $('#lj').hide();
-        $('#ss_content').show();
-    }else{
-        $('#lj').show();
-        $('#ss_content').hide();
-    }
-   })
-   
-   $('.ss_input').click(function(){
-       $('.zs').show()
-   })
+		    $('#chart-container').orgchart({
+		      'data' : datascource,
+		      'depth': 2,
+		      'nodeTitle': 'name',
+		      'nodeContent': 'title'
+		    });
 
-   $('#lj').click(function(){
-       alert('跳转介绍部门UI')
-   })
-   $('.zs').click(function(){
-       alert('跳转个人资料页面')
-   })
+		  });
 
-   $('.ls').click(function(){
-       alert('跳转个人资料页面')
-   })
-   $('.ww').click(function(){
-       alert('跳转个人资料页面')
-   })
-
-   $('.zl').click(function(){
-       alert('跳转个人资料页面')
-   })
-   
-   $('#myBack').click(function(){
-    if(localLeft){
-            $("#box_content").animate({left: '-60%'}, "slow");
-            localLeft = false
-        }else{
-            $("#box_content").animate({left: '0'}, "slow");
-            localLeft = true
-        }
-   })
-
-</script>
+		})(jQuery);
+      </script>
 </body>
 </html>
-''
