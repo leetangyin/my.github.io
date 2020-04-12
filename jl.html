@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web前端工程师李棠寅</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jQuery.3.4.1.min.js"></script>
+	<style type="text/css">
+		html,body{
+			padding: 0px;
+			margin: 0px;
+			color: #fff;
+		}
+		body{
+			background:url(img/bg.jpg) no-repeat;
+			background-size:100% 100%;
+		}
+		.bg-primary{
+		    color: #fff;
+		    background-color: #337ab7;
+		}
+		.bg-success{
+			color: #fff;
+			background-color: #dff0d8
+		}
+		.bg-info{
+			color: #fff;
+			background-color: #d9edf7
+		}
+		.bg-warning{
+			color: #fff;
+			background-color: #fcf8e
+		}
+		.bg-danger{
+			color: #fff;
+			background-color: #f2ded
+		}
+		.my_p_list p{
+			margin: 0px;
+			padding: 10px;
+			margin:10px 0 0 0;
+		}
+		.titel{
+			position: relative;
+		}
+		.titel img{
+			position: absolute;
+			right: 0px
+			top:5px;
+		}
+		.titel img{
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			right: 15px;
+
+		}
+		.my_p_list .content{
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+		<img style="width: 50%;display: block;margin: 50px auto 0 auto;" src="img/my.jpg"  alt="..." class="img-thumbnail">
+		<strong style="display:block;margin:20px 10px;font-size: 17px ">李棠寅web前端工程师</strong>
+	</div>
+	<div class="my_p_list">
+		<p class="bg-primary titel">掌握技能<img src="img/left.png"></p>
+		<div class="content" style="display: block;">1</div>
+		<p class="bg-success titel">个人情况<img src="img/left.png"></p>
+		<div class="content" style="display: none;">2</div>
+		<p class="bg-info titel">项目经历1<img src="img/left.png"></p>
+		<div class="content" style="display: none;">3</div>
+		<p class="bg-warning titel">项目经历2<img src="img/left.png"></p>
+		<div class="content" style="display: none;">4</div>
+		<p class="bg-danger titel">项目经历3<img src="img/left.png"></p>
+		<div class="content" style="display: none;">5</div>
+	</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	$('.my_p_list').find('p').click(function(){
+		console.log($(this))
+		$('.my_p_list').find('.content').hide();
+		$(this).next().show();
+		
+	});
+
+</script>
+
+
+
