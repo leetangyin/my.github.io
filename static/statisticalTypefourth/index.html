@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .swiper-slide video {
+
+            padding: 0;
+            margin: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .noData {
+            background: #1016FF;
+        }
+
+        #menu {
+            position: fixed;
+            width: 300px;
+            top: 0;
+            left: 0;
+            display: none;
+            z-index: 999
+        }
+
+        #menu ul li {
+            height: 56px;
+            line-height: 56px;
+            width: 300px;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid #dddddd;
+            text-align: center;
+            background: #ffffff;
+            cursor: pointer;
+        }
+
+        #menu ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        #menu {
+            border-top: 1px solid #dddddd;
+            border-right: 1px solid #dddddd;
+            border-left: 1px solid #dddddd;
+        }
+
+        .zw {
+            position: absolute;
+            z-index: 998;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .test {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .test iframe {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+
+
+        .outerDiv {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: none;
+            background: red;
+        }
+
+        .innerDiv {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            color: #FFD04B;
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body id="statisticalTypefourthBody" onclick="setmenushowState()" scroll="no">
+    <div class="outerDiv">
+        <div class="innerDiv">
+            <h1 style="position: relative;top:-50px"></h1>
+        </div>
+    </div>
+
+
+    <div id="menu">
+        <ul></ul>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="./dist/js/swiper.min.js"></script>
+    <script src="./dist/js/jquery.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var API_URL = 'http://bpsoft.cn:8084/fme';
+        var autoplayTime = 500
+        var currentIndex = 0
+        var localData = [];
+        var swiper = null;
+        var xun = null
+        function setmenushowState() {
+            var e = window.event || arguments.callee.caller.arguments[0];
+            if (e.target.className != 'menuli') {
+                $('#menu').hide('fast')
+            }
+        }
+        //初始化禁止用户右键事件
+        setRightClick();
+        init();
+        //初始化数据
+        function init() {
+            var cookieData = getCookie('screenHis')
+            console.log(cookieData)
+            if (cookieData && cookieData != undefined && cookieData != 'undefined') {
+                if (JSON.parse(cookieData).isShowWelcome == 'Y') {
+                    $('.outerDiv').show()
+                    $('.innerDiv').find('h1').html(JSON.parse(cookieData).welcomeContext)
+                } else {
+                    var localId = JSON.parse(cookieData).id
+                    var LoclIsShowWelcome = JSON.parse(cookieData).isShowWelcome
+                    var localObject = JSON.stringify({ id: localId, isShowWelcome: LoclIsShowWelcome })
+                    getScreenDisplayManager(localObject)
+                }
+                //存在cookie数据
+                $('body').removeClass('noData');
+            } else {
+                $('body').addClass('noData');
+                getMenuData(function (res) {
+                    var itemHtml = '';
+                    $('#menu').find('ul').html('')
+                    var localData = res.rows;
+                    var localDataLength = res.rows.length;
+                    for (var i = 0; i < localDataLength; i++) {
+                        var itemHtml = itemHtml + "<li class='menuli' onclick=getScreenDisplayManager('" + JSON.stringify(localData[i]) + "')>" + localData[i].companyName + '-' + localData[i].stationName + '-' + localData[i].name + "</li>"
+                    }
+                    $('#menu').find('ul').append(itemHtml)
+                    $('#menu').show()
+                })
+                console.log(2)
+                //不存在cookie数据
+            }
+        }
+        //获取素材item数据
+        function getScreenDisplayManager(item) {
+            setCookie('screenHis', item)
+            var localItem = JSON.parse(item)
+            var params = { deviceTerminalId: localItem.id, isUsed: 'Y' };
+            window.clearTimeout(xun)
+            currentIndex = 0;
+            localData = [];
+            $('.swiper-wrapper').html('')
+            if (localItem.isShowWelcome == 'Y') {
+                $('.swiper-container').hide()
+                $('.outerDiv').show();
+                $('.innerDiv').find('h1').html(localItem.welcomeContext)
+            } else {
+                $('.outerDiv').hide();
+                $('.innerDiv').find('h1').html('')
+                $.ajax({
+                    url: API_URL + "/message/getScreenDisplayManager", // 目标资源
+                    data: JSON.stringify(params),
+                    headers: {
+                        'Content-Type': 'application/json; charset=UTF-8'
+                    },
+                    dataType: 'json',// 服务器响应的数据类型
+                    type: "POST", // 请求方式
+                    success: function (data) {
+                        var itemHtml = ''
+                        localData = data.result;
+                        var locaTypeHtml = '';
+                        if (localData[currentIndex].materialType == 'VIDEO') {
+                            locaTypeHtml = "<video autoplay='autoplay' id='hVideo' controls='controls'preload='auto'  src=" + API_URL + "/UC/showVideo?fileID=" + localData[currentIndex].filePic + "></video>"
+                            //  locaTypeHtml = "<video  id='hVideo'loop='loop'  controls='controls' preload='auto' src='http://www.amdcu.net/admin/data/admin/lm_data/lm_23781/story_content/video_5uVjEQZCagr_30_48_720x406.mp4'></video>"
+                        } else if (localData[currentIndex].materialType == 'URL') {
+                            locaTypeHtml = '<div class="test"><iframe scrolling="no" src="https://www.swiper.com.cn/api/event/452.html"></iframe><div class="zw"></div> </div>'
+                        } else if (localData[currentIndex].materialType == 'IMG') {
+                            locaTypeHtml = "<img src=" + API_URL + "/UC/showImageInfo?fileId=" + localData[currentIndex].filePic + " />"
+                        }
+                        itemHtml = "<div class='swiper-slide'>" + locaTypeHtml + "</div>"
+                        $('#menu').hide();
+                        $('.swiper-wrapper').append(itemHtml);
+                        $('.swiper-container').show()
+
+                        swiper = new Swiper('.swiper-container', {
+                            loop: false,
+                            pagination: '.swiper-pagination',
+                            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+                            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+                            on: {
+                                slideChangeTransitionEnd: function () {
+                                    var activeIndex = this.activeIndex
+                                    console.log('我滑动结束了')
+                                    setTimeout(function () {
+                                        $('.swiper-slide').eq(activeIndex - 1).remove();
+                                        console.log(localData[currentIndex])
+                                        var video = document.getElementById('hVideo');
+                                        if (localData[currentIndex].materialType == 'VIDEO') {
+                                            video.addEventListener('loadedmetadata', function () {
+                                                this.currentTime = localData[currentIndex].playStartDatetime;
+                                            }, false);
+
+
+                                            // var video = document.getElementById('hVideo');
+                                            // console.log(video)
+                                            // video.oncanplay = function () {
+                                            //     console.log('开始播放')
+                                            //     video.currentTime = localData[currentIndex].playStartDatetime;
+                                            //     video.play();
+                                            // }
+                                            //
+                                            //video.play();
+                                        }
+                                    }, 300)
+                                }
+                            }
+                        });
+                        setTiemLunBo(localData[currentIndex].stayDate)
+                    }
+                });
+            }
+
+
+        }
+        function setTiemLunBo(time) {
+            xun = setTimeout(function () {
+                if (currentIndex == localData.length) {
+                    currentIndex = 0
+                } else {
+                    currentIndex = currentIndex + 1
+                }
+                var locaTypeHtml = '';
+                if (localData[currentIndex].materialType == 'VIDEO') {
+                    locaTypeHtml = "<video  autoplay='autoplay' id='hVideo'  controls='controls' preload='auto' src=" + API_URL + "/UC/showVideo?fileID=" + localData[currentIndex].filePic + "></video>"
+                    //locaTypeHtml = "<video  id='hVideo' loop='loop' controls='controls' preload='auto' src='http://www.amdcu.net/admin/data/admin/lm_data/lm_23781/story_content/video_5uVjEQZCagr_30_48_720x406.mp4'></video>"
+
+                } else if (localData[currentIndex].materialType == 'URL') {
+                    locaTypeHtml = '<div class="test"><iframe scrolling="no" src="' + localData[currentIndex].materialUrlContext + '"></iframe><div class="zw"></div> </div>'
+                } else if (localData[currentIndex].materialType == 'IMG') {
+                    locaTypeHtml = "<img src=" + API_URL + "/UC/showImageInfo?fileId=" + localData[currentIndex].filePic + " />"
+                }
+                itemHtml = "<div class='swiper-slide'>" + locaTypeHtml + "</div>"
+                $('#menu').hide();
+                $('.swiper-wrapper').append(itemHtml);
+                setTimeout(function () {
+                    swiper.slideNext();
+                    setTiemLunBo(localData[currentIndex].stayDate)
+                }, 500)
+            }, time * 1000)
+        }
+        //禁止用户右键事件
+        function setRightClick() {
+            var el = document.getElementById("statisticalTypefourthBody");
+            el.oncontextmenu = function (e) {
+                if (e.button == 2) {
+                    e.preventDefault();
+                    // var itemHtml = '<li>1</li><li>2</li><li>3</li>';
+                    // $('#menu').append(itemHtml)
+                    //获取右键菜单数据
+                    getMenuData(function (res) {
+                        var _x = e.clientX, _y = e.clientY;
+                        var itemHtml = '';
+                        $('#menu').find('ul').html('')
+                        var localData = res.rows;
+                        var localDataLength = res.rows.length;
+                        for (var i = 0; i < localDataLength; i++) {
+                            var itemHtml = itemHtml + "<li class='menuli' onclick=getScreenDisplayManager('" + JSON.stringify(localData[i]) + "')>" + localData[i].companyName + '-' + localData[i].stationName + '-' + localData[i].name + "</li>"
+                        }
+                        $('#menu').find('ul').append(itemHtml)
+                        $('#menu').css('top', _y + 'px').css('left', _x + 'px')
+                        $('#menu').show('fast')
+                    })
+                }
+            }
+        }
+
+
+        //获取菜单数据
+        function getMenuData(fn) {
+            var params = { deviceType: "IPTV" }
+            $.ajax({
+                url: API_URL + "/message/getIntelligentDeviceTerminal", // 目标资源
+                data: JSON.stringify(params),
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8'
+                },
+                dataType: 'json',// 服务器响应的数据类型
+                type: "POST", // 请求方式
+                success: function (data) {
+                    if (fn) {
+                        fn(data)
+                    }
+                }
+            });
+        }
+        //写cookies
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+
+        //获取Cookie
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+        //删除Cookie
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null)
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        }
+
+    </script>
+</body>
+
+</html>
